@@ -16,7 +16,7 @@ docker run --name myapp1 -p 8888:8080 -d stacksimplify/retail-store-sample-ui:1.
 
  List Running Docker Containers
 docker ps
-# List all containers (including stopped ones)
+# List all containers
 docker ps -a
 # List only container IDs
 docker ps -q
