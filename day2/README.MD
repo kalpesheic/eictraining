@@ -34,8 +34,5 @@ If the host reboots and cross-arch stops working, re-run the docker run --privil
 Below are the refernce SS
 
 
- 
- 
-
 
  
