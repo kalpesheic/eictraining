@@ -1,11 +1,8 @@
-Docker Compose Commands
-
+**Docker Compose Commands**
 Start Services
-  
 docker compose up
    
 - Start in detached mode (background):
-   
 docker compose -f docker-compose.yaml up -d
   
 Stop all services (gracefully):
