@@ -18,12 +18,14 @@ Below are the sceen shot for the reference.
 <img width="940" height="428" alt="image" src="https://github.com/user-attachments/assets/21b52b53-a561-432f-b280-9a3906dceb2c" />
 <img width="940" height="254" alt="image" src="https://github.com/user-attachments/assets/1c003978-b3e4-404c-b073-99efcac1c5ab" />
 
+The following commands were used to pull and run the application container:
+# List available Docker images
+docker images
 
+# Pull the application image from Docker Hub
+docker pull stacksimplify/retail-store-sample-ui:1.0.0
 
-
-Pull Docker Image from Docker Hub
-#docker images
-#docker pull stacksimplify/retail-store-sample-ui:1.0.0
+# Run the Docker container
 docker run --name myapp1 -p 8888:8080 -d stacksimplify/retail-store-sample-ui:1.0.0
 
  
