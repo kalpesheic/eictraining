@@ -18,6 +18,11 @@ Below are the sceen shot for the reference.
 <img width="940" height="428" alt="image" src="https://github.com/user-attachments/assets/21b52b53-a561-432f-b280-9a3906dceb2c" />
 <img width="940" height="254" alt="image" src="https://github.com/user-attachments/assets/1c003978-b3e4-404c-b073-99efcac1c5ab" />
 
+
+Docker repo
+
+https://hub.docker.com/repository/docker/kalpesheic/retail-store-sample-app-1.2.0.0/tags
+
 The following commands were used to pull and run the application container:
 # List available Docker images
 docker images
