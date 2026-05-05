@@ -31,6 +31,9 @@ Access Containers**
 docker run --privileged --rm tonistiigi/binfmt --install all
 If the host reboots and cross-arch stops working, re-run the docker run --privileged --rm tonistiigi/binfmt --install all command.
 
+Below are the refernce SS
+
+
  
  
 
