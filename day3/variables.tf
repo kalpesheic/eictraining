@@ -20,8 +20,11 @@ variable "aes_tags" {
   type        = map(string)
 
   default = {
-    Project = "EIC2026"
-    Owner   = "Kalpesh"
+    Project = "EIC-Internal"
+    Email_ID = "Kalpesh.kumar@einfochips.com"
+    Department = "PES"
+    BU = "IA"
+
   }
 }
 
@@ -55,4 +58,9 @@ variable "subnet_newbits" {
   description = "Number of new bits to add to VPC CIDR to generate subnets (e.g., 8 means /24 from /16)"
   type        = number
   default     = 8
+}
+
+variable "my_ip" {
+  description = "My public IP"
+  type        = string
 }

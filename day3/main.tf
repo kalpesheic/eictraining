@@ -7,22 +7,28 @@ locals {
 route_table_id = "rtb-0898c89baeb6ebb57"
 }
 
-resource "aws_security_group" "ec2_sg" {
-  name        = "kalpesh-sg"
-  vpc_id      = local.vpc_id
 
+resource "aws_security_group" "ec2_sg" {
+  name = "ssh-access"
+  vpc_id = local.vpc_id
   ingress {
-    description = "SSH"
+    description = "SSH from my IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] 
-    }
 
-
-  tags = {
-    Name = "kalpesh-sg"
+    cidr_blocks = [var.my_ip]
   }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  tags = var.aes_tags 
+
 }
 
 resource "aws_instance" "bootcamp_kalpesh" {
@@ -32,7 +38,5 @@ resource "aws_instance" "bootcamp_kalpesh" {
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   associate_public_ip_address = true
   key_name = "kalpesh2026"
-  tags = {
-    Name = "Kalpesh-POC"
-  }
+  tags = var.aes_tags 
 }
