@@ -4,12 +4,28 @@ data "aws_availability_zones" "available" {
 }
 
 # Locals
+#locals {
+#  azs = slice(data.aws_availability_zones.available.names, 0, 3)
+
+  #public_subnets  = [for k, az in local.azs:cidrsubnet(var.vpc_cidr, var.subnet_newbits, k)]
+
+  #private_subnets = [for k, az in local.azs:cidrsubnet(var.vpc_cidr, var.subnet_newbits, k + 10)]
+
+
+#}
+
 locals {
-  azs = slice(data.aws_availability_zones.available.names, 0, 3)
+  vpc_id             = "vpc-02358ddc1cb955bcd"
+  vpc_cidr           = "10.0.0.0/16"
 
-  public_subnets  = [for k, az in local.azs:cidrsubnet(var.vpc_cidr, var.subnet_newbits, k)]
+  internet_gateway_id = "igw-095a43d99a5ec72d6"
+  nat_gateway_id      = "nat-054be5efc41467fef"
 
-  private_subnets = [for k, az in local.azs:cidrsubnet(var.vpc_cidr, var.subnet_newbits, k + 10)]
+  public_subnet_ids = [
+    "subnet-0c1d51bdec6bbfc49"
+  ]
+
+  route_table_id = "rtb-0898c89baeb6ebb57"
 }
 
 # VPC
