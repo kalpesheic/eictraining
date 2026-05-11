@@ -50,8 +50,10 @@ kubectl get pods -o wide
 kubectl get endpointslices -l kubernetes.io/service-name=catalog-service
 
 Kubernetes uses the selector labels in the Service definition to automatically discover Pods that match those labels. It then creates an EndpointSlice object listing the Pod IPs and ports that belong to that Service.
+
 ####Kubernetes ConfigMap############
-ConfigMaps help externalize configuration from the container image.
-We defined all environment variables explicitly, even defaults.
-Deployment consumed ConfigMap via envFrom.
-Verified that environment variables were successfully injected into the container.
+
+1. ConfigMaps help externalize configuration from the container image.
+2. We defined all environment variables explicitly, even defaults.
+3. Deployment consumed ConfigMap via envFrom.
+4. Verified that environment variables were successfully injected into the container.
