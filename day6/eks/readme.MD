@@ -27,19 +27,19 @@ Scaling the Deployment
 kubectl scale deployment catalog --replicas=3
 
 Update the Deployment image
-# List Deployment Revisions
+Deployment Revisions
 kubectl rollout history deployment/catalog
 # Update the Deployment
 kubectl set image deployment/catalog catalog=public.ecr.aws/aws-containers/retail-store-sample-catalog:1.3.0
-# List Deployment Revisions
+Deployment Revisions
 kubectl rollout history deployment/catalog
 
 Verify rollout status
 kubectl rollout status deployment/catalog
 
-# Rollback to previous version
+Rollback to previous version
 kubectl rollout undo deployment/catalog
-# List Deployment Revisions
+Deployment Revisions
 kubectl rollout history deployment/catalog
 
 
