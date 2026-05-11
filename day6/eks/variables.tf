@@ -58,7 +58,7 @@ variable "cluster_endpoint_public_access" {
 variable "cluster_endpoint_public_access_cidrs" {
   description = "List of CIDR blocks allowed to access public EKS endpoint"
   type        = list(string)
-  default     = ["0.0.0.0/0"]
+  default     = ["103.161.98.246/32"]
 }
 
 
