@@ -31,8 +31,7 @@ Observe reverse deletion
 Delete Pod and Verify Identity
 kubectl delete pod catalog-mysql-0
 kubectl get pods
-
-# Restart Catalog App
+Restart Catalog App
 kubectl rollout restart deploy/catalog
 
 Mysql database pod uses an emptyDir volume, data stored inside the pod is ephemeral( it exists only for the pod's lifetime)
