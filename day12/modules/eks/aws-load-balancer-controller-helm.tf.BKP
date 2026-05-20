@@ -19,9 +19,15 @@ resource "helm_release" "aws_load_balancer_controller" {
       value = "aws-load-balancer-controller"
     },
     {
+      name = "region"
+      value = "ap-south-1"
+    },
+
+    {
       name  = "vpcId"
       value = data.terraform_remote_state.vpc.outputs.vpc_id
     }
+    
   ]
 
   timeout = 600

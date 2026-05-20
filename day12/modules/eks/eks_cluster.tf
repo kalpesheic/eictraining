@@ -64,37 +64,37 @@ resource "aws_eks_addon" "pod_identity" {
 
 #Created policy for the add aws loadbalancer controller policy
 
-resource "aws_iam_policy" "aws_load_balancer_controller" {
-  name = "AWSLoadBalancerControllerIAMPolicy_${local.eks_cluster_name}"
+#resource "aws_iam_policy" "aws_load_balancer_controller" {
+#  name = "AWSLoadBalancerControllerIAMPolicy_${local.eks_cluster_name}"
 
-  policy = file("${path.module}/policies/aws-load-balancer-controller-policy.json")
+#  policy = file("${path.module}/policies/aws-load-balancer-controller-policy.json")
 
-  tags = var.tags
-}
+#  tags = var.tags
+#}
 
 # create IAM role with attach trust policy 
 
-resource "aws_iam_role" "aws_load_balancer_controller" {
-  name               = "AmazonEKS_LBC_Role_${local.eks_cluster_name}"
-  assume_role_policy = file("${path.module}/policies/aws-load-balancer-controller-trust-policy.json")
-  tags               = var.tags
-}
+#resource "aws_iam_role" "aws_load_balancer_controller" {
+#  name               = "AmazonEKS_LBC_Role_${local.eks_cluster_name}"
+#  assume_role_policy = file("${path.module}/policies/aws-load-balancer-controller-trust-policy.json")
+#  tags               = var.tags
+#}
 
 # attach aws load balancer controller policy with IAM role
-resource "aws_iam_role_policy_attachment" "aws_load_balancer_controller" {
-  role       = aws_iam_role.aws_load_balancer_controller.name
-  policy_arn = aws_iam_policy.aws_load_balancer_controller.arn
-}
+#resource "aws_iam_role_policy_attachment" "aws_load_balancer_controller" {
+#  role       = aws_iam_role.aws_load_balancer_controller.name
+#  policy_arn = aws_iam_policy.aws_load_balancer_controller.arn
+#}
 
 # create PIA assocation along with attach aws load balancer controller.
 
-resource "aws_eks_pod_identity_association" "aws_load_balancer_controller" {
-  cluster_name    = aws_eks_cluster.main.name
-  namespace       = "kube-system"
-  service_account = "aws-load-balancer-controller"
-  role_arn        = aws_iam_role.aws_load_balancer_controller.arn
-  depends_on = [
-    aws_iam_role_policy_attachment.aws_load_balancer_controller
-  ]
-}
+#resource "aws_eks_pod_identity_association" "aws_load_balancer_controller" {
+#  cluster_name    = aws_eks_cluster.main.name
+#  namespace       = "kube-system"
+#  service_account = "aws-load-balancer-controller"
+#  role_arn        = aws_iam_role.aws_load_balancer_controller.arn
+#  depends_on = [
+#    aws_iam_role_policy_attachment.aws_load_balancer_controller
+#  ]
+#}
 
