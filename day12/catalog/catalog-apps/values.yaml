@@ -1,0 +1,11 @@
+app:
+  name: catalog
+  replicas: 1
+  image: public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.4
+  serviceAccount: catalog
+
+configMap:
+  name: catalog
+
+secret:
+  name: catalog-db

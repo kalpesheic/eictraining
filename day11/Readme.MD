@@ -4,6 +4,8 @@ rolls back to the last successfully release
 # helm rollback ui 1 --dry-run
 preview rollback without applying.
 
+ Pods may not restart automatically because ConfigMap/env changes don’t always trigger a rollout. If that happens, restart the Deployment manually.
+
 # rollback to previous release
 helm history ui
 
