@@ -65,7 +65,7 @@ resource "aws_eks_addon" "pod_identity" {
 #Created policy for the add aws loadbalancer controller policy
 
 #resource "aws_iam_policy" "aws_load_balancer_controller" {
-#  name = "AWSLoadBalancerControllerIAMPolicy_${local.eks_cluster_name}"
+# name = "AWSLoadBalancerControllerIAMPolicy_${local.eks_cluster_name}"
 
 #  policy = file("${path.module}/policies/aws-load-balancer-controller-policy.json")
 

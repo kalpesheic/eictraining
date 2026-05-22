@@ -8,6 +8,8 @@ data "terraform_remote_state" "vpc" {
   }
 }
 
+
+
 output "vpc_id" {
   value = data.terraform_remote_state.vpc.outputs.vpc_id
 
@@ -20,4 +22,12 @@ output "public_subnet_ids" {
   value = data.terraform_remote_state.vpc.outputs.public_subnet_ids
 }
 
+
+#output "eks_cluster_name" {
+#  value = aws_eks_cluster.main.name
+#}
+
+#output "eks_cluster_security_group_id" {
+#  value = aws_eks_cluster.main.vpc_config[0].cluster_security_group_id
+#}
 
