@@ -18,4 +18,3 @@ locals {
 data "aws_vpc" "main" {
   id = data.terraform_remote_state.vpc.outputs.vpc_id
 }
-
