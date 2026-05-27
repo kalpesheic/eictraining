@@ -12,12 +12,12 @@ spec:
   # Auto-discover subnets (your cluster tags)
   subnetSelectorTerms:
     - tags:
-        kubernetes.io/cluster/eic-internal-kalpesh-dev-kalpesh-demo: shared
+        kubernetes.io/cluster/eic-internal-kalpesh-dev-kalpesh-demo: owned
         kubernetes.io/role/internal-elb: "1"
   # Auto-discover security groups
   securityGroupSelectorTerms:
     - tags:
-        kubernetes.io/cluster/eic-internal-kalpesh-dev-kalpesh-demo: shared
+        kubernetes.io/cluster/eic-internal-kalpesh-dev-kalpesh-demo: owned
   # Required for Karpenter auto-discovery of resources
   tags:
     karpenter.sh/discovery: eic-internal-kalpesh-dev-kalpesh-demo

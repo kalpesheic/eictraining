@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spot-test-app
+  namespace: default
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: spot-test
+  template:
+    metadata:
+      labels:
+        app: spot-test
+    spec:
+      nodeSelector:
+        karpenter.sh/capacity-type: spot  # ← Force Spot nodes
+      
+      terminationGracePeriodSeconds: 30   # ← Allow graceful shutdown
+      
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports: 
+          - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
+
+---
+# PodDisruptionBudget - THE KEY TO ZERO DOWNTIME
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: spot-test-app-pdb
+  namespace: default
+spec:
+  minAvailable: 3  # ← Keep at least 3 pods running during disruptions
+  selector:
+    matchLabels:
+      app: spot-test
