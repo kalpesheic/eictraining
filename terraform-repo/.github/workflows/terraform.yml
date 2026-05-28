@@ -13,6 +13,10 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+  defaults:
+    run:
+       working-directory: terraform-repo  
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
