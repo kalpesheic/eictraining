@@ -19,21 +19,19 @@ output "public_subnet_map" {
   description = "Public subnets for ALB, NLB, etc."
 }
 
-output "internet_gateway_id" {
-  value       = module.vpc.internet_gateway_id
-  description = "Internet Gateway ID attached to the VPC"
-}
-
 output "eks_cluster_name" {
-  value = module.eks.cluster_name
+  value = module.eks.eks_cluster_name
 }
 
 output "eks_cluster_id" {
-  value = module.eks.cluster_id
+  value = module.eks.eks_cluster_id
 }
 
 output "eks_cluster_endpoint" {
-  value = module.eks.cluster_endpoint
+  value = module.eks.eks_cluster_endpoint
 }
 
+output "eks_cluster_certificate_authority_data" {
+  value = module.eks.eks_cluster_certificate_authority_data
+}
 

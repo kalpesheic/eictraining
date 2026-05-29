@@ -1,0 +1,41 @@
+resource "helm_release" "externaldns" {
+  name       = "external-dns"
+  repository = "https://kubernetes-sigs.github.io/external-dns/"
+  chart      = "external-dns"
+  namespace  = "external-dns"
+
+  create_namespace = true
+
+  depends_on = [
+    aws_iam_role.externaldns_role,
+    aws_eks_pod_identity_association.externaldns,
+    aws_eks_node_group.private_nodes
+  ]
+
+  set = [
+    {
+      name  = "provider"
+      value = "aws"
+    },
+    {
+      name  = "serviceAccount.create"
+      value = "true"
+    },
+    {
+      name  = "serviceAccount.name"
+      value = "external-dns"
+    },
+    {
+      name  = "policy"
+      value = "sync"
+    },
+    {
+      name  = "registry"
+      value = "txt"
+    },
+    {
+      name  = "txtOwnerId"
+      value = aws_eks_cluster.main.name
+    }
+  ]
+}
