@@ -50,6 +50,15 @@ COPY .mvn .mvn
 COPY mvnw .
 COPY pom.xml .
 
+COPY = Used to transfer files/directories from your local project into the Docker image.
+RUN = execute linux commands inside the container image during build time.
+# Multistage docker build
+A multi stage build uses multiple FROM instruction in a single dockerfile, one stage used to compile or build the application, and another stage is used to run it, files
+are coppied between stage using copy -- from=<stage>, this reduce size, removes unnecessary build tools from production images, and improved security and development speed.
+
+
+
+
  
  
  
