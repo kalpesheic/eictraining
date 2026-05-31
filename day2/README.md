@@ -1,3 +1,10 @@
+# Docker Compose
+docker compose is a tool for defining multi-container apps in a single yaml file
+managing networks, volumes and dependencies
+Running all services with docker, compose up
+
+
+
 **Docker Compose Commands**
 Start Services
 docker compose up
