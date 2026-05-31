@@ -1,3 +1,4 @@
+-var-file is one of the highest-precedence sources, second only to -var defined direcly on the command line
 Created VPC using Terraform step by step.
 
 Terraform Block
@@ -27,4 +28,21 @@ A variable (map) defined in your Terraform
 Usually contains common tags
 A map with a single key-value pair
 
+1. list- A list is an ordered collection of values.
+2. Map- A map store key and value pairs
+3. Object- object is a structured map with defined attributes
+4. Set- A set is a like a list but contains unique values
+5. tuple- Like a list can contain different data types
+6. merge- combine multiple maps
+7. concat- comibine of list
+8. flattern()- Convert nested list into a single list.
+9. lookup()-retrive value from a map safely.
+10. keys()- get map keys
+11. values()- get map values
+12. length()- count element
+13. to(set)- remove duplicate
+14. tolist()- convert list
+15. join()- list->string
+16. spilit()- string->list
+17. try()- handel missing attributes safely.
 
