@@ -33,6 +33,23 @@ docker pull stacksimplify/retail-store-sample-ui:1.0.0
 # Run the Docker container
 docker run --name myapp1 -p 8888:8080 -d stacksimplify/retail-store-sample-ui:1.0.0
 
+# Walkthrogh dockerfile
+
+FROM public.ecr.aws/amazonlinux/amazonlinux:2023 AS build-env
+create a temporary image used only for compilation 
+AL23--> Install mavan+ java--> compile code--> create jar
+
+Install build dependecies
+--setopt=install_weak_deps=False = Avoids unnecessary packages.
+VOLUME /tmp = Creates mount point.
+Set working directory 
+WORKDIR /
+
+copy mavan wrappper 
+COPY .mvn .mvn
+COPY mvnw .
+COPY pom.xml .
+
  
  
  
