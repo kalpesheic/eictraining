@@ -56,6 +56,12 @@ RUN = execute linux commands inside the container image during build time.
 A multi stage build uses multiple FROM instruction in a single dockerfile, one stage used to compile or build the application, and another stage is used to run it, files
 are coppied between stage using copy -- from=<stage>, this reduce size, removes unnecessary build tools from production images, and improved security and development speed.
 
+Remove all build cache (including unused images and layers
+docker builder purne --all
+docker builder prune --all -f 
+
+These commands will remove unused containers/images, so only run them when you're sure it's safe.
+docker system prune -a --volumes -f
 
 
 
