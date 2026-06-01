@@ -14,6 +14,24 @@ Liveness Probe-	If it fails repeatedly, kubelet restarts the container
 RollingUpdate → replaces Pods gradually without downtime
 maxUnavailable: 1 → ensures at most one Pod is down during rollout
 
+Selector label-it tells that which POD is belongs to particular deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+Below spec belongs to POD spec.
+template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+
 runAsNonRoot: true-	Runs container as non-root user
 readOnlyRootFilesystem: true-Prevents writes to filesystem
 capabilities.drop: [ALL]-	Removes unnecessary Linux capabilities
