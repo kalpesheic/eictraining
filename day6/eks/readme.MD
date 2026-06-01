@@ -16,11 +16,6 @@ maxUnavailable: 1 → ensures at most one Pod is down during rollout
 
 Selector label-it tells that which POD is belongs to particular deployment
 
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
 
 Below spec belongs to POD spec.
 template:
