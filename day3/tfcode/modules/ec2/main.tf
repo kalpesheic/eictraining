@@ -9,7 +9,7 @@ data "aws_ami" "al2023" {
   }
 }
 
-resource "aws_instance" "ekansh-ec2bootcamp" {
+resource "aws_instance" "kalpesh_inst" {
   ami                         = data.aws_ami.al2023.id
   instance_type               = "t3.medium"
   subnet_id                   = var.subnet_id

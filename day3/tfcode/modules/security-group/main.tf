@@ -1,4 +1,4 @@
-resource "aws_security_group" "Ekansh_sg_bootcamp" {
+resource "aws_security_group" "kalpesh_sg" {
   name        = "secure-sg"
   description = "Restricted SG"
   vpc_id      = var.vpc_id

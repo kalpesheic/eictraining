@@ -9,6 +9,7 @@
   #public_subnets  = [for k, az in local.azs : cidrsubnet(var.vpc_cidr, var.subnet_newbits, k)]
  # private_subnets = [for k, az in local.azs : cidrsubnet(var.vpc_cidr, var.subnet_newbits, k + 10)]
 #}
+
 # Existing VPC
 data "aws_vpc" "main" {
   id = "vpc-02358ddc1cb955bcd"

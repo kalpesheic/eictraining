@@ -1,5 +1,5 @@
 output "vpc_id" {
-  value = aws_vpc.Ekansh_vpc_bootcamp.id
+  value = aws_vpc.example_vpc.id
 }
 
 output "public_subnet_id" {
