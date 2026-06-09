@@ -1,6 +1,8 @@
 name: Terraform CI/CD
+
 on:
   workflow_dispatch:
+
   push:
     branches:
       - cluster090626
@@ -27,7 +29,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Configure AWS Credentials (OIDC)
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::454143665149:role/github-actions-terraform-role
