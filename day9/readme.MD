@@ -6,7 +6,6 @@ Example:
 
 Request 10Gi storage using gp2 StorageClass.
 
-
 ###PVC is a namespace-scoped resource#####
 
 Persistent Volume (PV)
@@ -14,24 +13,20 @@ Persistent Volume (PV)
 A Persistent Volume is the actual storage resource provisioned inside the Kubernetes cluster.
 
 It represents the real underlying storage such as:
-
 AWS EBS volume
 NFS share
 Azure Disk
 GCP Persistent Disk
 
 PV and storageclass are a cluster-scoped resource.
-
 A StorageClass enables dynamic storage provisioning in Kubernetes.
 
 Example responsibilities of StorageClass:
-
 volume type
 filesystem type
 reclaim policy
 encryption settings
-
-AWS EBS CSI Driver- The Amazon EBS CSI Driver knows how to communicate with AWS and dynamically create EBS volumes for Kubernetes workloads.
+AWS EBS CSI Driver- Amazon EBS CSI Driver knows how to communicate with AWS and dynamically create EBS volumes for Kubernetes workloads.
 
 ####The EBS CSI Driver mainly consists of:####
 EBS CSI Controller

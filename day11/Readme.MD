@@ -1,3 +1,6 @@
+Helm is package manager, while using of helm, we can maintain reusability, versioning, 
+release management, packaging and sharing.
+
 # helm rollback ui 
 rolls back to the last successfully release 
 

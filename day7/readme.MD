@@ -6,7 +6,7 @@ Deployment will work only for the stateless applications
 statefulset will work only for the statefull applications, all database are stateful applications.
 
 StatefulSet
-All required pods will be created sequently( first create master DB pod then Slave DB pod)
+All required pods will be created in sequence( first create master DB pod then Slave DB pod)
 Whenever any pod got crash, will get same name while creating and deleting.
 
 Why not using K8s cluster IP for the stateful applications.
@@ -14,6 +14,14 @@ Why not using K8s cluster IP for the stateful applications.
 #####Headless Service###############
 headless servcice will not do any load balancing like clusterIP service.
 it create dns at pod level example-(podname.headless-service.namespace.svc.cluster-domain.example)
+
+With the use of hedless service, there is no virtual IP(ClusterIP) allocated for the service, therefore, kube-proxy not perform the virtual load balacing through a service IP.
+
+# common use case for the K8s statefulset
+if we have service "serviceName: my-db"and a headless service named my-db, creates stable records such as.
+db-01-my-db.svc.cluster.local
+db-02-my-db-svc.cluster.local
+
 
 #####
 ####Scale Up – Ordered Pod Creation#############
@@ -34,6 +42,7 @@ kubectl get pods
 Restart Catalog App
 kubectl rollout restart deploy/catalog
 
+Statefulset pods are created/deted in sequencely, if we requred that first master pod should create first then slave Pods.
 Mysql database pod uses an emptyDir volume, data stored inside the pod is ephemeral( it exists only for the pod's lifetime)
 MySQL StatefulSet to multiple replicas only creates independent MySQL servers. Kubernetes does not configure replication automatically
 
@@ -41,10 +50,6 @@ StatefulSet = identity + storage + ordering
 Deployment = stateless scaling + rollout
 ConfigMap = configuration injection (not runtime management system)
 
-
-
- 
- 
 
  
 MySQL startup logs like the above, it confirms that the Catalog microservice is successfully pointing to the MySQL database Pod
@@ -61,17 +66,17 @@ ConfigMap = configuration injection (not runtime management system)
 labels-it has been used by Pod, deployments and nodes
 Selector- service and replicaset.
 
+
+
 #####QA###
 In a Kubernetes StatefulSet, EKS with Multi-AZ enabled, what happens depends mainly on the storage type and volume binding behavior.
 
 Most Statefulsets will use prersistentVolumeClaim and backend by EBS(Gp2/Gp3)
 via ebs.csi.aws.com
-if pod is rescheduling in same AZ, it will work properly, if this pod schedule on different AZ, this pod will be reamin in pending state as ebs volume
-is not avaialble.
+if pod is rescheduling in same AZ, it will work properly, if this pod schedule on different AZ, this pod will be reamin in pending state as ebs volume is not avaialble.
 we may get error volume node affinity conflict or multi-attach error.
 
-##Why this happen automatically
-if we use 
+##Why this happen automaticall if we use 
 volumeBindingMode: WaitForFirstConsumer
 K8s creates the volume in the same AZ as the selected node and remembers node affinity, scheduler then tries to place future pod restart in the same AZ.
 So normally-:

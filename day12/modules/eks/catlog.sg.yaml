@@ -1,0 +1,11 @@
+apiVersion: vpcresources.k8s.aws/v1beta1
+kind: SecurityGroupPolicy
+metadata:
+  name: catalog-sgp
+spec:
+  podSelector:
+    matchLabels:
+      app: catalog
+  securityGroups:
+    groupIds:
+      - sg-0392682bee094b12d
