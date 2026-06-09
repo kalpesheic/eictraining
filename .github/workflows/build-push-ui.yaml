@@ -3,13 +3,7 @@ on:
   push:
     branches:
       - '**'
-    paths:
-      - 'project2026/cluster26/**'
-
-  pull_request:
-    paths:
-      - 'project2026/cluster26/**'
-
+pull_request:
 permissions:
   id-token: write
   contents: read
