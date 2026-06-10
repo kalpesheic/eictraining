@@ -6,7 +6,6 @@ if configuration already exist, terrafrom will overwrite the existing configurat
 # resolve_conflicts_on_update = "OVERWRITE"
 if existing config differs, or someone manually changed setting, terrafrom overwrites those changes.
 
-
   set = [
     {
       name  = "syncSecret.enabled"

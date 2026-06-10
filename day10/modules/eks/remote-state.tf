@@ -3,7 +3,8 @@ data "terraform_remote_state" "vpc" {
 
   config = {
     bucket = "kalpesheic042026"
-    key    = "dev/terraform.tfstate"
+    #key    = "dev/terraform.tfstate"
+    key    = "dev/vpc/terraform.tfstate"
     region = "ap-south-1"
   }
 }

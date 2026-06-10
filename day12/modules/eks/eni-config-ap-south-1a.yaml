@@ -1,0 +1,8 @@
+apiVersion: crd.k8s.amazonaws.com/v1alpha1
+kind: ENIConfig
+metadata:
+  name: ap-south-1a
+spec:
+  subnet: subnet-00b77429381a50ec0
+  securityGroups:
+    - sg-0f7de4b64267a8486

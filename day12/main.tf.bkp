@@ -1,7 +1,7 @@
 module "eks" {
   source = "./modules/eks"
 
-  cluster_name = "kalpesh-test-cluster"
+  cluster_name = "kalpesh-test"
 
   # other variables
 }

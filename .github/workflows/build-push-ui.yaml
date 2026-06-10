@@ -4,12 +4,7 @@ on:
   push:
     branches:
       - cluster090626
-    paths:
-      - 'project2026/cluster26/**'
-
   pull_request:
-    paths:
-      - 'project2026/cluster26/**'
 
 permissions:
   id-token: write
