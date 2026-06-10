@@ -1,9 +1,11 @@
 name: Terraform CI/CD
 on:
+  workflow_dispatch:
   push:
     branches:
-      - '**'
-pull_request:
+      - cluster090626
+  pull_request:
+
 permissions:
   id-token: write
   contents: read
@@ -11,9 +13,10 @@ permissions:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+
     defaults:
-     run:
-      working-directory: project2026/cluster26  
+      run:
+        working-directory: project2026/cluster26
 
     steps:
       - name: Checkout Code
@@ -36,7 +39,3 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
-
-      #- name: Terraform Apply
-      #  if: github.ref == 'refs/heads/main'
-      # run: terraform apply -auto-approve
