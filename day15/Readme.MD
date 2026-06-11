@@ -1,6 +1,6 @@
 Bin Packaging- Efficently placing PODs onto a minumum numbers of nodes possible to reduce cost and improve utilization.
 
-Karpenter Descide on 
+Karpenter Decide on 
 1. CPU requests
 2. Memory requests
 3. Taint/Toleration

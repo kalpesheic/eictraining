@@ -34,7 +34,7 @@ AWS Provider
   ↓
 AWS Secrets Manager / SSM Parameter Store
 
-1. Whenever catalog pod get started, it will get the secret from the aws aws secret manager via secret store CSI driver, ASCP and PIA, it will mount to the below location in catalog pod.
+1. Whenever catalog pod get started, it will get the secret from the aws secret manager via secret store CSI driver, ASCP and PIA, it will mount to the below location in catalog pod.
 
 " - name: aws-secrets
               mountPath: /mnt/secrets-store

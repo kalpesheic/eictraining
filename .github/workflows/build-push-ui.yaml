@@ -13,6 +13,7 @@ permissions:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    environment: production
 
     defaults:
       run:
@@ -39,3 +40,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
