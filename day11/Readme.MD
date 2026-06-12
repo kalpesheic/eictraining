@@ -99,7 +99,6 @@ it may chance, resources may updates partially
 helm upgrade --atomic
 --atomic-> automatic rollback on failure
 # production best practices for helm
-
 Seperate value per env
 avoid hardcoded configs
 use linting
