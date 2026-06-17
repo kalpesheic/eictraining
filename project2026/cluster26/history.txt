@@ -1,0 +1,1000 @@
+ 1060  kubectl get pods
+ 1061  kubectl get ns
+ 1062  kubectl get pods -n harness-delegate-ng
+ 1063  kubectl describe pod helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng
+ 1064  kubectl get pods -n harness-delegate-ng
+ 1065  kubectl logs helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng
+ 1066  kubectl get pods -n harness-delegate-ng
+ 1067  kubectl exec -it helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1068  kubectl get pods -n harness-delegate-ng
+ 1069  kubectl get pods -n harness-delegate-ng - w
+ 1070  kubectl get pods -n harness-delegate-ng -w
+ 1071  kubectl get pods -n harness-delegate-ng
+ 1072  kubectl describe pod helm-delegate-upgrader-job-29686200-jklw4 -n harness-delegate-ng
+ 1073  kubectl get pods -n harness-delegate-ng
+ 1074  kubectl describe pod helm-delegate-upgrader-job-29686200-jklw4 -n harness-delegate-ng
+ 1075  kubectl get pods -n harness-delegate-ng
+ 1076  kubectl get deploy -n harness-delegate-ng
+ 1077  kubectl get deploy/helm-delegate -n harness-delegate-ng
+ 1078  kubectl describe deploy/helm-delegate -n harness-delegate-ng
+ 1079  kubectl get sa -n harness-delegate-ng
+ 1080  kubectl edit sa -n harness-delegate-ng
+ 1081  kubectl describe sa helm-delegate -n harness-delegate-ng
+ 1082  kubectl get sa helm-delegate -n harness-delegate-ng -o yaml
+ 1083  kubectl get clusterrolebinding | grep helm-delegate
+ 1084  kubectl get ns
+ 1085  ls
+ 1086  cd ..
+ 1087  cd eic2026/
+ 1088  dir
+ 1089  git repo
+ 1090  ls
+ 1091  ls -l
+ 1092  cd project2026/
+ 1093  dir
+ 1094  cd cluster26/
+ 1095  ls
+ 1096  cd ..
+ 1097  dir
+ 1098  ls -l
+ 1099  mkdir helm
+ 1100  cd helm/
+ 1101  ls
+ 1102  cd ..
+ 1103  ls
+ 1104  git checkout
+ 1105  git add .
+ 1106  git status
+ 1107  git commit -m "uploaded nginx code for the testing"
+ 1108  git branch
+ 1109  git push origin cluster090626
+ 1110  git pull origin cluster090626 --rebase
+ 1111  git push origin cluster090626
+ 1112  kubectl get pods
+ 1113  kubectl get ns
+ 1114  ls
+ 1115  cd project2026/
+ 1116  ls
+ 1117  cd ..
+ 1118  ls
+ 1119  cd helm/
+ 1120  ls
+ 1121  cd nginx/
+ 1122  ls
+ 1123  pwd
+ 1124  ls
+ 1125  cd templates/
+ 1126  ls
+ 1127  cat ingress.yaml 
+ 1128  cd ..
+ 1129  ls
+ 1130  cat values.yaml 
+ 1131  kubectl get pods
+ 1132  kubectl get pods -A 
+ 1133  kubectl get sa
+ 1134  kubectl get pods -A 
+ 1135  tree
+ 1136  git remote -v
+ 1137  git branch
+ 1138  kubectl get pods -A 
+ 1139  kubectl get pods -n harness-delegate-ng
+ 1140  kubectl exec -it helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1141  ls 
+ 1142  df -k
+ 1143  df -kh
+ 1144  git ls-tree -r origin/cluster090626 --name-only
+ 1145  kubectl logs -n harness-delegate-ng -l harness.io/name=helm-delegate --tail=200
+ 1146  kubectl exec -it <delegate-pod> -n harness-delegate-ng -- sh
+ 1147  kubectl get pods -n harness-delegate-ng
+ 1148  kubectl exec -it elm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1149  kubectl exec -it helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1150  kubectl get pods -n harness-delegate-ng
+ 1151  kubectl exec -it helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1152  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1153  cd ..
+ 1154  git checkout cluster090626
+ 1155  git status
+ 1156  ls
+ 1157  cd day11/
+ 1158  ls
+ 1159  rm -rf devops-real-world-project-implementation-on-aws/
+ 1160  cd ..
+ 1161  git add .
+ 1162  git status 
+ 1163  git commit -m " deleted day11"
+ 1164  git push origin cluster090626
+ 1165  git checkout cluster090626
+ 1166  kubectl exec -it helm-delegate-988cfd88d-vdlx8 -n harness-delegate-ng -- sh
+ 1167  kubectl get pods -n harness-delegate-ng
+ 1168  kubectl exec -it helm-delegate-6cd4c9bdfb-mfhh -n harness-delegate-ng -- sh
+ 1169  kubectl get pods -n harness-delegate-ng
+ 1170  kubectl exec -it helm-delegate-6cd4c9bdfb-mfhhg -n harness-delegate-ng -- sh
+ 1171  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1172  kubectl get pods -n harness-delegate-ng -w
+ 1173  git checkout cluster090626
+ 1174  git ls-tree -r origin/cluster090626 --name-only | grep ecr-repo
+ 1175  ls
+ 1176  cd ecr-repo/
+ 1177  ls
+ 1178  cd ..
+ 1179  git branch
+ 1180  cp -r ecr-repo/ /mnt/c/eic2026/
+ 1181  cp -r ecr-repo/*  /mnt/c/eic2026/
+ 1182  cd ..
+ 1183  ls
+ 1184  l
+ 1185  cd eic2026/
+ 1186  ls
+ 1187  rm -rf ecr-repo/
+ 1188  ls
+ 1189  git checkout
+ 1190  git add .
+ 1191  git status
+ 1192  ls
+ 1193  git commit -m "deleted ecr-repo"
+ 1194  git push origin cluster090626
+ 1195  git status
+ 1196  git branch
+ 1197  ls
+ 1198  rm -rf Day-1
+ 1199  ls
+ 1200  git add .
+ 1201  git status
+ 1202  git commit -m "deleted Day-1"
+ 1203  git push origin cluster090626
+ 1204  kubectl get pods -n harness-delegate-ng -w
+ 1205  kubectl get pods -n harness-delegate-ng
+ 1206  kubectl exec -it helm-delegate-5ff67f584b-7ll9l -n harness-delegate-ng -- sh
+ 1207  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1208  kubectl get pods -n harness-delegate-ng -w
+ 1209  find /opt/harness-delegate/repository -name "Day-1" -ls
+ 1210  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1211  kubectl exec -it helm-delegate-5ff67f584b-7ll9l -n harness-delegate-ng -- sh
+ 1212  git rev-parse --show-toplevel
+ 1213  git ls-tree -r origin/cluster090626 --name-only
+ 1214  ls
+ 1215  l
+ 1216  git ls-tree -r origin/cluster090626/helm --name-only
+ 1217  git ls-tree -r origin/cluster090626 --name-only
+ 1218  ls
+ 1219  git checkout
+ 1220  git add .
+ 1221  git status
+ 1222  git commit -m " added new project demo"
+ 1223  git push origin cluster090626
+ 1224  ls
+ 1225  pwd
+ 1226  find demo -type f
+ 1227  kubectl exec -it helm-delegate-5ff67f584b-7ll9l -n harness-delegate-ng -- sh
+ 1228  kubectl get pods -n harness-delegate-ng
+ 1229  kubectl describe pod helm-delegate-79f9f9547-kt7cn -n harness-delegate-ng
+ 1230  kubectl exec -it helm-delegate-79f9f9547-kt7cn -n harness-delegate-ng -- sh
+ 1231  kubectl get pods - A
+ 1232  kubectl get pods  - A
+ 1233  kubectl get pods  -A
+ 1234  git add .
+ 1235  git statud
+ 1236  git status
+ 1237  git commit -m "change in Chart.yaml"
+ 1238  git push origin cluster090626
+ 1239  git checkout
+ 1240  git add .
+ 1241  git commit -m "changed in deployment"
+ 1242  git push origin cluster090626
+ 1243  kubectl get pods  -A
+ 1244  kubectl get ns
+ 1245  kubectl get pods  -A
+ 1246  kubectl get deployment
+ 1247  kubectl get pods
+ 1248  kubectl get pods  -A
+ 1249  kubectl get ingress
+ 1250  kubectl get ing
+ 1251  kubectl get ing - A
+ 1252  kubectl get ing -A
+ 1253  git checkout
+ 1254  git add .
+ 1255  git commit -m "changed in deployment"
+ 1256  git push origin cluster090626
+ 1257  kubectl get ing -A
+ 1258  kubectl get pods  -A
+ 1259  kubectl get deploy
+ 1260  kubectl get pods  -A
+ 1261  kubectl get ns
+ 1262  kubectl get pods -n harness-delegate-ng
+ 1263  kubectl get pods -n kube-public
+ 1264  kubectl get pods -n kube-system
+ 1265  kubectl get pods -n kube-public
+ 1266  ls
+ 1267  cd project2026/
+ 1268  dir
+ 1269  cd ..
+ 1270  ls
+ 1271  cd project2026/
+ 1272  ls
+ 1273  cd cluster26/
+ 1274  l
+ 1275  ls
+ 1276  terraform destroy
+ 1277  ls
+ 1278  terraform plan
+ 1279  terraform apply
+ 1280  history 
+ 1281  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1282  kubectl get pods
+ 1283  kubectl get ns
+ 1284  kubectl get pods - A
+ 1285  kubectl get pods -A
+ 1286  ls
+ 1287  cd pia/
+ 1288  ls
+ 1289  kubectl apply -f service_account.yaml 
+ 1290  kubectl apply -f aws_cli_pod.yaml 
+ 1291  kubectl get pods -A
+ 1292  kubectl get pods
+ 1293  helm repo add harness-delegate https://app.harness.io/storage/harness-download/delegate-helm-chart/
+ 1294  helm repo update harness-delegate
+ 1295  helm upgrade -i helm-delegate-new --namespace harness-delegate-ng --create-namespace   harness-delegate/harness-delegate   --set delegateName=helm-delegate-new   --set accountId=OrQy9oULT9Ky1K9MNw4ByQ   --set delegateToken=ZTNmNDI4NzdmNTY4ZmI4NTU3MTEyZTgzMTVjNmQ4ZWU=   --set managerEndpoint=https://app.harness.io   --set delegateDockerImage=us-docker.pkg.dev/gar-prod-setup/harness-public/harness/delegate:26.06.89303   --set replicas=1 --set upgrader.enabled=true
+ 1296  helm upgrade -i helm-delegate-new --namespace harness-delegate-ng --create-namespace   harness-delegate/harness-delegate-ng   --set delegateName=helm-delegate-new   --set accountId=OrQy9oULT9Ky1K9MNw4ByQ   --set delegateToken=ZTNmNDI4NzdmNTY4ZmI4NTU3MTEyZTgzMTVjNmQ4ZWU=   --set managerEndpoint=https://app.harness.io   --set delegateDockerImage=us-docker.pkg.dev/gar-prod-setup/harness-public/harness/delegate:26.06.89303   --set replicas=1 --set upgrader.enabled=true
+ 1297  kubectl get pods -A
+ 1298  kubectl describe pod  helm-delegate-new-7bb7599cb-thff4
+ 1299  kubectl describe pods helm-delegate-new-7bb7599cb-thff4
+ 1300  kubectl describe pods helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1301  kubectl get pods -n harness-delegate-ng 
+ 1302  kubectl describe pods helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1303  kubectl logs pods helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1304  kubectl logs helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1305  kubectl get pods -A | grep delegate
+ 1306  kubectl logs helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1307  kubectl exec -it helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng -- /bin/sh 
+ 1308  kubectl get secret - A
+ 1309  kubectl get ns
+ 1310  kubectl get secret -n harness-delegate-ng
+ 1311  kubectl logs helm-delegate-new-7bb7599cb-thff4 -n harness-delegate-ng 
+ 1312  kubectl get pods -n harness-delegate-ng 
+ 1313  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1314  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng-new
+ 1315  kubectl get ns
+ 1316  kubectl rollout restart deployment helm-delegate -n harness-delegate-ng
+ 1317  kubectl get deployment
+ 1318  kubectl get deployment -n harness-delegate-ng
+ 1319  kubectl rollout restart deployment helm-delegate-new -n harness-delegate-ng
+ 1320  kubectl get deployment
+ 1321  kubectl get deployment -n harness-delegate-ng
+ 1322  kubectl get pods -A
+ 1323  kubectl get pods -n  harness-delegate-n
+ 1324  kubectl get pods -n harness-delegate-n
+ 1325  kubectl get pods -n  harness-delegate-ng
+ 1326  kubectl logs helm-delegate-new-d9767bc67-mdbwk -n harness-delegate-ng
+ 1327  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- env | grep AWS
+ 1328  kubectl get sa
+ 1329  kubectl describe sa aws-cli-sa
+ 1330  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- sh
+ 1331  kubectl get deployment helm-delegate-new -n harness-delegate-ng -o yaml
+ 1332  kubectl describe serviceaccount helm-delegate-new -n harness-delegate-ng
+ 1333  kubectl get pods -n harness-delegate-ng
+ 1334  kubectl get sa -n harness-delegate-ng
+ 1335  kubectl describe sa helm-delegate-new 
+ 1336  kubectl describe sa helm-delegate-new -n harness-delegate-ng
+ 1337  kubectl describe sa helm-delegate-new 
+ 1338  kubectl get sa -n harness-delegate-ng
+ 1339  kubectl get sa
+ 1340  kubectl describe sa aws-cli-sa
+ 1341  kubectl get sa -n harness-delegate-ng
+ 1342  kubectl get pods -n harness-delegate-ng
+ 1343  kubectl logs helm-delegate-new-d9767bc67-mdbwk -n harness-delegate-ng
+ 1344  kubectl get sa -n harness-delegate-ng
+ 1345  kubectl describe sa helm-delegate-new -n harness-delegate-ng
+ 1346  ls
+ 1347  cat service_account.yaml 
+ 1348  ls
+ 1349  cat aws_cli_pod.yaml 
+ 1350  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- printenv | grep AWS
+ 1351  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- ls -l /var/run/secrets/eks.amazonaws.com/serviceaccount/
+ 1352  kubectl rollout restart deployment helm-delegate-new -n harness-delegate-ng
+ 1353  kubectl get sa
+ 1354  kubectl get pods - A
+ 1355  kubectl get pods -A
+ 1356  kubectl describe pods helm-delegate-new-68f54dcb84-7kvxh -n harness-delegate-ng
+ 1357  kubectl get pods 
+ 1358  kubectl get pods -n harness-delegate-ng
+ 1359  kubectl describe pods helm-delegate-new-68f54dcb84-7kvxh -n harness-delegate-ng
+ 1360  kubectl get pods -n harness-delegate-ng
+ 1361  kubectl logs helm-delegate-new-68f54dcb84-7kvxh -n harness-delegate-ng
+ 1362  kubectl get pods -n harness-delegate-ng
+ 1363  kubectl describe pods helm-delegate-new-68f54dcb84-7kvxh -n harness-delegate-ng
+ 1364  kubectl get pods -A
+ 1365  kubectl get sa -n harness-delegate-ng
+ 1366  kubectl describe sa -n harness-delegate-ng
+ 1367  kubectl get sa -n harness-delegate-ng
+ 1368  kubectl describe sa helm-delegate-new -n harness-delegate-ng
+ 1369  ls
+ 1370  cd ..
+ 1371  cd lb/
+ 1372  ls
+ 1373  cd ..
+ 1374  ls
+ 1375  kubectl rollout restart deployment helm-delegate-new -n harness-delegate-ng
+ 1376  kubectl get pods -A
+ 1377  kubectl describe pods helm-delegate-new-7687b67876-hlrdt -n arness-delegate-ng
+ 1378  kubectl describe pods helm-delegate-new-7687b67876-hlrdt -n harness-delegate-ng
+ 1379  kubectl describe pods helm-delegate-new-7687b67876-hlrdt -n arness-delegate-ng
+ 1380  kubectl describe pods helm-delegate-new-7687b67876-hlrdt -n harness-delegate-ng
+ 1381  kubectl logs pods helm-delegate-new-7687b67876-hlrdt -n harness-delegate-ng
+ 1382  kubectl logs helm-delegate-new-7687b67876-hlrdt -n harness-delegate-ng
+ 1383  kubectl describe pods helm-delegate-new-7687b67876-hlrdt -n harness-delegate-ng
+ 1384  kubectl get ns
+ 1385  ls
+ 1386  cd ..
+ 1387  ls
+ 1388  cd ..
+ 1389  ls
+ 1390  cd helm/
+ 1391  ls
+ 1392  cd nginx/
+ 1393  ls
+ 1394  cd ..
+ 1395  git checkout
+ 1396  git branch
+ 1397  git add .
+ 1398  git status
+ 1399  git commit -m "made ingress=false"
+ 1400  git push origin cluster090626
+ 1401  ls
+ 1402  cd helm/nginx/
+ 1403  ls
+ 1404  touch test
+ 1405  git add .
+ 1406  git status
+ 1407  git commit -m "added test file for the testing"
+ 1408  git push origin cluster090626
+ 1409  cd ..
+ 1410  ls
+ 1411  cd project2026/
+ 1412  ls
+ 1413  cd cluster26/
+ 1414  ls
+ 1415  terraform destroy 
+ 1416  ls
+ 1417  cd ..
+ 1418  ls
+ 1419  cd ..
+ 1420  ls
+ 1421  cd helm/
+ 1422  ls
+ 1423  cd nginx/
+ 1424  ls
+ 1425  rm -rf test 
+ 1426  git checkout
+ 1427  git add .
+ 1428  git status
+ 1429  git push origin cluster090626
+ 1430  ls
+ 1431  touch test12
+ 1432  git checkout
+ 1433  git add .
+ 1434  git status
+ 1435  git commit -m "added test12"
+ 1436  git push origin cluster090626
+ 1437  ls
+ 1438  rm -rf test12 
+ 1439  git checkout
+ 1440  git add .
+ 1441  get status
+ 1442  git status
+ 1443  git commit -m "deleted test"
+ 1444  git push origin cluster090626
+ 1445  mkdir newtest12 
+ 1446  git checkout
+ 1447  git add .
+ 1448  git status
+ 1449  git commit -m "added test"
+ 1450  git push origin cluster090626
+ 1451  git commit -m "added test"
+ 1452  ls
+ 1453  rm -rf newtest12
+ 1454  git checkout
+ 1455  git status
+ 1456  git add .
+ 1457  git status
+ 1458  touch testing
+ 1459  git add .
+ 1460  git status
+ 1461  git commit -m "added test"
+ 1462  git push origin cluster090626
+ 1463  ls
+ 1464  touch testnew
+ 1465  git checkout
+ 1466  git add .
+ 1467  git status
+ 1468  git commit -m "added test"
+ 1469  git push origin cluster090626
+ 1470  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- printenv | grep SELECTOR
+ 1471  kubectl get pods - A
+ 1472  kubectl get pods -A
+ 1473  kubectl exec pods -A
+ 1474  kubectl get pods -A
+ 1475  cd ..
+ 1476  kubectl describe pod  aws-node-fbdll -n kube-system
+ 1477  kubectl get pods -A
+ 1478  kubectl describe sa helm-delegate-new -n harness-delegate-ng
+ 1479  kubectl get pod -n harness-delegate-ng -o wide
+ 1480  kubectl get sa helm-delegate-new -n harness-delegate-ng -o yaml
+ 1481  kubectl exec -it -n harness-delegate-ng helm-delegate-new-d9767bc67-mdbwk -- printenv | grep AWS
+ 1482  kubectl get pods
+ 1483  kubectl get sa helm-delegate-new -n harness-delegate-ng
+ 1484  kubectl get pods -n harness-delegate-ng
+ 1485  kubectl get sa helm-delegate-new -n harness-delegate-ng
+ 1486  aws eks list-pod-identity-associations --cluster-name dev-kalpesh-demo
+ 1487  aws eks describe-pod-identity-association   --cluster-name dev-kalpesh-demo   --association-id a-i2sxocg75qddzwe4x
+ 1488  aws iam simulate-principal-policy   --policy-source-arn arn:aws:iam::454143665149:role/AmazonEKS_LBC_Role_dev-kalpesh-demo   --action-names ec2:DescribeRegions
+ 1489  kubectl rollout restart deployment helm-delegate-new -n harness-delegate-ng
+ 1490  kubectl get pods -n harness-delegate-ng -w
+ 1491  kubectl rollout restart deployment helm-delegate-new -n harness-delegate-ng
+ 1492  kubectl get pods -n harness-delegate-ng -w
+ 1493  kubectl run aws-test --rm -it --image=amazon/aws-cli --serviceaccount=helm-delegate-new -n harness-delegate-ng -- aws ec2 describe-regions
+ 1494  kubectl run aws-test --rm -it --image=amazon/aws-cli --serviceaccount=helm-delegate-new -n harness-delegate-ng -- aws ec2 describe-regions
+ 1495  apiVersion: v1
+ 1496  kind: Pod
+ 1497  metadata:
+ 1498  spec:
+ 1499  touch test.yaml
+ 1500  vim test.yaml 
+ 1501  kubectl apply -f test.yaml 
+ 1502  kubectl get pod aws-test -n harness-delegate-ng
+ 1503  kubectl describe pod aws-test -n harness-delegate-ng
+ 1504  kubectl get pod aws-test -n harness-delegate-ng
+ 1505  kubectl exec -it aws-test -n harness-delegate-ng -- aws sts get-caller-identity
+ 1506  kubectl get pods -n harness-delegate-ng
+ 1507  kubectl get pod helm-delegate-new-54d7db9544-n9h7t -n harness-delegate-ng -o jsonpath='{.spec.serviceAccountName}'
+ 1508  ls
+ 1509  cd ..
+ 1510  l
+ 1511  sls
+ 1512  ls
+ 1513  cd helm/
+ 1514  ls
+ 1515  cd nginx/
+ 1516  ls
+ 1517  git checkout
+ 1518  git add .
+ 1519  git status
+ 1520  git commit -m "added test.yaml"
+ 1521  git add .
+ 1522  git commit -m "added test.yaml"
+ 1523  git add .
+ 1524  ls
+ 1525  rm -rf testing 
+ 1526  git add .
+ 1527  git status
+ 1528  git commit -m "delete test"
+ 1529  git push origin cluster090626
+ 1530  ls
+ 1531  touch testlast
+ 1532  git checkout
+ 1533  git add .
+ 1534  git commit -m "delete test"
+ 1535  git push origin cluster090626
+ 1536  ls
+ 1537  cd ..
+ 1538  ls
+ 1539  cd project2026/
+ 1540  ls
+ 1541  cd cluster26/
+ 1542  dir
+ 1543  ls
+ 1544  terraform destroy
+ 1545  ls
+ 1546  ls -l
+ 1547  cd /mnt/c/eic2026/
+ 1548  dir
+ 1549  ls
+ 1550  cd project2026/
+ 1551  ls
+ 1552  cd cluster26/
+ 1553  ls
+ 1554  cd ..
+ 1555  ls'
+ 1556  find /home/ -name "kalpesh2026"
+ 1557  find / -name "kalpesh2026" 2>/dev/null
+ 1558  ls
+ 1559  cd ..
+ 1560  ls
+ 1561  cd Users/112545a/
+ 1562  l
+ 1563  ls
+ 1564  cd ..
+ 1565  ls
+ 1566  cd Kalpesh/
+ 1567  ls
+ 1568  cd ..
+ 1569  ls
+ 1570  cd Documents\ and\ Settings/
+ 1571  dir
+ 1572  cd ..
+ 1573  ls
+ 1574  cd Users/
+ 1575  ls
+ 1576  cd 169370/
+ 1577  ls
+ 1578  cd Downloads/
+ 1579  ls
+ 1580  ssh -i kalpesh2026.pem ubuntu@13.126.189.70
+ 1581  ls
+ 1582  cd /mnt/c/
+ 1583  dir
+ 1584  cd Documents\ and\ Settings/
+ 1585  dir
+ 1586  cd ..
+ 1587  ls
+ 1588  cd Users/
+ 1589  dir
+ 1590  cd 169370/
+ 1591  dir
+ 1592  cd Downloads/
+ 1593  ls
+ 1594  cd ..
+ 1595  cd Downloads/
+ 1596  ls
+ 1597  cat kalpesh2026.pem 
+ 1598  ssh -i kalpesh2026.pem ubuntu@13.126.189.70
+ 1599  ls
+ 1600  ssh -i kalpesh2026.pem ubuntu@13.126.189.70
+ 1601  pwd
+ 1602  exit
+ 1603  cd /mnt/c/
+ 1604  ls
+ 1605  cd Documents\ and\ Settings
+ 1606  ls
+ 1607  cd 169370/
+ 1608  ls
+ 1609  cd Downloads/
+ 1610  ls
+ 1611  ssh -i kalpesh2026.pem ubuntu@13.126.189.70
+ 1612  cat kalpesh2026.pem 
+ 1613  ssh -i kalpesh2026.pem ubuntu@13.126.189.70
+ 1614  kubectl get pods
+ 1615  kubectl get pods -o
+ 1616  kubectl get pods - o
+ 1617  kubectl get pods
+ 1618  kubectl get pods -w
+ 1619  cd /mnt/c/eic2026/
+ 1620  cd project2026/
+ 1621  dir
+ 1622  cd cluster26/
+ 1623  dir
+ 1624  terraform plan
+ 1625  yes
+ 1626  terraform apply
+ 1627  history 
+ 1628  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1629  kubectl get pods
+ 1630  kubectl get nodes
+ 1631  ls
+ 1632  cd pia/
+ 1633  ls
+ 1634  kubectl apply -f service_account.yaml 
+ 1635  kubectl apply -f aws_cli_pod.yaml 
+ 1636  cd ..
+ 1637  ls
+ 1638  cd lb/
+ 1639  ls
+ 1640  cd ui/
+ 1641  ls
+ 1642  kubectl get pods
+ 1643  cd ..
+ 1644  ls
+ 1645  cd ..
+ 1646  ls
+ 1647  cd lb/
+ 1648  ls
+ 1649  cd catalog/
+ 1650  ls
+ 1651  cd ..
+ 1652  ls
+ 1653  cd ui/
+ 1654  ls
+ 1655  cd ..
+ 1656  ls
+ 1657  cd ..
+ 1658  ls
+ 1659  cd jenkins/
+ 1660  ls
+ 1661  cd ..
+ 1662  ls
+ 1663  cd aws_tf/
+ 1664  ls
+ 1665  cd ..
+ 1666  ls
+ 1667  cd cluster26/
+ 1668  ls
+ 1669  cd modules/
+ 1670  ls
+ 1671  cd eks/
+ 1672  ls
+ 1673  cd ..
+ 1674  cd vpc/
+ 1675  ls
+ 1676  cd ..
+ 1677  ls
+ 1678  cd lb/
+ 1679  ls
+ 1680  cd ui/
+ 1681  ls
+ 1682  cd ..
+ 1683  kubectl apply -f ui/
+ 1684  kubectl get pods
+ 1685  kubectl describe pods ui-86df59f96d-757wq
+ 1686  kubectl get pods
+ 1687  kubectl describe pods ui-86df59f96d-757wq
+ 1688  kubectl get pods
+ 1689  kubectl logs ui-86df59f96d-757wq
+ 1690  kubectl d
+ 1691  kubectl logs ui-86df59f96d-757wq
+ 1692  kubectl get pods
+ 1693  kubectl logs ui-86df59f96d-cbdcp
+ 1694  kubectl get pods
+ 1695  kubectl get deploy
+ 1696  kubectl get deploy/ui
+ 1697  kubectl describe deploy/ui
+ 1698  kubectl get pods
+ 1699  terraform init
+ 1700  cd ..
+ 1701  terraform init
+ 1702  terraform apply
+ 1703  kubectl get nodes - w
+ 1704  kubectl get nodes -w
+ 1705  kubectl get nodes 
+ 1706  kubectl cordon ip-10-0-113-18.ap-south-1.compute.internal
+ 1707  kubectl get pods -w
+ 1708  kubectl get pods 
+ 1709  kubectl get nodes 
+ 1710  kubectl get pods -A -o wide
+ 1711  kubectl get pods -o wide
+ 1712  kubectl get nodes 
+ 1713  kubectl drain ip-10-0-113-18.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data
+ 1714  ls
+ 1715  kubectl get pods
+ 1716  kubectl edit pods aws-cli
+ 1717  kubectl drain ip-10-0-113-18.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data --force
+ 1718  kubectl get pods
+ 1719  kubectl get pods -o wide
+ 1720  kubectl get nodes
+ 1721  kubectl cordon ip-10-0-123-207.ap-south-1.compute.internal
+ 1722  kubectl get nodes
+ 1723  kubectl get pods -o wide
+ 1724  kubectl drain ip-10-0-123-207.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data
+ 1725  kubectl get pods -o wide
+ 1726  kubectl get nodes
+ 1727  kubectl get pods -o wide
+ 1728  l
+ 1729  cd pia/
+ 1730  ls
+ 1731  kubectl apply -g aws_cli_pod.yaml 
+ 1732  kubectl apply -f aws_cli_pod.yaml 
+ 1733  kubectl get pods -o wide
+ 1734  kubectl get nodes
+ 1735  kubectl get pods - A
+ 1736  kubectl get pods -A
+ 1737  kubectl get pods -A - w
+ 1738  kubectl get pods -o wide
+ 1739  kubectl get pods - A wide
+ 1740  kubectl get pods - A  o wide
+ 1741  kubectl get pods -A -o wide
+ 1742  kubectl describe node ip-10-0-113-18.ap-south-1.compute.internal
+ 1743  kubectl get pods -A -o wide
+ 1744  ls
+ 1745  cd ..
+ 1746  kubectl get pods -A -o wide
+ 1747  kubectl describe node ip-10-0-113-18.ap-south-1.compute.internal
+ 1748  ls
+ 1749  cd modules/
+ 1750  ls
+ 1751  cd ..
+ 1752  terraform apply 
+ 1753  kubectl get nodes
+ 1754  kubectl get pods -A -o wide
+ 1755  kubectl get pods -
+ 1756  kubectl get pods  -o wide
+ 1757  terraform apply
+ 1758  kubectl get nodes
+ 1759  kubectl describe nodes ip-10-0-113-63.ap-south-1.compute.internal
+ 1760  kubectl get nodes -L eks.amazonaws.com/nodegroup
+ 1761  kubectl get pods
+ 1762  helm repo add volcano-sh https://volcano-sh.github.io/helm-charts
+ 1763  helm repo update
+ 1764  helm install volcano valcano-sh/valcano --namespace volcano-system --create namespace
+ 1765  helm install volcano valcano-sh/valcano --namespace volcano-system --create-namespace
+ 1766  helm install volcano volcano-sh/volcano   --namespace volcano-system   --create-namespace
+ 1767  kubectl get pods
+ 1768  kubectl get pods -n valcano-system
+ 1769  kubectl get pods -n volcano-system
+ 1770  kubectl logs -n volcano-system deployment/volcano-scheduler
+ 1771  kubectl get deploy
+ 1772  kubectl edit deploy/ui
+ 1773  ls
+ 1774  cd lb/ui/
+ 1775  ls
+ 1776  vim deployment.yaml 
+ 1777  cat deployment.yaml 
+ 1778  ls
+ 1779  kubectl edit deploy/ui
+ 1780  kubectl get pods -o custom-columns=NAME:.metadata.name,SCHEDULER:.spec.schedulerName
+ 1781  kubectl edit deploy/ui
+ 1782  kubectl get deployment ui -o yaml | grep schedulerName
+ 1783  kubectl edit deploy/ui
+ 1784  kubectl get deployment ui -o yaml | grep schedulerName
+ 1785  kubectl get deployment ui -o yaml 
+ 1786  kubectl get deployment ui -o yaml | less
+ 1787  kubectl get deployment ui -o yaml
+ 1788  kubectl edit deployment ui -o yaml
+ 1789  kubectl rollout restart deployment ui
+ 1790  kubectl get deploy ui
+ 1791  kubectl describe deploy ui
+ 1792  kubectl describe deploy ui - w
+ 1793  kubectl describe deploy ui
+ 1794  kubectl describe deploy ui - o wide
+ 1795  kubectl describe deploy ui -o wide
+ 1796  kubectl get pods  -o wide
+ 1797  kubectl get deploy ui  -o wide
+ 1798  kubectl describe deploy ui
+ 1799  kubectl get pods 
+ 1800  kubectl get pods -n valcano
+ 1801  kubectl get ns
+ 1802  kubectl get pods -n volcano-system
+ 1803  kubectl get pods
+ 1804  kubectl describe pod ui-598cd8b7c7-6l62q
+ 1805  kubectl get pods  -o custom-columns=NAME:.metadata.name,SCHEDULER:.spec.schedulerName
+ 1806  kubectl edit deployment ui -o yaml
+ 1807  cd ..
+ 1808  terraform destroy
+ 1809  exit
+ 1810  ls
+ 1811  cd /mnt/c/eic2026/project2026/
+ 1812  ls
+ 1813  cd ..
+ 1814  ls
+ 1815  mkdir deepak
+ 1816  cd deepak/
+ 1817  docker version
+ 1818  docker images
+ 1819  docker run demo:latest 
+ 1820  docker pull apline
+ 1821  docker alpine
+ 1822  docker pull alpine
+ 1823  docker images
+ 1824  docker run alpine:latest 
+ 1825  docker ps
+ 1826  docker ps -a
+ 1827  docker exec -it e94e4f48dd30 /bin/bash
+ 1828  docker exec -it e94e4f48dd30 /bin/sh
+ 1829  docker ps -a
+ 1830  docker exec -it e94e4f48dd30 /bin/sh
+ 1831  docker start e94e4f48dd30
+ 1832  docker exec -it e94e4f48dd30 /bin/sh
+ 1833  docker exec -it e94e4f48dd30 /bin/bash
+ 1834  docker ps -a
+ 1835  docker start e94e4f48dd30
+ 1836  docker exec -it e94e4f48dd30 /bin/sh
+ 1837  docker run -it alpine:latest /bin/sh
+ 1838  docker ps -a
+ 1839  docker run -it alpine:latest /bin/sh
+ 1840  cd /mnt/c/eic2026/project2026/
+ 1841  ls
+ 1842  cd cluster26/
+ 1843  ls
+ 1844  cd lb/
+ 1845  ls
+ 1846  kubectl apply -f ui
+ 1847  kubectl apply -f catalog/
+ 1848  kubectl get pods
+ 1849  kubectl describe pod ui-86df59f96d-8v2dv
+ 1850  kubectl get pods
+ 1851  while true; do   kubectl exec deploy/nginx -- curl http://nginx;   sleep 1; done
+ 1852  ls
+ 1853  cd test 
+ 1854  ls
+ 1855  rm -rf test 
+ 1856  mkdir test
+ 1857  cd test/
+ 1858  docker run -it --rm -p 8888:8080 public.ecr.aws/aws-containers/retail-store-sample-ui:1.0.0
+ 1859  docker images
+ 1860  wget https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/docker-compose.yaml
+ 1861  ls
+ 1862  DB_PASSWORD=kalpesh123 docker compose --file docker-compose.yaml up
+ 1863  docker compose -f docker-compose.yaml 
+ 1864  docker compose -f docker-compose.yaml down
+ 1865  ls
+ 1866  cat docker-compose.yaml 
+ 1867  cd ..
+ 1868  ls
+ 1869  cd /mnt/c/eic2026/
+ 1870  dir
+ 1871  cd project2026/
+ 1872  dir
+ 1873  cd cluster26/
+ 1874  dir
+ 1875  terraform init
+ 1876  terraform plan
+ 1877  terraform providers
+ 1878  terraform version
+ 1879  terraform plan
+ 1880  ls
+ 1881  terraform plan
+ 1882  ls
+ 1883  cat main.tf 
+ 1884  ls
+ 1885  cat modules/eks/cluster.tf 
+ 1886  terraform init
+ 1887  terraform init -upgrade
+ 1888  terraform validate
+ 1889  terraform plan
+ 1890  terraform providers
+ 1891  terraform init -upgrade
+ 1892  terraform apply
+ 1893  terraform plan
+ 1894  ls
+ 1895  cd modules/eks/
+ 1896  curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+ 1897  mv iam_policy.json aws-load-balancer-controller-policy.json
+ 1898  ls
+ 1899  cat aws-load-balancer-controller-policy.json 
+ 1900  cd ..
+ 1901  ls
+ 1902  terraform plan
+ 1903  grep -R "resource \"aws_iam_policy\"" modules/eks
+ 1904  terraform fmt
+ 1905  terraform validate
+ 1906  terraform fmt
+ 1907  terraform validate
+ 1908  terraform plan
+ 1909  terraform apply
+ 1910  history 
+ 1911  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1912  helm list -A
+ 1913  helm status aws-load-balancer-controller -n kube-system
+ 1914  kubectl get pods -n kube-system
+ 1915  kubectl logs aws-load-balancer-controller-764f6b9c88-6kjwk -n kube-system
+ 1916  grep -R "resource \"aws_vpc\"" modules/eks
+ 1917  helm uninstall aws-load-balancer-controller -n kube-system
+ 1918  terraform apply
+ 1919  terraform plan
+ 1920  terraform apply
+ 1921  ls
+ 1922  cd pia/
+ 1923  ls
+ 1924  cat aws_cli_pod.yaml 
+ 1925  cd ..
+ 1926  ls
+ 1927  cd pia/
+ 1928  ls
+ 1929  cat service_account.yaml 
+ 1930  kubectl get -n kube-system
+ 1931  kubectl get pods -n kube-system
+ 1932  kubectl get ns
+ 1933  kubectl get pods -n istio-system
+ 1934  kubectl get ns
+ 1935  kubectl get pods -n istio-ingress
+ 1936  kubectl pod describe istio-ingressgateway-79bb47f95-grbf7 -n istio-ingress
+ 1937  kubectl describe pod istio-ingressgateway-79bb47f95-grbf7 -n istio-ingress
+ 1938  kubectl get pods -n istio-ingress -w
+ 1939  kubectl describe pod -n istio-ingress istio-ingressgateway-79bb47f95-grbf7
+ 1940  kubectl logs -n istio-ingress istio-ingressgateway-79bb47f95-grbf7
+ 1941  kubectl get deployment -n istio-ingress
+ 1942  kubectl get svc -n istio-ingress
+ 1943  kubectl describe svc istio-ingressgateway -n istio-ingress
+ 1944  kubectl create deployment nginx --image=nginx
+ 1945  kubectl expose deployment nginx --port=80
+ 1946  kubectl create deployment nginx --image=nginx
+ 1947  kubectl label namespace default istio-injection=enabled
+ 1948  kubectl rollout restart deployment nginx
+ 1949  kubectl get pods
+ 1950  kubectl describe pods nginx-578d7548cb-c8465
+ 1951  kubectl get pods
+ 1952  kubectl exec -it nginx-578d7548cb-c8465 -c istio-proxy -- pilot-agent request GET stats
+ 1953  istioctl proxy-status
+ 1954  kubectl exec -it <pod-name> -c istio-proxy -- pilot-agent request GET stats
+ 1955  kubectl get pods
+ 1956  kubectl exec -it nginx-578d7548cb-c8465 -c istio-proxy -- pilot-agent request GET stats
+ 1957  helm repo add kiali https://kiali.org/helm-charts
+ 1958  helm install kiali-server kiali/kiali-server -n istio-system
+ 1959  kubectl get pods -n istio-system
+ 1960  kubectl get svc -n istio-system
+ 1961  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1962  kubectl get configmap kiali -n istio-system -o yaml
+ 1963  kubectl create token admin-user -n kube-system
+ 1964  kubectl get sa -A
+ 1965  cat <<EOF | kubectl apply -f -
+ 1966  apiVersion: v1
+ 1967  kind: ServiceAccount
+ 1968  metadata:
+ 1969    name: kiali-admin
+ 1970    namespace: kube-system
+ 1971  ---
+ 1972  apiVersion: rbac.authorization.k8s.io/v1
+ 1973  kind: ClusterRoleBinding
+ 1974  metadata:
+ 1975    name: kiali-admin
+ 1976  roleRef:
+ 1977    apiGroup: rbac.authorization.k8s.io
+ 1978    kind: ClusterRole
+ 1979    name: cluster-admin
+ 1980  subjects:
+ 1981  - kind: ServiceAccount
+ 1982    name: kiali-admin
+ 1983    namespace: kube-system
+ 1984  EOF
+ 1985  kubectl create token kiali-admin -n kube-system
+ 1986  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1987  kubectl get pods - n kube-system
+ 1988  kubectl get pods -n kube-system
+ 1989  kubectl get sa -n kube-system
+ 1990  kubectl get sa -n kube-system | grep kiali
+ 1991  kubectl get pods -n istio-system
+ 1992  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1993  kubectl get nodes
+ 1994  kubectl describe node ip-10-0-113-192.ap-south-1.compute.internal
+ 1995  kubectl get nodes
+ 1996  kubectl get pods -n kube-system
+ 1997  kubectl logs aws-node-lt8zd -n kube-system
+ 1998  kubectl get deploy -n kube-system
+ 1999  kubectl rollout deploy/coredns -n kube-system
+ 2000  history 
+ 2001  kubectl get nodes
+ 2002  kubectl get pods -n kube-syste
+ 2003  kubectl get pods -n kube-system
+ 2004  kubectl get nodes
+ 2005  kubectl create token kiali-admin -n kube-system
+ 2006  kubectl get pods
+ 2007  kubectl label namespace default istio-injection=enabled --overwrite
+ 2008  kubectl get namespace default --show-labels
+ 2009* kubectl get de
+ 2010  kubectl rollout restart deployment catalog
+ 2011  kubectl rollout restart deployment ui 
+ 2012  kubectl get pods
+ 2013  kubectl get pods - w
+ 2014  kubectl get pods -w
+ 2015  kubectl get pods
+ 2016  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}'
+ 2017  kubectl get pod ui-54b4d856fb-wh87g -o jsonpath='{.spec.containers[*].name}'
+ 2018  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}'
+ 2019  kubectl get pod ui-54b4d856fb-b5mvh --all-namespaces
+ 2020  kubectl get ns <namespace> --show-labels
+ 2021  kubectl get ns default --show-labels
+ 2022  kubectl get pod ui-54b4d856fb-b5mvh -n default
+ 2023  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}' -n default
+ 2024  kubectl desctibe ui-54b4d856fb-b5mvh
+ 2025  kubectl desctibe pod ui-54b4d856fb-b5mvh
+ 2026  kubectl describe pod ui-54b4d856fb-b5mvh
+ 2027  ls
+ 2028  cd ..
+ 2029  cd /mnt/c/eic2026/project2026/cluster26/
+ 2030  terraform destroy
+ 2031  kubectl describe pod ui-54b4d856fb-b5mvh
+ 2032  kubectl get nodes
+ 2033  helm list -A
+ 2034  kubectl get ns | grep istio
+ 2035  kubectl replace --raw "/api/v1/namespaces/istio-ingress/finalize" -f istio-ingress.json
+ 2036  kubectl get svc -A
+ 2037  kubectl delete svc istio-ingress
+ 2038  kubectl delete svc istio-ingressgateway
+ 2039  kubectl get svc -A
+ 2040  kubectl get svc
+ 2041  kubectl delete svc istio-ingressgateway -n kube-system
+ 2042  kubectl delete svc istio-ingressgateway  -n istio-ingress
+ 2043  kubectl get svc
+ 2044  kubectl get pods
+ 2045  kubectl get nodes
+ 2046  history 
+ 2047  helm uninstall aws-load-balancer-controller -n kube-system
+ 2048  kubectl get pods
+ 2049  ls
+ 2050  kubectl get deploy
+ 2051  kubectl delete deployment catalog
+ 2052  kubectl delete deployment nginx
+ 2053  kubectl delete deployment ui
+ 2054  kubectl get deploy -n kube-system
+ 2055  kubectl get ns
+ 2056  kubectl get pods -n istio-ingress
+ 2057  kubectl get pods -n kube-node-lease
+ 2058  kubectl get ns
+ 2059  history >>history.txt

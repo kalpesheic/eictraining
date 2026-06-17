@@ -107,3 +107,8 @@ variable "public_subnet_ids" {
   type        = list(string)
 }
 
+variable "istio_enabled" {
+ description = "Enable istio"
+ type = bool 
+ default = true   
+}

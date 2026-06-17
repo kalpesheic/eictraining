@@ -9,9 +9,9 @@ resource "aws_eks_node_group" "private_nodes" {
   #disk_size      = var.node_disk_size
 
   scaling_config {
-    desired_size = 2
-    min_size     = 2
-    max_size     = 2
+    desired_size = 0
+    min_size     = 0
+    max_size     = 1
   }
 
   update_config {
