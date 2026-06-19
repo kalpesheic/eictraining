@@ -20,8 +20,26 @@ D. Gatekeeper(OPA)- Policy Validation
 E. Argo CD
 
 # Dynamic Admission Controller
-
 Istio should add side-car contianer, isto should now that when POD cretion request created, somehow API server should notify to Istio that now you can procced with side-car injection, that concept call is dynamic admission controller, dynamic admission controller wouldn't mutated( manipulate) or change, it would forward requst to ISTIOD (admission webhook)
+
+# Destination rule
+It is Istio custom resource(CRD) that defines polices for traffic going to K8s service.
+Client->Virtual service->DestinationRule->K8S service->POD Selected by lables
+Suppose we have deployment= review-v1(labels: app=review and version=v1, Deployment=review-v2(labels: app=review, version-v2))
+
+review service select all review pods
+review service-> review-v1-pod, review-pod, review-pod
+
+Now destinationrule group those pods into named subsets based on labels.
+
+# Istio interputs this as-:
+A. Send traffic to the review(Service)
+B. Look at the DestinationRule for review
+C. Find subnet v2.
+D. Route only to PODs with version=v2
+
+DestinationRule	Defines subsets and traffic policies for the Service
+VirtualService Decides which subset or Service receives traffic
 
 
 
