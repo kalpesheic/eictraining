@@ -10,7 +10,7 @@ spec:
     name: nginx
 
   minReplicas: 2
-  maxReplicas: 15
+  maxReplicas: 5
 
   metrics:
   - type: Resource
