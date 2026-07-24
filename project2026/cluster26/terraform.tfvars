@@ -14,6 +14,7 @@ tags = {
   Project   = "EIC-Internal"
   Owner     = "Kalpesh.kumar"
   email_id  = "Kalpesh.kumar@einfochips.com"
+  Department = "PES"
 
 }
 

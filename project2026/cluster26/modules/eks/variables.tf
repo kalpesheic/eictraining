@@ -112,3 +112,4 @@ variable "istio_enabled" {
  type = bool 
  default = true   
 }
+
