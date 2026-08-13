@@ -7,7 +7,7 @@ variable "aes_tags" {
     Email_ID = "Kalpesh.kumar@einfochips.com"
     Department = "PES"
     BU = "IA"
-    END_Date = "15-06-2026"
+    END_Date = "31-08-2026"
   }
 }
 

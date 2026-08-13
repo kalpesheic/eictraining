@@ -1,122 +1,171 @@
-data "aws_vpc" "existing" {
+# Created VPCs without IGW
+# VPC 1
 
-id = "vpc-02358ddc1cb955bcd"
+resource "aws_vpc" "vpc_1" {
+  cidr_block           = "10.10.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-1"
+    }
+  )
 }
 
-# Internet Gateway
-#resource "aws_internet_gateway" "igw" {
-#  vpc_id = data.aws_vpc.existing.id
+# ------------------------------------------------------------
+# VPC 1 - Public Subnet
+# ------------------------------------------------------------
 
- # tags = {
- #   Name = "existing-vpc-igw"
- # }
-#}
-data "aws_internet_gateway" "existing_igw" {
-  filter {
-    name   = "attachment.vpc-id"
-    values = [data.aws_vpc.existing.id]
-  }
-}
-
-# Public Subnet
-resource "aws_subnet" "public_subnet" {
-  vpc_id                  = data.aws_vpc.existing.id
-  cidr_block              = "10.0.13.0/24"
+resource "aws_subnet" "vpc_1_public_subnet" {
+  vpc_id                  = aws_vpc.vpc_1.id
+  cidr_block              = "10.10.1.0/24"
   availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = true
 
-  tags = {
-    Name = "public-sub-kalpesh"
-  }
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-1-public-subnet"
+      Type = "Public"
+    }
+  )
 }
-# Private Subnet
-resource "aws_subnet" "private_subnet" {
-  vpc_id            = data.aws_vpc.existing.id
-  cidr_block        = "10.0.113.0/24"
+
+# ------------------------------------------------------------
+# VPC 1 - Private Subnet
+# ------------------------------------------------------------
+
+resource "aws_subnet" "vpc_1_private_subnet" {
+  vpc_id            = aws_vpc.vpc_1.id
+  cidr_block        = "10.10.2.0/24"
   availability_zone = "ap-south-1a"
 
-  tags = {
-    Name = "private-sub-kalpesh"
-  }
-}
-# Public Route Table
-resource "aws_route_table" "public_rt" {
-  vpc_id = data.aws_vpc.existing.id
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = data.aws_internet_gateway.existing_igw.id
-  }
-
-tags = {
-  Name = "public-rt-kalpesh"
-}
-}
-# Private Route Table
-  
-resource "aws_route_table" "private_rt" {
-vpc_id = data.aws_vpc.existing.id 
-tags = {
-  Name = "private-rt-kalpesh"
-}
-}
-
-# route table assocation
-
-resource "aws_route_table_association" "public_assoc" {
-  subnet_id = aws_subnet.public_subnet.id 
-  route_table_id = aws_route_table.public_rt.id  
-}
-
-resource "aws_route_table_association" "private_assoc" {
-  subnet_id      = aws_subnet.private_subnet.id
-  route_table_id = aws_route_table.private_rt.id
-}
-
-resource "aws_security_group" "ec2_sg" {
-  name = "ssh-access"
-  vpc_id = data.aws_vpc.existing.id
-  ingress {
-    description = "SSH from my IP"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-
-    cidr_blocks = [var.my_ip]
-  }
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  tags = var.aes_tags 
-
-}
-
-data "aws_ami" "amazon_linux" {
-  most_recent = true
-  owners = ["amazon"]
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-  }
-}
-
-resource "aws_instance" "kalpesh-poc" {
-  ami = data.aws_ami.amazon_linux.id
-  instance_type = "t2.micro"
-  subnet_id = aws_subnet.public_subnet.id
-  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
-  associate_public_ip_address = true
-
-    tags = merge(
-     var.aes_tags,
+  tags = merge(
+    var.aes_tags,
     {
-    Name = "kalpesh-ec2" 
+      Name = "kalpesh-vpc-1-private-subnet"
+      Type = "Private"
+    }
+  )
 }
-    )
+
+# ------------------------------------------------------------
+# VPC 1 - Public Route Table
+# ------------------------------------------------------------
+
+resource "aws_route_table" "vpc_1_public_rt" {
+  vpc_id = aws_vpc.vpc_1.id
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-1-public-rt"
+    }
+  )
+}
+
+# ------------------------------------------------------------
+# VPC 1 - Private Route Table
+# ------------------------------------------------------------
+
+resource "aws_route_table" "vpc_1_private_rt" {
+  vpc_id = aws_vpc.vpc_1.id
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-1-private-rt"
+    }
+  )
+}
+
+# ------------------------------------------------------------
+# VPC 1 - Route Table Associations
+# ------------------------------------------------------------
+
+resource "aws_route_table_association" "vpc_1_public_assoc" {
+  subnet_id      = aws_subnet.vpc_1_public_subnet.id
+  route_table_id = aws_route_table.vpc_1_public_rt.id
+}
+
+resource "aws_route_table_association" "vpc_1_private_assoc" {
+  subnet_id      = aws_subnet.vpc_1_private_subnet.id
+  route_table_id = aws_route_table.vpc_1_private_rt.id
 }
 
 
+# ============================================================
+# VPC 2
+# ============================================================
+
+resource "aws_vpc" "vpc_2" {
+  cidr_block           = "10.20.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-2"
+    }
+  )
+}
+
+# VPC Peering related configuration
+# ------------------------------------------------------------
+# VPC 2 - Private Route Table
+# ------------------------------------------------------------
+
+resource "aws_route_table" "vpc_2_private_rt" {
+  vpc_id = aws_vpc.vpc_2.id
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc-2-private-rt"
+    }
+  )
+}
+# ============================================================
+# VPC PEERING
+# VPC-1 Private Subnet <--> VPC-2 Private Subnet
+# ============================================================
+
+resource "aws_vpc_peering_connection" "vpc1_to_vpc2" {
+  vpc_id      = aws_vpc.vpc_1.id
+  peer_vpc_id = aws_vpc.vpc_2.id
+  auto_accept = true
+
+  tags = merge(
+    var.aes_tags,
+    {
+      Name = "kalpesh-vpc1-to-vpc2-peering"
+    }
+  )
+}
+
+
+# ------------------------------------------------------------
+# VPC-1 Private Route Table
+# Allow VPC-1 private subnet to reach VPC-2
+# ------------------------------------------------------------
+
+resource "aws_route" "vpc1_to_vpc2" {
+  route_table_id            = aws_route_table.vpc_1_private_rt.id
+  destination_cidr_block    = aws_vpc.vpc_2.cidr_block
+  vpc_peering_connection_id = aws_vpc_peering_connection.vpc1_to_vpc2.id
+}
+
+
+# ------------------------------------------------------------
+# VPC-2 Private Route Table
+# Allow VPC-2 private subnet to reach VPC-1
+# ------------------------------------------------------------
+
+resource "aws_route" "vpc2_to_vpc1" {
+  route_table_id            = aws_route_table.vpc_2_private_rt.id
+  destination_cidr_block    = aws_vpc.vpc_1.cidr_block
+  vpc_peering_connection_id = aws_vpc_peering_connection.vpc1_to_vpc2.id
+}
