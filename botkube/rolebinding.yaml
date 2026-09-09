@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: botkube-demo
+  namespace: demo
+subjects:
+- kind: ServiceAccount
+  name: botkube-sa
+  namespace: botkube
+roleRef:
+  kind: Role
+  name: botkube-demo
+  apiGroup: rbac.authorization.k8s.io

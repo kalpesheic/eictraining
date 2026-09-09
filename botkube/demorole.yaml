@@ -1,0 +1,28 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: botkube-demo
+  namespace: demo
+rules:
+- apiGroups: [""]
+  resources:
+    - pods
+    - services
+    - configmaps
+    - secrets
+    - events
+  verbs:
+    - get
+    - list
+    - watch
+
+- apiGroups: ["apps"]
+  resources:
+    - deployments
+    - replicasets
+    - statefulsets
+    - daemonsets
+  verbs:
+    - get
+    - list
+    - watch

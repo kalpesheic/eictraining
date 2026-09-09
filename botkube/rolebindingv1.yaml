@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: botkube-demo-access
+  namespace: demo
+subjects:
+- kind: User
+  name: botkube-internal-static-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: botkube-demo-access

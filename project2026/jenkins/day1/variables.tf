@@ -4,7 +4,7 @@ variable "aes_tags" {
 
   default = {
     Project = "EIC-Internal"
-    Email_ID = "Kalpesh.kumar@einfochips.com"
+    Owner = "Kalpesh.kumar@einfochips.com"
     Department = "PES"
     BU = "IA"
     END_Date = "15-06-2026"
@@ -14,4 +14,5 @@ variable "aes_tags" {
 variable "my_ip" {
   description = "My public IP"
   type        = string
-}
+}cd /d c:\eic2026\project2026\jenkins\day1
+terraform init

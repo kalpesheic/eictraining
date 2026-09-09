@@ -1,0 +1,1000 @@
+ 1262  ls
+ 1263  cd ..
+ 1264  kubectl apply -f ui/
+ 1265  kubectl get pods
+ 1266  kubectl describe pods ui-86df59f96d-757wq
+ 1267  kubectl get pods
+ 1268  kubectl describe pods ui-86df59f96d-757wq
+ 1269  kubectl get pods
+ 1270  kubectl logs ui-86df59f96d-757wq
+ 1271  kubectl d
+ 1272  kubectl logs ui-86df59f96d-757wq
+ 1273  kubectl get pods
+ 1274  kubectl logs ui-86df59f96d-cbdcp
+ 1275  kubectl get pods
+ 1276  kubectl get deploy
+ 1277  kubectl get deploy/ui
+ 1278  kubectl describe deploy/ui
+ 1279  kubectl get pods
+ 1280  terraform init
+ 1281  cd ..
+ 1282  terraform init
+ 1283  terraform apply
+ 1284  kubectl get nodes - w
+ 1285  kubectl get nodes -w
+ 1286  kubectl get nodes 
+ 1287  kubectl cordon ip-10-0-113-18.ap-south-1.compute.internal
+ 1288  kubectl get pods -w
+ 1289  kubectl get pods 
+ 1290  kubectl get nodes 
+ 1291  kubectl get pods -A -o wide
+ 1292  kubectl get pods -o wide
+ 1293  kubectl get nodes 
+ 1294  kubectl drain ip-10-0-113-18.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data
+ 1295  ls
+ 1296  kubectl get pods
+ 1297  kubectl edit pods aws-cli
+ 1298  kubectl drain ip-10-0-113-18.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data --force
+ 1299  kubectl get pods
+ 1300  kubectl get pods -o wide
+ 1301  kubectl get nodes
+ 1302  kubectl cordon ip-10-0-123-207.ap-south-1.compute.internal
+ 1303  kubectl get nodes
+ 1304  kubectl get pods -o wide
+ 1305  kubectl drain ip-10-0-123-207.ap-south-1.compute.internal --ignore-daemonsets --delete-emptydir-data
+ 1306  kubectl get pods -o wide
+ 1307  kubectl get nodes
+ 1308  kubectl get pods -o wide
+ 1309  l
+ 1310  cd pia/
+ 1311  ls
+ 1312  kubectl apply -g aws_cli_pod.yaml 
+ 1313  kubectl apply -f aws_cli_pod.yaml 
+ 1314  kubectl get pods -o wide
+ 1315  kubectl get nodes
+ 1316  kubectl get pods - A
+ 1317  kubectl get pods -A
+ 1318  kubectl get pods -A - w
+ 1319  kubectl get pods -o wide
+ 1320  kubectl get pods - A wide
+ 1321  kubectl get pods - A  o wide
+ 1322  kubectl get pods -A -o wide
+ 1323  kubectl describe node ip-10-0-113-18.ap-south-1.compute.internal
+ 1324  kubectl get pods -A -o wide
+ 1325  ls
+ 1326  cd ..
+ 1327  kubectl get pods -A -o wide
+ 1328  kubectl describe node ip-10-0-113-18.ap-south-1.compute.internal
+ 1329  ls
+ 1330  cd modules/
+ 1331  ls
+ 1332  cd ..
+ 1333  terraform apply 
+ 1334  kubectl get nodes
+ 1335  kubectl get pods -A -o wide
+ 1336  kubectl get pods -
+ 1337  kubectl get pods  -o wide
+ 1338  terraform apply
+ 1339  kubectl get nodes
+ 1340  kubectl describe nodes ip-10-0-113-63.ap-south-1.compute.internal
+ 1341  kubectl get nodes -L eks.amazonaws.com/nodegroup
+ 1342  kubectl get pods
+ 1343  helm repo add volcano-sh https://volcano-sh.github.io/helm-charts
+ 1344  helm repo update
+ 1345  helm install volcano valcano-sh/valcano --namespace volcano-system --create namespace
+ 1346  helm install volcano valcano-sh/valcano --namespace volcano-system --create-namespace
+ 1347  helm install volcano volcano-sh/volcano   --namespace volcano-system   --create-namespace
+ 1348  kubectl get pods
+ 1349  kubectl get pods -n valcano-system
+ 1350  kubectl get pods -n volcano-system
+ 1351  kubectl logs -n volcano-system deployment/volcano-scheduler
+ 1352  kubectl get deploy
+ 1353  kubectl edit deploy/ui
+ 1354  ls
+ 1355  cd lb/ui/
+ 1356  ls
+ 1357  vim deployment.yaml 
+ 1358  cat deployment.yaml 
+ 1359  ls
+ 1360  kubectl edit deploy/ui
+ 1361  kubectl get pods -o custom-columns=NAME:.metadata.name,SCHEDULER:.spec.schedulerName
+ 1362  kubectl edit deploy/ui
+ 1363  kubectl get deployment ui -o yaml | grep schedulerName
+ 1364  kubectl edit deploy/ui
+ 1365  kubectl get deployment ui -o yaml | grep schedulerName
+ 1366  kubectl get deployment ui -o yaml 
+ 1367  kubectl get deployment ui -o yaml | less
+ 1368  kubectl get deployment ui -o yaml
+ 1369  kubectl edit deployment ui -o yaml
+ 1370  kubectl rollout restart deployment ui
+ 1371  kubectl get deploy ui
+ 1372  kubectl describe deploy ui
+ 1373  kubectl describe deploy ui - w
+ 1374  kubectl describe deploy ui
+ 1375  kubectl describe deploy ui - o wide
+ 1376  kubectl describe deploy ui -o wide
+ 1377  kubectl get pods  -o wide
+ 1378  kubectl get deploy ui  -o wide
+ 1379  kubectl describe deploy ui
+ 1380  kubectl get pods 
+ 1381  kubectl get pods -n valcano
+ 1382  kubectl get ns
+ 1383  kubectl get pods -n volcano-system
+ 1384  kubectl get pods
+ 1385  kubectl describe pod ui-598cd8b7c7-6l62q
+ 1386  kubectl get pods  -o custom-columns=NAME:.metadata.name,SCHEDULER:.spec.schedulerName
+ 1387  kubectl edit deployment ui -o yaml
+ 1388  cd ..
+ 1389  terraform destroy
+ 1390  exit
+ 1391  ls
+ 1392  cd /mnt/c/eic2026/project2026/
+ 1393  ls
+ 1394  cd ..
+ 1395  ls
+ 1396  mkdir deepak
+ 1397  cd deepak/
+ 1398  docker version
+ 1399  docker images
+ 1400  docker run demo:latest 
+ 1401  docker pull apline
+ 1402  docker alpine
+ 1403  docker pull alpine
+ 1404  docker images
+ 1405  docker run alpine:latest 
+ 1406  docker ps
+ 1407  docker ps -a
+ 1408  docker exec -it e94e4f48dd30 /bin/bash
+ 1409  docker exec -it e94e4f48dd30 /bin/sh
+ 1410  docker ps -a
+ 1411  docker exec -it e94e4f48dd30 /bin/sh
+ 1412  docker start e94e4f48dd30
+ 1413  docker exec -it e94e4f48dd30 /bin/sh
+ 1414  docker exec -it e94e4f48dd30 /bin/bash
+ 1415  docker ps -a
+ 1416  docker start e94e4f48dd30
+ 1417  docker exec -it e94e4f48dd30 /bin/sh
+ 1418  docker run -it alpine:latest /bin/sh
+ 1419  docker ps -a
+ 1420  docker run -it alpine:latest /bin/sh
+ 1421  cd /mnt/c/eic2026/project2026/
+ 1422  ls
+ 1423  cd cluster26/
+ 1424  ls
+ 1425  cd lb/
+ 1426  ls
+ 1427  kubectl apply -f ui
+ 1428  kubectl apply -f catalog/
+ 1429  kubectl get pods
+ 1430  kubectl describe pod ui-86df59f96d-8v2dv
+ 1431  kubectl get pods
+ 1432  while true; do   kubectl exec deploy/nginx -- curl http://nginx;   sleep 1; done
+ 1433  ls
+ 1434  cd test 
+ 1435  ls
+ 1436  rm -rf test 
+ 1437  mkdir test
+ 1438  cd test/
+ 1439  docker run -it --rm -p 8888:8080 public.ecr.aws/aws-containers/retail-store-sample-ui:1.0.0
+ 1440  docker images
+ 1441  wget https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/docker-compose.yaml
+ 1442  ls
+ 1443  DB_PASSWORD=kalpesh123 docker compose --file docker-compose.yaml up
+ 1444  docker compose -f docker-compose.yaml 
+ 1445  docker compose -f docker-compose.yaml down
+ 1446  ls
+ 1447  cat docker-compose.yaml 
+ 1448  cd ..
+ 1449  ls
+ 1450  cd /mnt/c/eic2026/
+ 1451  dir
+ 1452  cd project2026/
+ 1453  dir
+ 1454  cd cluster26/
+ 1455  dir
+ 1456  terraform init
+ 1457  terraform plan
+ 1458  terraform providers
+ 1459  terraform version
+ 1460  terraform plan
+ 1461  ls
+ 1462  terraform plan
+ 1463  ls
+ 1464  cat main.tf 
+ 1465  ls
+ 1466  cat modules/eks/cluster.tf 
+ 1467  terraform init
+ 1468  terraform init -upgrade
+ 1469  terraform validate
+ 1470  terraform plan
+ 1471  terraform providers
+ 1472  terraform init -upgrade
+ 1473  terraform apply
+ 1474  terraform plan
+ 1475  ls
+ 1476  cd modules/eks/
+ 1477  curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
+ 1478  mv iam_policy.json aws-load-balancer-controller-policy.json
+ 1479  ls
+ 1480  cat aws-load-balancer-controller-policy.json 
+ 1481  cd ..
+ 1482  ls
+ 1483  terraform plan
+ 1484  grep -R "resource \"aws_iam_policy\"" modules/eks
+ 1485  terraform fmt
+ 1486  terraform validate
+ 1487  terraform fmt
+ 1488  terraform validate
+ 1489  terraform plan
+ 1490  terraform apply
+ 1491  history 
+ 1492  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1493  helm list -A
+ 1494  helm status aws-load-balancer-controller -n kube-system
+ 1495  kubectl get pods -n kube-system
+ 1496  kubectl logs aws-load-balancer-controller-764f6b9c88-6kjwk -n kube-system
+ 1497  grep -R "resource \"aws_vpc\"" modules/eks
+ 1498  helm uninstall aws-load-balancer-controller -n kube-system
+ 1499  terraform apply
+ 1500  terraform plan
+ 1501  terraform apply
+ 1502  ls
+ 1503  cd pia/
+ 1504  ls
+ 1505  cat aws_cli_pod.yaml 
+ 1506  cd ..
+ 1507  ls
+ 1508  cd pia/
+ 1509  ls
+ 1510  cat service_account.yaml 
+ 1511  kubectl get -n kube-system
+ 1512  kubectl get pods -n kube-system
+ 1513  kubectl get ns
+ 1514  kubectl get pods -n istio-system
+ 1515  kubectl get ns
+ 1516  kubectl get pods -n istio-ingress
+ 1517  kubectl pod describe istio-ingressgateway-79bb47f95-grbf7 -n istio-ingress
+ 1518  kubectl describe pod istio-ingressgateway-79bb47f95-grbf7 -n istio-ingress
+ 1519  kubectl get pods -n istio-ingress -w
+ 1520  kubectl describe pod -n istio-ingress istio-ingressgateway-79bb47f95-grbf7
+ 1521  kubectl logs -n istio-ingress istio-ingressgateway-79bb47f95-grbf7
+ 1522  kubectl get deployment -n istio-ingress
+ 1523  kubectl get svc -n istio-ingress
+ 1524  kubectl describe svc istio-ingressgateway -n istio-ingress
+ 1525  kubectl create deployment nginx --image=nginx
+ 1526  kubectl expose deployment nginx --port=80
+ 1527  kubectl create deployment nginx --image=nginx
+ 1528  kubectl label namespace default istio-injection=enabled
+ 1529  kubectl rollout restart deployment nginx
+ 1530  kubectl get pods
+ 1531  kubectl describe pods nginx-578d7548cb-c8465
+ 1532  kubectl get pods
+ 1533  kubectl exec -it nginx-578d7548cb-c8465 -c istio-proxy -- pilot-agent request GET stats
+ 1534  istioctl proxy-status
+ 1535  kubectl exec -it <pod-name> -c istio-proxy -- pilot-agent request GET stats
+ 1536  kubectl get pods
+ 1537  kubectl exec -it nginx-578d7548cb-c8465 -c istio-proxy -- pilot-agent request GET stats
+ 1538  helm repo add kiali https://kiali.org/helm-charts
+ 1539  helm install kiali-server kiali/kiali-server -n istio-system
+ 1540  kubectl get pods -n istio-system
+ 1541  kubectl get svc -n istio-system
+ 1542  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1543  kubectl get configmap kiali -n istio-system -o yaml
+ 1544  kubectl create token admin-user -n kube-system
+ 1545  kubectl get sa -A
+ 1546  cat <<EOF | kubectl apply -f -
+ 1547  apiVersion: v1
+ 1548  kind: ServiceAccount
+ 1549  metadata:
+ 1550    name: kiali-admin
+ 1551    namespace: kube-system
+ 1552  ---
+ 1553  apiVersion: rbac.authorization.k8s.io/v1
+ 1554  kind: ClusterRoleBinding
+ 1555  metadata:
+ 1556    name: kiali-admin
+ 1557  roleRef:
+ 1558    apiGroup: rbac.authorization.k8s.io
+ 1559    kind: ClusterRole
+ 1560    name: cluster-admin
+ 1561  subjects:
+ 1562  - kind: ServiceAccount
+ 1563    name: kiali-admin
+ 1564    namespace: kube-system
+ 1565  EOF
+ 1566  kubectl create token kiali-admin -n kube-system
+ 1567  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1568  kubectl get pods - n kube-system
+ 1569  kubectl get pods -n kube-system
+ 1570  kubectl get sa -n kube-system
+ 1571  kubectl get sa -n kube-system | grep kiali
+ 1572  kubectl get pods -n istio-system
+ 1573  kubectl port-forward svc/kiali 20001:20001 -n istio-system
+ 1574  kubectl get ns istio-ingress -o json
+ 1575  kubectl get ns istio-ingress -o json > ns.json
+ 1576  vim ns.json 
+ 1577  kubectl replace --raw "/api/v1/namespaces/istio-ingress/finalize" -f ns.json
+ 1578  kubectl get ns
+ 1579  cd /mnt/c/eic2026/project2026/
+ 1580  ls
+ 1581  cd cluster26/
+ 1582  dir
+ 1583  cd pia/
+ 1584  ls
+ 1585  cd ..
+ 1586  ls
+ 1587  cd istio/
+ 1588  ls
+ 1589  cd istio-1.30.1/
+ 1590  ls
+ 1591  cat traffic-shifting.yaml 
+ 1592  kubectl apply -f traffic-shifting.yaml 
+ 1593  kubectl get pods
+ 1594  kubectl get svc
+ 1595  kubectl get deployment
+ 1596  kubectl get svc
+ 1597  cat traffic-shifting.yaml 
+ 1598  vim traffic-shifting.yaml 
+ 1599  kubectl apply -f traffic-shifting.yaml 
+ 1600  kubectl get deployment
+ 1601  kubectl get svc
+ 1602  ls
+ 1603  vim traffic-shifting.yaml 
+ 1604  kubectl apply -f traffic-shifting.yaml 
+ 1605  vim traffic-shifting.yaml 
+ 1606  kubectl apply -f traffic-shifting.yaml 
+ 1607  ls
+ 1608  vim traffic-shifting.yaml 
+ 1609  kubectl apply -f traffic-shifting.yaml 
+ 1610  vim traffic-shifting.yaml 
+ 1611  kubectl get pods -n kube-system
+ 1612  kubectl get pods
+ 1613  kubectl get svc
+ 1614  ls
+ 1615  kubectl get pods
+ 1616  kubectl get ds
+ 1617  exit
+ 1618  kubectl get nodes
+ 1619  kubectl describe node ip-10-0-113-192.ap-south-1.compute.internal
+ 1620  kubectl get nodes
+ 1621  kubectl get pods -n kube-system
+ 1622  kubectl logs aws-node-lt8zd -n kube-system
+ 1623  kubectl get deploy -n kube-system
+ 1624  kubectl rollout deploy/coredns -n kube-system
+ 1625  history 
+ 1626  kubectl get nodes
+ 1627  kubectl get pods -n kube-syste
+ 1628  kubectl get pods -n kube-system
+ 1629  kubectl get nodes
+ 1630  kubectl create token kiali-admin -n kube-system
+ 1631  kubectl get pods
+ 1632  kubectl label namespace default istio-injection=enabled --overwrite
+ 1633  kubectl get namespace default --show-labels
+ 1634  kubectl get de
+ 1635  kubectl rollout restart deployment catalog
+ 1636  kubectl rollout restart deployment ui 
+ 1637  kubectl get pods
+ 1638  kubectl get pods - w
+ 1639  kubectl get pods -w
+ 1640  kubectl get pods
+ 1641  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}'
+ 1642  kubectl get pod ui-54b4d856fb-wh87g -o jsonpath='{.spec.containers[*].name}'
+ 1643  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}'
+ 1644  kubectl get pod ui-54b4d856fb-b5mvh --all-namespaces
+ 1645  kubectl get ns <namespace> --show-labels
+ 1646  kubectl get ns default --show-labels
+ 1647  kubectl get pod ui-54b4d856fb-b5mvh -n default
+ 1648  kubectl get pod ui-54b4d856fb-b5mvh -o jsonpath='{.spec.containers[*].name}' -n default
+ 1649  kubectl desctibe ui-54b4d856fb-b5mvh
+ 1650  kubectl desctibe pod ui-54b4d856fb-b5mvh
+ 1651  kubectl describe pod ui-54b4d856fb-b5mvh
+ 1652  ls
+ 1653  cd ..
+ 1654  cd /mnt/c/eic2026/project2026/cluster26/
+ 1655  terraform destroy
+ 1656  kubectl describe pod ui-54b4d856fb-b5mvh
+ 1657  kubectl get nodes
+ 1658  helm list -A
+ 1659  kubectl get ns | grep istio
+ 1660  kubectl replace --raw "/api/v1/namespaces/istio-ingress/finalize" -f istio-ingress.json
+ 1661  kubectl get svc -A
+ 1662  kubectl delete svc istio-ingress
+ 1663  kubectl delete svc istio-ingressgateway
+ 1664  kubectl get svc -A
+ 1665  kubectl get svc
+ 1666  kubectl delete svc istio-ingressgateway -n kube-system
+ 1667  kubectl delete svc istio-ingressgateway  -n istio-ingress
+ 1668  kubectl get svc
+ 1669  kubectl get pods
+ 1670  kubectl get nodes
+ 1671  history 
+ 1672  helm uninstall aws-load-balancer-controller -n kube-system
+ 1673  kubectl get pods
+ 1674  ls
+ 1675  kubectl get deploy
+ 1676  kubectl delete deployment catalog
+ 1677  kubectl delete deployment nginx
+ 1678  kubectl delete deployment ui
+ 1679  kubectl get deploy -n kube-system
+ 1680  kubectl get ns
+ 1681  kubectl get pods -n istio-ingress
+ 1682  kubectl get pods -n kube-node-lease
+ 1683  kubectl get ns
+ 1684  history >>history.txt
+ 1685  cat history.txt 
+ 1686  kubectl get ns
+ 1687  kubectl get sa
+ 1688  kubectl delete sa catalog
+ 1689  kubectl delete sa ui
+ 1690  kubectl delete sa default
+ 1691  kubectl get ns
+ 1692  kubectl get pods -n kube-public 
+ 1693  kubectl get pods -n kube-system 
+ 1694  terraform destroy
+ 1695  terraform destroy -target=helm_release.istio_ingressgateway
+ 1696  terraform destroy -target=helm_release.istiod
+ 1697  terraform destroy
+ 1698  terraform state
+ 1699  terraform state list
+ 1700  terraform state rm module.eks.kubernetes_namespace.istio_ingress[0]
+ 1701  terraform destroy
+ 1702  terraform plan
+ 1703  git checkout
+ 1704  git branch
+ 1705  git add .
+ 1706  git status
+ 1707  git commit -m "added isto with awsload balancer"
+ 1708  git remote -v
+ 1709  git push origin cluster090626
+ 1710  terraform plan
+ 1711  ls
+ 1712  mkdir istio
+ 1713  cd istio/
+ 1714  ls
+ 1715  curl -L https://istio.io/downloadIstio | sh -
+ 1716  ls
+ 1717  cd istio-1.30.1/
+ 1718  ls
+ 1719  cd ..
+ 1720  ls
+ 1721  cd ..
+ 1722  ls
+ 1723  pwd
+ 1724  ls
+ 1725  cd istio/
+ 1726  ls
+ 1727  cd ..
+ 1728  ls
+ 1729  terraform plan
+ 1730  terraform apply
+ 1731  git checkout
+ 1732  git status
+ 1733  fit add .
+ 1734  git add .
+ 1735  git statsu
+ 1736  git status
+ 1737  git commit -m "disabled temp istio conf"
+ 1738  git push origin cluster090626
+ 1739  ls
+ 1740  cd ..
+ 1741  ls
+ 1742  cd ..
+ 1743  ls
+ 1744  cd project2026/
+ 1745  ls
+ 1746  cd cluster26/
+ 1747  ls
+ 1748  cd istio/
+ 1749  ls
+ 1750  cd ..
+ 1751  ls
+ 1752  cd cluster26/
+ 1753  terraform apply
+ 1754  ls
+ 1755  cat history.txt 
+ 1756  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1757  kubectl get nodes
+ 1758  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1759  kubectl get nodes
+ 1760  terraform apply
+ 1761  kubectl get nodes
+ 1762  aws eks list-clusters
+ 1763  aws eks describe-cluster --name dev-kalpesh-demo
+ 1764  aws sts get-caller-identity
+ 1765  aws eks update-kubeconfig     --region <region>     --name <cluster-name>
+ 1766  aws eks update-kubeconfig --region ap-south-1 --name dev-kalpesh-demo
+ 1767  kubectl get nodes
+ 1768  kubectl config current-context
+ 1769  kubectl config view
+ 1770  aws eks get-token   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1771  aws eks get-token --cluster-name dev-kalpesh-demo --region ap-south-1
+ 1772  aws eks list-access-entries   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1773  kubectl -n kube-system get configmap aws-auth -o yaml
+ 1774  aws eks describe-cluster   --name dev-kalpesh-demo   --region ap-south-1   --query "cluster.status"
+ 1775  kubectl version --client
+ 1776  kubectl get --raw=/version
+ 1777  aws eks list-access-entries   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1778  terraform destroy
+ 1779  terraform apply
+ 1780  aws sts get-caller-identity
+ 1781  terraform state rm module.eks.kubernetes_service_account.aws_load_balancer_controller
+ 1782  terraform state rm module.eks.helm_release.aws_load_balancer_controller
+ 1783  terraform destroy
+ 1784  kubectl get nodes
+ 1785  terraform apply
+ 1786  aws eks update-kubeconfig --region ap-south-1 --name dev-kalpesh-demo
+ 1787  kubectl get nodes
+ 1788  terraform destroy
+ 1789  ls
+ 1790  terraform apply
+ 1791  aws eks update-kubeconfig --region ap-south-1 --name dev-kalpesh-demo
+ 1792  kubectl get nodes
+ 1793  ls
+ 1794  cd lb/
+ 1795  ls
+ 1796  cd ..
+ 1797  ls
+ 1798  cd pia/
+ 1799  ls
+ 1800  kubectl apply -f service_account.yaml 
+ 1801  kubectl apply -f aws_cli_pod.yaml 
+ 1802  ls
+ 1803  cd ..
+ 1804  ls
+ 1805  cd modules/
+ 1806  ls
+ 1807  cd eks/
+ 1808  ls
+ 1809  cd ..
+ 1810  ls
+ 1811  cd ..
+ 1812  ls
+ 1813  terraform plan
+ 1814  terraform apply
+ 1815  kubectl get nodes
+ 1816  kubectl get pods -n kube-system
+ 1817  aws eks list-pod-identity-associations   --cluster-name dev-kalpesh-demo
+ 1818  kubectl get pods -n kube-system
+ 1819  helm list -A
+ 1820  kubectl get deployment -n kube-system
+ 1821  helm repo add eks https://aws.github.io/eks-charts
+ 1822  helm repo update
+ 1823  helm install aws-load-balancer-controller eks/aws-load-balancer-controller   -n kube-system   --set clusterName=dev-kalpesh-demo   --set serviceAccount.create=false   --set serviceAccount.name=aws-load-balancer-controller   --set region=ap-south-1   --set vpcId=vpc-02358ddc1cb955bcd
+ 1824  kubectl get deployment -n kube-system
+ 1825  kubectl get pods -n kube-system
+ 1826  ls
+ 1827  ccd istio/
+ 1828  ls
+ 1829  cd istio/
+ 1830  ls
+ 1831  cd istio-1.30.1/
+ 1832  ls 
+ 1833  ls -l
+ 1834  export PATH=$PWD/bin:$PATH
+ 1835  kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+ 1836  kubectl get pods
+ 1837  kubectl describe pods details-v1-764c46cfdb-5pzg6
+ 1838  kubectl get pods
+ 1839  kubectl describe pods productpage-v1-85664dccbc-p2jds
+ 1840  kubectl get pods
+ 1841  ls
+ 1842  cd bin/
+ 1843  ls
+ 1844  cd ..
+ 1845  istioctl install --set profile=demo
+ 1846  kubectl get ns
+ 1847  kubectl get pods -n istio-system
+ 1848  kubectl get pods 
+ 1849  kubectl get deploy
+ 1850  kubectl rollout restart deployment details-v1 
+ 1851  kubectl rollout restart deployment productpage-v1
+ 1852  kubectl rollout restart deployment ratings-v1
+ 1853  kubectl rollout restart deployment ratings-v2
+ 1854  kubectl rollout restart deployment ratings-v3
+ 1855  kubectl get pods 
+ 1856  kubectl label namespace default istio-injection=enabled
+ 1857  kubectl get pods 
+ 1858  kubectl get pods
+ 1859  kubectl describe pod details-v1-66b65d7d8-lrqpx
+ 1860  kubectl rollout restart deployment details-v1 
+ 1861  kubectl rollout restart deployment productpage-v1
+ 1862  kubectl rollout restart deployment ratings-v1
+ 1863  kubectl rollout restart deployment ratings-v2
+ 1864  kubectl rollout restart deployment ratings-v3
+ 1865  kubectl rollout restart deployment ratings-v2
+ 1866  kubectl get pods
+ 1867  kubectl get deploy
+ 1868  kubectl rollout restart deployment reviews-v1
+ 1869  kubectl rollout restart deployment reviews-v2
+ 1870  kubectl rollout restart deployment reviews-v3
+ 1871  kubectl get pods
+ 1872  kubectl desctibe pod productpage-v1-9749b48b5-ntmds
+ 1873  kubectl desctibe pods productpage-v1-9749b48b5-ntmds
+ 1874  kubectl describe pods productpage-v1-9749b48b5-ntmds
+ 1875  kubectl describe pods productpage-v1-9749b48b5-ntmds | grep istio
+ 1876  kubectl describe pods productpage-v1-9749b48b5-ntmds | grep container
+ 1877  kubectl describe pods productpage-v1-9749b48b5-ntmds
+ 1878  oot@D6FHR24:/mnt/c/eic2026/project2026/cluster26/istio/istio-1.30.1# kubectl describe pods productpage-v1-9749b48b5-ntmds
+ 1879  Name:             productpage-v1-9749b48b5-ntmds
+ 1880  Namespace:        default
+ 1881  Priority:         0
+ 1882  Service Account:  bookinfo-productpage
+ 1883  Node:             ip-10-0-113-198.ap-south-1.compute.internal/10.0.113.198
+ 1884  Start Time:       Thu, 18 Jun 2026 09:39:05 +0000
+ 1885  Labels:           app=productpage
+ 1886  Annotations:      istio.io/rev: default
+ 1887  kubectl get pod productpage-v1-9749b48b5-ntmds   -o jsonpath='{.status.containerStatuses[*].name}'
+ 1888  kubectl get pod productpage-v1-9749b48b5-ntmds   -o jsonpath='{.spec.initContainers[*].name}'
+ 1889  kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+ 1890  kubectl get pods
+ 1891  kubectl get pods -A
+ 1892  kubectl get sa -A
+ 1893  kubectl get gateway
+ 1894  export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+ 1895  export INGRESS_HOST=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+ 1896  export INGRESS_PORT=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
+ 1897  export SECURE_INGRESS_PORT=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.spec.ports[?(@.name=="https")].port}')
+ 1898  export TCP_INGRESS_PORT=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.spec.ports[?(@.name=="tcp")].port}')
+ 1899  export INGRESS_HOST=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+ 1900  export INGRESS_HOST=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+ 1901  curl localhost
+ 1902  export INGRESS_NAME=istio-ingressgateway
+ 1903  export INGRESS_NS=istio-system
+ 1904  kubectl get svc "$INGRESS_NAME" -n "$INGRESS_NS"
+ 1905  curl k8s-istiosys-istioing-7cfdcedb3d-83594fefa5cf63a6.elb.ap-south-1.amazonaws.com
+ 1906  export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+ 1907  export INGRESS_NS=istio-system
+ 1908  kubectl get svc "$INGRESS_NAME" -n "$INGRESS_NS"
+ 1909  export INGRESS_HOST=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+ 1910  export INGRESS_PORT=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
+ 1911  export SECURE_INGRESS_PORT=$(kubectl -n "$INGRESS_NS" get service "$INGRESS_NAME" -o jsonpath='{.spec.ports[?(@.name=="https")].port}')
+ 1912  curl -s -I -HHost:httpbin.example.com "http://$INGRESS_HOST:$INGRESS_PORT/status/200"
+ 1913  curl -s -I -HHost:httpbin.example.com "http://$INGRESS_HOST:$INGRESS_PORT
+ 1914  curl -s -I -HHost:httpbin.example.com "http://$INGRESS_HOST:$INGRESS_PORT/status/200"
+ 1915  curl -s -I -HHost:httpbin.example.com "http://$INGRESS_HOST:$INGRESS_PORT/headers"
+ 1916  kubectl get svc
+ 1917  kubectl port-forward svc/productpage 9080:9080
+ 1918  kubectl get svc
+ 1919  curl 172.20.103.218:9080/ratings 
+ 1920  ls
+ 1921  touch tls-mode.yaml
+ 1922  vim tls-mode.yaml 
+ 1923  kubectl apply -f tls-mode.yaml 
+ 1924  cat tls-mode.yaml 
+ 1925  kubectl port-forward svc/productpage 9080:9080
+ 1926  kubectl get svc
+ 1927  ls
+ 1928  touch old-version.yaml
+ 1929  vim old-version.yaml 
+ 1930  kubectl apply -f old-version.yaml 
+ 1931  kubectl get pods - A
+ 1932  kubectl get pods -A
+ 1933  kubectl get svc -A
+ 1934  kubectl edit dr review
+ 1935  kubectl get deployment
+ 1936  kubectl get dr review
+ 1937  kubectl get ns
+ 1938  kubectl get dr review
+ 1939  kubectl get destinationrule
+ 1940  kubectl get dr
+ 1941  ls
+ 1942  cat old-version.yaml 
+ 1943  kubectl get dr
+ 1944  kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
+ 1945  kubectl get dr
+ 1946  kubectl get vs
+ 1947  kubectl edit dr review
+ 1948  kubectl edit dr reviews
+ 1949  kubectl apply -f old-version.yaml 
+ 1950  kubectl edit dr reviews
+ 1951  kubectl get dr reviews
+ 1952  kubectl get dr 
+ 1953  kubectl get ns
+ 1954  kubectl get svc
+ 1955  kubectl get pods
+ 1956  kubectl get dr 
+ 1957  kubectl get dr productpage
+ 1958  kubectl edit dr productpage
+ 1959  ls
+ 1960  cat old-version.yaml 
+ 1961  kubectl apply -f old-version.yaml 
+ 1962  kubectl edit dr reviews
+ 1963  ls
+ 1964  touch traffic-shifting.yaml
+ 1965  vim traffic-shifting.yaml 
+ 1966  kubectl port-forward svc/productpage 9080:9080
+ 1967  kubectl port-forward svc/ratings 9080:9080
+ 1968  kubectl port-forward svc/productpage 9080:9080
+ 1969  kubectl get dr
+ 1970  kubectl get pods
+ 1971  kubectl get dr reviews
+ 1972  kubectl get dr 
+ 1973  cat get dr productpage
+ 1974  kubectl get dr productpage
+ 1975  kubectl describe dr productpage
+ 1976  kubectl get dr 
+ 1977  kubectl describe dr ratings
+ 1978  kubectl describe dr reviews
+ 1979  kubectl get peerauthentication -A
+ 1980  kubectl describe peerauthentication default -n istio-system
+ 1981  kubectl get default -n istio-system
+ 1982  kubectl get pods -n istio-system
+ 1983  kubectl describe peerauthentication  -n istio-system
+ 1984  kubectl describe peerauthentication default -n istio-system
+ 1985  istioctl proxy-config clusters productpage-v1-9749b48b5-ntmds
+ 1986  istioctl authn tls-check productpage-v1-9749b48b5-ntmds.default
+ 1987  istioctl proxy-config clusters productpage-v1-9749b48b5-ntmds
+ 1988  istioctl proxy-config secret productpage-v1-9749b48b5-ntmds
+ 1989  istioctl authn tls-check productpage-v1-9749b48b5-ntmds.default
+ 1990  kubectl apply -f samples/addons/kiali.yaml
+ 1991  kubectl apply -f samples/addons/
+ 1992  kubectl get pods -n istio-system
+ 1993  istioctl dashboard kiali
+ 1994  kubectl port-forward svc/kiali -n istio-system 20001:20001
+ 1995  kubectl get nodes
+ 1996  history 
+ 1997  helm uninstall aws-load-balancer-controller -n kube-system
+ 1998  helm list -n kube-system
+ 1999  kubectl get deployment -n kube-system aws-load-balancer-controller
+ 2000  ls
+ 2001  cd /mnt/c/eic2026/
+ 2002  cd project2026/
+ 2003  ls
+ 2004  cd cluster26/
+ 2005  ls
+ 2006  terraform destory
+ 2007  ls
+ 2008  terraform destroy
+ 2009  sudo apt-get install windsurf
+ 2010  sudo apt install ./windsurf*.deb
+ 2011  sudo dpkg -i windsurf*.deb
+ 2012  ls
+ 2013  cd istio/
+ 2014  ls
+ 2015  rm -rf istio-1.30.1/
+ 2016  ls
+ 2017  cd ..
+ 2018  git add .
+ 2019  git status
+ 2020  git commit -m "deleted istio source code"
+ 2021  git push origin cluster090626
+ 2022  ls
+ 2023  terraform plan
+ 2024  terraform apply
+ 2025  terraform destroy
+ 2026  aws eks describe-nodegroup   --cluster-name 
+ 2027  dev-kalpesh-demo   --nodegroup-name 
+ 2028  dev-kalpesh-demo-spot   --query "nodegroup.nodeRole"   --output text
+ 2029  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo   --output text
+ 2030  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo   --output text
+ 2031  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo  --output text
+ 2032  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo   --output text
+ 2033  aws eks describe-cluster --name dev-kalpesh-demo --query "arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo" --output text
+ 2034  aws eks describe-cluster --name dev-kalpesh-demo --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo --output text
+ 2035  aws eks describe-cluster --name dev-kalpesh-demo --query "cluster.roleArn" --output text
+ 2036  aws eks describe-cluster --name dev-kalpesh-demo
+ 2037  aws eks describe-cluster --name dev-kalpesh-demo --query arn:aws:eks:ap-south-1:454143665149:cluster/dev-kalpesh-demo --output text
+ 2038  aws eks describe-cluster   --name dev-kalpesh-demo
+ 2039  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:iam::454143665149:role/dev-eks-cluster-role   --output text
+ 2040  aws eks describe-cluster --name dev-kalpesh-demo --query arn:aws:iam::454143665149:role/dev-eks-cluster-role--output text
+ 2041  aws eks describe-cluster--name dev-kalpesh-demo--query arn:aws:iam::454143665149:role/dev-eks-cluster-role--output text
+ 2042  aws eks describe-cluster   --name dev-kalpesh-demo   --query arn:aws:iam::454143665149:role/dev-eks-cluster-role --output text
+ 2043  aws eks describe-cluster --name dev-kalpesh-demo --query arn:aws:iam::454143665149:role/dev-eks-cluster-role --output text
+ 2044  terraform destroy
+ 2045  ls
+ 2046  terraform plan
+ 2047  terraform apply
+ 2048  history 
+ 2049  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 2050  kubectl get nodes
+ 2051  kubectl create namespace argocd
+ 2052  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+ 2053  kubectl get pods
+ 2054  kubectl get pods -n argocd
+ 2055  kubectl describe pods argocd-server-7c8986577c-jxc29 -n argocd
+ 2056  kubectl get pods -n argocd
+ 2057  kubectl port-forward svc/argocd-server -n argocd 8080:443
+ 2058  kubectl -n argocd get secret argocd-initial-admin-secret   -o jsonpath="{.data.password}" | base64 -d
+ 2059  kubectl port-forward svc/argocd-server -n argocd 8080:443
+ 2060  kubectl patch svc argocd-server   -n argocd   -p '{"spec":{"type":"LoadBalancer"}}'
+ 2061  kubectl get svc -n argocd
+ 2062  kubectl -n argocd get secret argocd-initial-admin-secret   -o jsonpath="{.data.password}" | base64 -d
+ 2063  argocd repo add https://github.com/kalpesheic/eictraining.git   --kalpesheic    --password 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
+ 2064  argocd repo add https://github.com/kalpesheic/eictraining.git   --username kalpesheic   --password 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
+ 2065  argocd repo add https://github.com/kalpesheic/eictraining.git
+ 2066  argocd repo add https://github.com/kalpesheic/eictraining.git   --username kalpesheic   --password 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
+ 2067  kubectl get svc -n argocd
+ 2068  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+ 2069  argocd login a342d8e4375264bbe86a7678a44a4f5f-40624065.ap-south-1.elb.amazonaws.com   --username admin   --password -nAiS4yk-xkvXSzb   --insecure
+ 2070  argocd account get-user-info
+ 2071  argocd repo add https://github.com/kalpesheic/eictraining.git
+ 2072  argocd repo add https://github.com/kalpesheic/eictraining.git   --username kalpesheic   --password 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
+ 2073  argocd repo add https://github.com/kalpesheic/eictraining.git   --username kalpesheic   --password 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
+ 2074  argocd repo add https://github.com/kalpesheic/eictraining.git  --username kalpesheic  --password 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
+ 2075  argocd repo list
+ 2076  argocd repo add https://github.com/kalpesheic/eictraining.git   --username kalpesheic   --password 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   --upsert
+ 2077  argocd repo list
+ 2078  kubectl get deploy -n argocd
+ 2079  cd ..
+ 2080  cd eic2026/
+ 2081  ls
+ 2082  mkdir apps
+ 2083  cd apps/
+ 2084  mkdir nginx
+ 2085  touch deployment.yaml
+ 2086  touch service.yaml
+ 2087  touch namespace.yaml
+ 2088  vim namespace.yaml 
+ 2089  vim deployment.yaml 
+ 2090  vim service.yaml 
+ 2091  git add .
+ 2092  git status\
+ 2093  git status
+ 2094  git commit -m "testing argocd"
+ 2095  
+ 2096  git repo
+ 2097  git remote -v
+ 2098  git push origin cluster090626
+ 2099  touch nginx-app.yaml
+ 2100  vim nginx
+ 2101  vim nginx-app.yaml 
+ 2102  kubectl apply -f nginx-app.yaml
+ 2103  kubectl get applications -n argocd
+ 2104  argocd app list
+ 2105  kubectl get pods -n demo
+ 2106  kubectl apply -f deployment.yaml 
+ 2107  ls
+ 2108  kubectl apply -f namespace.yaml 
+ 2109  kubectl apply -f deployment.yaml 
+ 2110  kubectl apply -f service.yaml 
+ 2111  ls
+ 2112  cd nginx
+ 2113  ls
+ 2114  cd ..
+ 2115  pwd
+ 2116  ls
+ 2117  cd apps/
+ 2118  ls
+ 2119  mv deployment.yaml nginx
+ 2120  mv namespace.yaml nginx
+ 2121  mv nginx-app.yaml nginx
+ 2122  mv service.yaml nginx/
+ 2123  kubectl get pods -n demo
+ 2124  kubectl get svc -n demo
+ 2125  kubectl get deploy 
+ 2126  kubectl get deploy -n demo
+ 2127  kubectl get deploy nginx -n demo
+ 2128  kubectl describe deploy nginx -n demo
+ 2129  kubectl get deploy nginx -n demo
+ 2130  kubectl edit deploy nginx -n demo
+ 2131  ls
+ 2132  cd nginx/
+ 2133  ls
+ 2134  vim deployment.yaml 
+ 2135  git add apps/nginx/deployment.yaml
+ 2136  git add .
+ 2137  git status
+ 2138  git commit -m "Scale nginx to 3 replicas"
+ 2139  git push origin cluster090626
+ 2140  argocd app get nginx-demo
+ 2141  kubectl get deployment -n demo
+ 2142  kubectl rollout restart deployment nginx -n demo
+ 2143  kubectl get deployment -n demo
+ 2144  vim deployment.yaml 
+ 2145  git add .
+ 2146  git status
+ 2147  git commit -m "Scale nginx to 4 replicas"
+ 2148  git push origin cluster090626
+ 2149  kubectl get deployment -n demo
+ 2150  kubectl scale deployment nginx --replicas=2 -n demo
+ 2151  kubectl get deployment -n demo
+ 2152  kubectl edit deployment nginx -n demo
+ 2153  kubectl scale deployment nginx --replicas=2 -n demo
+ 2154  kubectl get deployment -n demo
+ 2155  kubectl get rs
+ 2156  kubectl get rs -n demo
+ 2157  kubectl get deployment -n demo
+ 2158  kubectl get deployment nginx -n demo -o jsonpath='{.spec.replicas}'
+ 2159  echo
+ 2160  l
+ 2161  cat deployment.yaml 
+ 2162  kubectl scale deployment nginx --replicas=2 -n demo
+ 2163  kubectl get deployment nginx -n demo
+ 2164  kubectl get deployment nginx -n demo - w
+ 2165  kubectl get deployment nginx -n demo -w
+ 2166  kubectl get deployment nginx -n demo
+ 2167  vim deployment.yaml 
+ 2168  git add .
+ 2169  git status
+ 2170  git commit -m "rollback replica=2"
+ 2171  git push origin cluster090626
+ 2172  kubectl get deployment nginx -n demo
+ 2173  ls
+ 2174  cat nginx-app.yaml 
+ 2175  kubectl get applications -n argocd
+ 2176  cat 
+ 2177  kubectl get pods -n demo
+ 2178  kubectl get pods -n argocd
+ 2179  ls
+ 2180  touch hpa.yaml
+ 2181  vim hpa.yaml 
+ 2182  kubectl apply -f hpa.yaml 
+ 2183  kubectl get hpa
+ 2184  kubectl get hpa -n demo
+ 2185  ls
+ 2186  vim hpa.yaml 
+ 2187  git add .
+ 2188  git commit -m "Increase HPA max replicas"
+ 2189  git status
+ 2190  ls
+ 2191  git status
+ 2192  git pod -n demo
+ 2193  kubectl git pod -n demo
+ 2194  kubectl get pod -n demo
+ 2195  kubectl get pod -n arogcd
+ 2196  kubectl get pod -n argocd
+ 2197  cd ..
+ 2198  l
+ 2199  git commit -m "added hpa"
+ 2200  git add .
+ 2201  git commit -m "added hpa"
+ 2202  git push origin cluster090626
+ 2203  kubectl get apiservices | grep metrics
+ 2204  kubectl top nodes
+ 2205  kubectl top pods -A
+ 2206  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+ 2207  kubectl get pods -n kube-system | grep metrics
+ 2208  kubectl top nodes
+ 2209  kubectl top nodes -n kube-system
+ 2210  kubectl top pods -n demo
+ 2211  kubectl logs -n kube-system deployment/metrics-server
+ 2212  argocd app resources nginx-demo
+ 2213  kubectl edit hpa nginx -n demo
+ 2214  kubectl get hpa nginx -n demo -o yaml | grep maxReplicas
+ 2215  kubectl edit hpa nginx -n demo
+ 2216  kubectl get hpa nginx -n demo -o yaml | grep maxReplicas
+ 2217  kubectl edit hpa nginx -n demo
+ 2218  ls
+ 2219  cd nginx/
+ 2220  ls
+ 2221  vim hpa.yaml 
+ 2222  git add .
+ 2223  git statuw
+ 2224  git status
+ 2225  git commit -m "changed hpa"
+ 2226  git push origin cluster090626
+ 2227  kubectl get hpa nginx -n demo -o yaml | grep maxReplicas
+ 2228  kubectl get hpa 
+ 2229  kubectl get hpa  -n demo
+ 2230  kubectl edit hpa nginx -n demo
+ 2231  kubectl get hpa  -n demo
+ 2232  kubectl get hpa  -n demo -o 
+ 2233  kubectl get hpa  -n demo - w
+ 2234  kubectl get hpa  -n demo
+ 2235  kubectl get pods -n argocd
+ 2236  root@D6FHR24:/mnt/c/eic2026/apps/nginx# kubectl get pods -n argocd
+ 2237  NAME                                                READY   STATUS             RESTARTS        AGE
+ 2238  argocd-application-controller-0                     1/1     Running            0               3h45m
+ 2239  argocd-applicationset-controller-77497b89df-dm4pv   0/1     CrashLoopBackOff   34 (5m1s ago)   3h45m
+ 2240  argocd-dex-server-7c874c5958-hv76f                  1/1     Running            0               3h45m
+ 2241  argocd-notifications-controller-6c5f7c5dcc-rlnqp    1/1     Running            0               3h45m
+ 2242  argocd-redis-798565fd74-7zj58                       1/1     Running            0               3h45m
+ 2243  argocd-repo-server-59d57b7dcc-86wlb                 1/1     Running            0               3h45m
+ 2244  argocd-server-7c8986577c-jxc29                      1/1     Running            0               3h45m
+ 2245  root@D6FHR24:/mnt/c/eic2026/apps/nginx#
+ 2246  kubectl delete applications --all -n argocd
+ 2247  kubectl delete namespace argocd
+ 2248  ls
+ 2249  kubectl get pods -n argocd
+ 2250  ls
+ 2251  kubectl delete nginx-app.yaml 
+ 2252  kubectl delete nginx-app.yaml -n demo
+ 2253  kubectl get pods -n demo
+ 2254  kubectl delete nginx-app.yaml -n demo
+ 2255  kubectl get svc -n demo
+ 2256  kubectl get svc -n argocd
+ 2257  history 
+ 2258  touch history
+ 2259  vim history 
+ 2260  history >>history
+ 2261  history >history

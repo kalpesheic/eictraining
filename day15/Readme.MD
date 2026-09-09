@@ -1,3 +1,12 @@
+Why Karpenter
+![alt text](image-5.png)
+
+Provisions nodes in seconds, not minutes
+Automatically selects optimal instance types based on pod requirements
+Supports Spot instances with graceful interruption handling
+Consolidates nodes to reduce costs when capacity is underutilized
+Eliminates the need for managing Auto Scaling Groups (ASGs)
+
 Bin Packaging- Efficently placing PODs onto a minumum numbers of nodes possible to reduce cost and improve utilization.
 
 Karpenter Decide on 
@@ -78,7 +87,7 @@ subnetSelectorTerms:
         kubernetes.io/cluster/retail-dev-eksdemo1: owned
         kubernetes.io/role/internal-elb: "1"
  #### owned and internal-elb: "1" ####
- if we keep only owned, worker nodes will be launch in punlic or private but if we put tags internal-elb: "1" then worker nodes will be launch only private subnets.
+ if we keep only owned, worker nodes will be launch in public or private but if we put tags internal-elb: "1" then worker nodes will be launch only private subnets.
 
   tags:
     karpenter.sh/discovery: eic-internal-kalpesh-dev-kalpesh-demo

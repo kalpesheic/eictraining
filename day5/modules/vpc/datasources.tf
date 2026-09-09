@@ -11,7 +11,7 @@
 #}
 
 data "aws_vpc" "main" {
-  id = "vpc-02358ddc1cb955bcd"
+  id = "vpc-092e8f68b0d22f6ac"
 }
 
 # Existing Internet Gateway
@@ -26,7 +26,7 @@ data "aws_internet_gateway" "igw" {
 data "aws_subnet" "public" {
   filter {
     name   = "cidr-block"
-    values = ["10.0.13.0/24"]
+    values = ["10.0.0.0/20"]
   }
 
   vpc_id = data.aws_vpc.main.id
@@ -36,7 +36,7 @@ data "aws_subnet" "public" {
 data "aws_subnet" "private_1" {
   filter {
     name   = "cidr-block"
-    values = ["10.0.113.0/24"]
+    values = ["10.0.128.0/20"]
   }
 
   vpc_id = data.aws_vpc.main.id
@@ -46,7 +46,7 @@ data "aws_subnet" "private_1" {
 data "aws_subnet" "private_2" {
   filter {
     name   = "cidr-block"
-    values = ["10.0.123.0/24"]
+    values = ["10.0.144.0/20"]
   }
 
   vpc_id = data.aws_vpc.main.id

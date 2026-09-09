@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aws-test
+  namespace: harness-delegate-ng
+spec:
+  serviceAccountName: helm-delegate-new
+  restartPolicy: Never
+  containers:
+  - name: aws-cli
+    image: amazon/aws-cli
+    command:
+    - sleep
+    - "3600"

@@ -1,0 +1,43 @@
+communications:
+  default-group:
+    socketSlack:
+      appToken: xapp-1-A0BCX05M7G9-11450722178581-daac96a03853e9cef0dc3c40928324b6e55630acfe7e2676ef93e57ef90acc04
+      botToken: xoxb-11430725530179-11430837773251-yFgYNeYYfh7U2zirsD9OCcCD
+      channels:
+        default:
+          bindings:
+            executors:
+              - k8s-default-tools
+            sources:
+              - k8s-all-events
+              - k8s-err-events
+              - k8s-recommendation-events
+          name: devops
+      enabled: true
+
+executors:
+  k8s-default-tools:
+    botkube/kubectl:
+      config:
+        defaultNamespace: demo
+      displayName: Kubectl
+      enabled: true
+
+settings:
+  clusterName: dev-kalpesh-demo
+
+sources:
+  k8s-all-events:
+    namespaces:
+      include:
+        - demo
+
+  k8s-err-events:
+    namespaces:
+      include:
+        - demo
+
+  k8s-recommendation-events:
+    namespaces:
+      include:
+        - demo

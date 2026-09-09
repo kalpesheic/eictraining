@@ -18,6 +18,7 @@ variable "business_division" {
   default     = "eic-internal"
 }
 
+
 # EKS Cluster Configuration
 
 variable "cluster_name" {
