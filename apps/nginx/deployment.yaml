@@ -13,7 +13,9 @@ spec:
     metadata:
       labels:
         app: nginx
-
+        annotations:
+        gitops-test: "v2"
+          
     spec:
       nodeSelector:
         worker-pool: high
