@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        annotations:
+      annotations:
         gitops-test: "v2"
           
     spec:
