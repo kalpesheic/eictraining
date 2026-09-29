@@ -60,7 +60,7 @@ resource "kubernetes_service_account" "aws_load_balancer_controller" {
     name      = "aws-load-balancer-controller"
     namespace = "kube-system"
   }
-    depends_on = [
+  depends_on = [
     aws_eks_node_group.private_nodes
   ]
 }
@@ -70,9 +70,9 @@ resource "aws_eks_pod_identity_association" "aws_lb_controller" {
   cluster_name    = aws_eks_cluster.main.name
   namespace       = "kube-system"
   service_account = "aws-load-balancer-controller"
- role_arn        = aws_iam_role.aws_load_balancer_controller.arn
+  role_arn        = aws_iam_role.aws_load_balancer_controller.arn
 
-depends_on = [
+  depends_on = [
     aws_iam_role_policy_attachment.aws_lb_controller,
     kubernetes_service_account.aws_load_balancer_controller
   ]

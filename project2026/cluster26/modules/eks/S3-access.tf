@@ -1,7 +1,7 @@
 # below code for the S3 readonly access with PIA assocation
 
 resource "aws_iam_role" "s3_readonly_role" {
-name = "${local.eks_cluster_name}-s3-readonly-role"
+  name = "${local.eks_cluster_name}-s3-readonly-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"

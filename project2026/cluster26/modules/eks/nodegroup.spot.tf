@@ -3,12 +3,12 @@ resource "aws_eks_node_group" "spot_nodes" {
   node_group_name = "${local.eks_cluster_name}-spot"
 
   node_role_arn = aws_iam_role.eks_nodes.arn
-  subnet_ids    = var.private_subnet_ids
+  subnet_ids    = var.public_subnet_ids
 
   instance_types = [
     "t3.medium",
     "t3a.medium",
-     "t2.medium"
+    "t2.medium"
 
   ]
 

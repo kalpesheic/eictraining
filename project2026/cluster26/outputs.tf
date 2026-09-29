@@ -3,10 +3,10 @@ output "vpc_id" {
   description = "VPC ID used by EKS and other services"
 }
 
-output "private_subnet_ids" {
-  value       = module.vpc.private_subnet_ids
-  description = "Private subnets for EKS worker nodes"
-}
+#output "private_subnet_ids" {
+#  value       = module.vpc.private_subnet_ids
+#  description = "Private subnets for EKS worker nodes"
+#}
 
 
 output "public_subnet_ids" {

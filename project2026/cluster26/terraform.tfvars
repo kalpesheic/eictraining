@@ -10,10 +10,10 @@ aws_region       = "ap-south-1"
 
 # Tags 
 tags = {
-  Terraform = "true"
-  Project   = "EIC-Internal"
-  Owner     = "Kalpesh.kumar"
-  email_id  = "Kalpesh.kumar@einfochips.com"
+  Terraform  = "true"
+  Project    = "EIC-Internal"
+  Owner      = "Kalpesh.kumar"
+  email_id   = "Kalpesh.kumar@einfochips.com"
   Department = "PES"
 
 }

@@ -101,15 +101,15 @@
 
 #        annotations = {
 #          "service.beta.kubernetes.io/aws-load-balancer-type"            = "external"
- #         "service.beta.kubernetes.io/aws-load-balancer-nlb-target-type" = "ip"
+#         "service.beta.kubernetes.io/aws-load-balancer-nlb-target-type" = "ip"
 #          "service.beta.kubernetes.io/aws-load-balancer-scheme"          = "internet-facing"
- #       }
- #     }
- #   })
- # ]
+#       }
+#     }
+#   })
+# ]
 
- # wait    = true
- # timeout = 600
+# wait    = true
+# timeout = 600
 #}
 
 ### added code for the aws load balancer controller 

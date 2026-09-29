@@ -95,9 +95,9 @@ variable "node_disk_size" {
   default     = 20
 }
 
-variable "private_subnet_ids" {
-  type = list(string)
-}
+#variable "public_subnet_ids" {
+#  type = list(string)
+#}
 
 variable "vpc_id" {
   type = string
@@ -109,8 +109,8 @@ variable "public_subnet_ids" {
 }
 
 variable "istio_enabled" {
- description = "Enable istio"
- type = bool 
- default = true   
+  description = "Enable istio"
+  type        = bool
+  default     = true
 }
 

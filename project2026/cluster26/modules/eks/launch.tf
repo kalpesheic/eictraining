@@ -24,13 +24,13 @@ resource "aws_launch_template" "eks_nodes" {
     resource_type = "volume"
 
     tags = merge(var.tags, {
-      Name        = "${local.name}-worker-volume"
-      Environment = var.environment_name
-      DM = "kalpesh.kumar@einfochips.com"
+      Name         = "${local.name}-worker-volume"
+      Environment  = var.environment_name
+      DM           = "kalpesh.kumar@einfochips.com"
       Project_Name = "EIC_Internal"
-      END_Date = "2026-07-30"
-      BU = "IA"
-      Department = "PES"    
+      END_Date     = "2026-07-30"
+      BU           = "IA"
+      Department   = "PES"
     })
   }
 }
