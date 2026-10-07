@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+  namespace: demo
+data:
+  index.html: |
+    <html>
+    <head>
+      <title>HTTPS Demo</title>
+    </head>
+    <body>
+      <h1>HTTPS Demo Application</h1>
+      <p>Traffic successfully reached the sample application.</p>
+    </body>
+    </html>

@@ -1,0 +1,1016 @@
+ 1057  cd ..
+ 1058  ls
+ 1059  cd ..
+ 1060  ls
+ 1061  cd cdk-multi-stack-new/
+ 1062  ls
+ 1063  cd lib/
+ 1064  ls
+ 1065  cd ..
+ 1066  cd bin/
+ 1067  ls
+ 1068  cd ..
+ 1069  ls
+ 1070  cdk synth
+ 1071  ls
+ 1072  cd ..
+ 1073  ls
+ 1074  cd cdk-multi-stack-new/
+ 1075  ls
+ 1076  vim bin/cdk-multi-stack-new.ts
+ 1077  find . -name "cdk-multi-stack-new-stack"
+ 1078  cd ..
+ 1079  find . -name "cdk-multi-stack-new-stack"
+ 1080  cd cdk-multi-stack-new/
+ 1081  ls
+ 1082  find . -name "cdk-multi-stack-new-stack"
+ 1083  find . -name "*.cdk-multi-stack-new-stack"
+ 1084  vim bin/cdk-multi-stack-new.ts
+ 1085  ls -la bin/
+ 1086  ls -la lib/
+ 1087  grep -R "CdkMultiStackNewStack" -n bin lib
+ 1088  cdk synth
+ 1089  vim bin/cdk-multi-stack-new.ts
+ 1090  cdk synth
+ 1091  cdk diff\
+ 1092  cdk diff
+ 1093  cdk deploy --all
+ 1094  ls
+ 1095  cd lib/
+ 1096  ls
+ 1097  cat application-stack.ts 
+ 1098  ls
+ 1099  vim database-stack.ts 
+ 1100  la -l
+ 1101  ls -l
+ 1102  vim network-stack.ts 
+ 1103  cd ..
+ 1104  cdk synth
+ 1105  ls
+ 1106  vim lib/network-stack.ts 
+ 1107  cdk synth
+ 1108  vim lib/network-stack.ts 
+ 1109  cdk synth
+ 1110  vim lib/network-stack.ts 
+ 1111  cdk synth
+ 1112  vim lib/application-stack.ts 
+ 1113  cdk synth
+ 1114  vim lib/application-stack.ts 
+ 1115  vim lib/network-stack.ts 
+ 1116  vim lib/database-stack.ts 
+ 1117  vim lib/monitoring-stack.ts 
+ 1118  cdk synth
+ 1119  cdk deploy
+ 1120  cdk deploy --all
+ 1121  cdk ls
+ 1122  cdk synth DatabaseStack
+ 1123  cdk destroy --all
+ 1124  cdk deploy --all
+ 1125  cdk destroy --all
+ 1126  exit
+ 1127  cd /mnt/c/eic2026/
+ 1128  dir
+ 1129  cd project2026/
+ 1130  s
+ 1131  ls
+ 1132  cd jenkins/
+ 1133  ls
+ 1134  ssh -i kalpesh2026.pem ubuntu@13.203.219.175
+ 1135  mkdir -p ~/lambda-pymysql/python
+ 1136  cd ~/lambda-pymysql
+ 1137  tree
+ 1138  python3 -m pip install PyMySQL -t python/
+ 1139  sudo apt install python3-pip -y
+ 1140  python3 -m pip install PyMySQL -t python/
+ 1141  ls python/
+ 1142  python3 -c "import sys; sys.path.insert(0, 'python'); import pymysql; print(pymysql.__version__)"
+ 1143  sudo apt install zip -y
+ 1144  zip -r pymysql-layer.zip python/
+ 1145  ]unzip -l pymysql-layer.zip | head -20
+ 1146  unzip -l pymysql-layer.zip | head -20
+ 1147  pwd
+ 1148  ls
+ 1149  cp pymysql-layer.zip /mnt/c/eic2026/
+ 1150  cd /mnt/c/eic2026/project2026/
+ 1151  ls
+ 1152  cd jenkins/
+ 1153  ssh -i kalpesh2026.pem ubuntu@13.203.219.175
+ 1154  cd ..
+ 1155  ls
+ 1156  mkdir -p /agentic-rca
+ 1157  cd /agentic-rca/
+ 1158  python3 -m venv venv
+ 1159  source venv/bin/activate
+ 1160  pip install boto3 fastapi uvicorn langgraph langchain-aws
+ 1161  cd ..
+ 1162  ls
+ 1163  mkdir -p agents
+ 1164  cd agents/
+ 1165  cd ..
+ 1166  vim agents/incident.agent.py
+ 1167  vim agents/test.py
+ 1168  python agents/test.py 
+ 1169  ls -l
+ 1170  cd agents
+ 1171  ls
+ 1172  ls -l
+ 1173  cat incident.agent.py 
+ 1174  cd ..
+ 1175  ls
+ 1176  exit
+ 1177  cd /mnt/c/eic2026/
+ 1178  dir
+ 1179  cd day5
+ 1180  dir
+ 1181  cd ..
+ 1182  ls
+ 1183  cd project2026/
+ 1184  dir
+ 1185  cd jenkins/
+ 1186  ssh -i kalpesh2026.pem ubuntu@13.126.195.16
+ 1187  df -kh
+ 1188  sudo apt install -y amazon-ssm-agent
+ 1189  snap install amazon-ssm-agent
+ 1190  sudo apt install -y amazon-ssm-agent
+ 1191  snap install amazon-ssm-agent
+ 1192  snap install amazon-ssm-agent --classic
+ 1193  systemctl enable --now snap.amazon-ssm-agent.amazon-ssm-agent.service
+ 1194  systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service
+ 1195  journalctl -u snap.amazon-ssm-agent.amazon-ssm-agent.service -n 50 --no-pager
+ 1196  sudo systemctl enable --now amazon-ssm-agent
+ 1197  sudo systemctl status amazon-ssm-agent
+ 1198  sudo apt install -y nginx
+ 1199  sudo systemctl enable --now nginx
+ 1200  curl http://localhost
+ 1201  sudo amazon-ssm-agent -register   -code "GL0WmVgAJJFFqjNFHbyV"   -id "1422efda-cc20-4cf7-befc-c72ab6ad8cd8"   -region "ap-south-1"
+ 1202  amazon-ssm-agent.ssm-cli 
+ 1203  amazon-ssm-agent.ssm-cli -register   -code "GL0WmVgAJJFFqjNFHbyV"   -id "1422efda-cc20-4cf7-befc-c72ab6ad8cd8"   -region "ap-south-1"
+ 1204  which amazon-ssm-agent
+ 1205  which amazon-ssm-agent.ssm-cli
+ 1206  snap list | grep -i ssm
+ 1207  snap services amazon-ssm-agent
+ 1208  sudo snap services amazon-ssm-agent
+ 1209  sudo snap start amazon-ssm-agent
+ 1210  sudo snap logs amazon-ssm-agent -n 50
+ 1211  TOKEN=$(curl -sS -m 5 -X PUT \
+ 1212    "http://169.254.169.254/latest/api/token" \
+ 1213    -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+ 1214  echo "TOKEN=$TOKEN"
+ 1215  curl -v -m 5   -H "X-aws-ec2-metadata-token: $TOKEN"   http://169.254.169.254/latest/meta-data/instance-id
+ 1216  TOKEN=$(curl -sS -m 5 -X PUT \
+ 1217    "http://169.254.169.254/latest/api/token" \
+ 1218    -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+ 1219  echo "TOKEN=$TOKEN"
+ 1220  sudo snap logs amazon-ssm-agent -n 50
+ 1221  TOKEN=$(curl -sS -m 5 -X PUT \
+ 1222    "http://169.254.169.254/latest/api/token" \
+ 1223    -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+ 1224  echo "TOKEN=$TOKEN"
+ 1225  ip route
+ 1226  ip route get 169.254.169.254
+ 1227  ip addr 
+ 1228  ping -c 3 169.254.169.254
+ 1229  sudo iptables -L -n -v
+ 1230  systemd-detect-virt
+ 1231  hostnamectl
+ 1232  curl -s http://169.254.169.254/latest/meta-data/instance-id --connect-timeout 2
+ 1233  sudo dmidecode -s system-product-name
+ 1234  apt-get install dmidecode
+ 1235  sudo dmidecode -s system-product-name
+ 1236  ip neigh show 172.18.240.1
+ 1237  sudo snap stop amazon-ssm-agent
+ 1238  sudo snap remove amazon-ssm-agent
+ 1239  wget https://s3.amazonaws.com/amazon-ssm-ap-south-1/latest/debian_amd64/amazon-ssm-agent.deb
+ 1240  ls
+ 1241  wget https://s3.amazonaws.com/amazon-ssm-ap-south-1/latest/debian_amd64/amazon-ssm-agent.deb
+ 1242  wget https://s3.ap-south-1.amazonaws.com/amazon-ssm-ap-south-1/latest/debian_amd64/amazon-ssm-agent.deb
+ 1243  ls
+ 1244  ls -lh amazon-ssm-agent.deb 
+ 1245  sudo dpkg -i amazon-ssm-agent.deb
+ 1246  sudo systemctl enable amazon-ssm-agent
+ 1247  sudo systemctl start amazon-ssm-agent
+ 1248  sudo systemctl status amazon-ssm-agent --no-pager
+ 1249  which amazon-ssm-agent
+ 1250  sudo amazon-ssm-agent -register   -code "GL0WmVgAJJFFqjNFHbyV"   -id "1422efda-cc20-4cf7-befc-c72ab6ad8cd8"   -region "ap-south-1"
+ 1251  sudo systemctl enable amazon-ssm-agent
+ 1252  sudo systemctl start amazon-ssm-agent
+ 1253  sudo systemctl status amazon-ssm-agent --no-pager
+ 1254  sudo tail -50 /var/log/amazon/ssm/amazon-ssm-agent.log
+ 1255  hostname
+ 1256  cd /etc/nginx/
+ 1257  ls
+ 1258  cd conf.d/
+ 1259  ls
+ 1260  cd ..
+ 1261  ls
+ 1262  vim /etc/nginx/sites-available/default
+ 1263  vim /var/www/html/index.nginx-debian.html 
+ 1264  systemctl restart nginx
+ 1265  hostname
+ 1266  cd /mnt/c/eic2026/
+ 1267  dir
+ 1268  cd apps/
+ 1269  ls
+ 1270  cd nginx/
+ 1271  ls
+ 1272  git branch
+ 1273  git add .
+ 1274  ls
+ 1275  git push
+ 1276  https://github.com/kalpesheic/eictraining.git/
+ 1277  git push https://github.com/kalpesheic/eictraining.git/
+ 1278  cd /mnt/c/eic2026/
+ 1279  dir
+ 1280  cd project2026/
+ 1281  ls
+ 1282  cd cluster26/
+ 1283  ls
+ 1284  terraform init
+ 1285  aws configure
+ 1286  terraform init
+ 1287  terraform plan
+ 1288  pwd
+ 1289  ls -l
+ 1290  terraform plan
+ 1291  aws ec2 describe-vpcs   --vpc-ids vpc-0e632612fa9de2a0c
+ 1292  terraform plan
+ 1293  terraform apply
+ 1294  aws ec2 describe-subnets   --region ap-south-1   --filters "Name=vpc-id,Values=vpc-0e632612fa9de2a0c"   --query 'Subnets[*].[SubnetId,CidrBlock,AvailabilityZone,MapPublicIpOnLaunch,Tags[?Key==`Name`].Value|[0]]'   --output table
+ 1295  terraform init
+ 1296  terraform plan
+ 1297  terraform apply
+ 1298  terraform fmt -recursive
+ 1299  terraform validate
+ 1300  terraform plan
+ 1301  terraform fmt -recursive
+ 1302  terraform validate
+ 1303  grep -R "private_subnet_ids" . --exclude-dir=.terraform --exclude-dir=.git
+ 1304  terraform validate
+ 1305  terraform apply
+ 1306  ls
+ 1307  history 
+ 1308  cat history.txt 
+ 1309  [200~aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1310  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1311  kubectl get nodes
+ 1312  terraform destroy
+ 1313  terraform apply
+ 1314  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1315  kubectl get pods
+ 1316  kubectl get nodes
+ 1317  ls
+ 1318  cd cordns/
+ 1319  ls
+ 1320  cd ..
+ 1321  ls
+ 1322  cd pia/
+ 1323  l
+ 1324  ls
+ 1325  cd ..
+ 1326  ls
+ 1327  cd istio/
+ 1328  ls
+ 1329  cd ..
+ 1330  ls
+ 1331  cd modules/
+ 1332  ls
+ 1333  cd eks/
+ 1334  ls
+ 1335  cd ..
+ 1336  ls -l
+ 1337  cd ..
+ 1338  ls
+ 1339  cd ..
+ 1340  ls
+ 1341  cd ..
+ 1342  ls
+ 1343  cd apps/
+ 1344  ls
+ 1345  cd nginx/
+ 1346  ls
+ 1347  cat deployment.yaml 
+ 1348  ls
+ 1349  kubectl apply -f deployment.yaml 
+ 1350  kubectl create namespace demo
+ 1351  kubectl apply -f deployment.yaml 
+ 1352  cat namespace.yaml 
+ 1353  kubectl get pods -n demo
+ 1354  kubectl describre pods nginx-7bdf4c7bb8-mcfvp -n demo
+ 1355  kubectl describe pods nginx-7bdf4c7bb8-mcfvp -n demo
+ 1356  ls -l
+ 1357  kuectl get nodes --show-labels
+ 1358  kubectl get nodes --show-labels
+ 1359  kubectl get nodes -L worker-pool
+ 1360  kubectl label node p-10-0-0-186.ap-south-1.compute.internal worker-pool=high
+ 1361  kubectl label node ip-10-0-0-186.ap-south-1.compute.internal worker-pool=high
+ 1362  kubectl get nodes -L worker-pool
+ 1363  kubctl get pods -n demo
+ 1364  kubectl get pods -n demo
+ 1365  kubectl get nodes -L worker-pool
+ 1366  kubectl describe pods nginx-7bdf4c7bb8-mcfvp -n demo
+ 1367  kubectl get nodes -L worker-pool
+ 1368  kubectl get pods -n demo
+ 1369  kubectl describe pods nginx-7bdf4c7bb8-mfgnf -n demo
+ 1370  kubectl get nodes -L worker-pool
+ 1371  kubectl get pods -n demo
+ 1372  kubectl get pods - o wide
+ 1373  kubectl get pods -o wide
+ 1374  kubectl get pods -o wide -n demo
+ 1375  kubectl get nodes -L worker-pool
+ 1376  kubectl label node ip-10-0-2-38.ap-south-1.compute.internal worker-pool=high
+ 1377  kubectl get pods -o wide -n demo
+ 1378  kubectl ger deploy
+ 1379  kubectl get deploy -n demo
+ 1380  kubectl rollout deploy nginx -n demo
+ 1381  kubectl rollout restart deployment/nginx
+ 1382  kubectl rollout restart deployment/nginx -n demo
+ 1383  kubectl get pods -o wide -n demo
+ 1384  kubetcl edit deploy nginx -n demo
+ 1385  kubectl edit deploy nginx -n demo
+ 1386  kubectl get pods -o wide -n demo
+ 1387  kubetcl edit deploy nginx -n demo
+ 1388  kubectl edit deploy nginx -n demo
+ 1389  kubectl get pods -o wide -n demo
+ 1390  ls
+ 1391  cat nginx-app.yaml 
+ 1392  ls -l
+ 1393  kubectl apply -f service.yaml 
+ 1394  kubectl apply -f nginx-app.yaml 
+ 1395  kubectl create namespace argocd
+ 1396  kubectl apply -f nginx-app.yaml 
+ 1397  cat nginx-app.yaml 
+ 1398  kubectl get pods -o wide -n demo
+ 1399  kubectl get svc -n demo
+ 1400  curl -i a7d9f4ae106704a8ea3b88e83fc33392-353323618.ap-south-1.elb.amazonaws.com
+ 1401  kubectl get svc -n demo
+ 1402  kubectl describe svc nginx-service -n demo
+ 1403  l
+ 1404  ls
+ 1405  cat service.yaml 
+ 1406  kubectl describe svc nginx-service -n demo
+ 1407  ls
+ 1408  kubectl delete service.yaml -n demo
+ 1409  kubectl delete service.yaml 
+ 1410  kubectl delete service service.yaml 
+ 1411  kubectl delete --force service.yaml -n demo
+ 1412  kubectl svc -n demo
+ 1413  kubectl get svc -n demo
+ 1414  kubectl delete nginx-service -n demo
+ 1415  ls
+ 1416  cat history 
+ 1417  kubectl delete service.yaml -n demo
+ 1418  kubectl delete nginx-app.yaml -n demo
+ 1419  kubectl delete nginx-app.yaml
+ 1420  kubectl delete service.yaml 
+ 1421  kubectl delete -f  service.yaml 
+ 1422  kubectl delete -f  nginx-app.yaml 
+ 1423  kubectl get pods -n demo
+ 1424  kubectl get deploy
+ 1425  kubectl get deploy -n demo
+ 1426  kubectl get svc -n demo
+ 1427  kubectl edit deploy -n demo
+ 1428  kubectl get deploy -n demo
+ 1429  kubectl delete -f deployment.yaml 
+ 1430  kubectl get pods -n demo
+ 1431  cd ..
+ 1432  ls
+ 1433  cd project2026/
+ 1434  dir
+ 1435  cd cluster26/
+ 1436  ls
+ 1437  cd modules/
+ 1438  l
+ 1439  ls -lk
+ 1440  ls -l
+ 1441  cd ..
+ 1442  ls
+ 1443  terraform destroy
+ 1444  ls
+ 1445  terraform apply
+ 1446  aws eks --region ap-south-1 update-kubeconfig --name dev-kalpesh-demo
+ 1447  kubectl get nodes
+ 1448  kubectl config current-context
+ 1449  kubectl create namespace argocd
+ 1450  kubectl get ns argocd
+ 1451  kubectl apply -n argocd   -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+ 1452  kubectl get pods -n argocd
+ 1453  kubectl get pods -n argocd -w
+ 1454  kubectl port-forward svc/argocd-server -n argocd 8080:443
+ 1455  cd /mnt/c/eic2026/c
+ 1456  cd /mnt/c/eic2026/
+ 1457  ls
+ 1458  cd project2026/
+ 1459  ls
+ 1460  cd cluster26/
+ 1461  ls
+ 1462  kubectl -n argocd get secret argocd-initial-admin-secret   -o jsonpath="{.data.password}" | base64 -d
+ 1463  argocd version --client
+ 1464  argocd app create nginx-app   --repo https://github.com/kalpesheic/eictraining/tree/cluster090626/apps.git   --path nginx   --dest-server https://kubernetes.default.svc   --dest-namespace default
+ 1465  nslookup a342d8e4375264bbe86a7678a44a4f5f-40624065.ap-south-1.elb.amazonaws.com
+ 1466  curl -v https://a342d8e4375264bbe86a7678a44a4f5f-40624065.ap-south-1.elb.amazonaws.com
+ 1467  kubectl get svc -n argocd
+ 1468  kubectl get svc argocd-server -n argocd -o wide
+ 1469  kubectl get endpoints argocd-server -n argocd
+ 1470  aws elbv2 describe-load-balancers   --region ap-south-1   --query 'LoadBalancers[].DNSName'
+ 1471  argocd app create nginx-app   --repo https://github.com/kalpesheic/eictraining.git   --revision cluster090626   --path apps/nginx   --dest-server https://kubernetes.default.svc   --dest-namespace default
+ 1472  kubectl get svc argocd-server -n argocd -o wide
+ 1473  kubectl get svc -n argocd
+ 1474  kubectl get svc argocd-server -n argocd -o wide
+ 1475  curl -k https://localhost:8080
+ 1476  argocd admin initial-password -n argocd
+ 1477  argocd login localhost:8080   --username admin   --password 'tSqMmZMdg2cGk5W9'   --insecure
+ 1478  argocd app create nginx-app   --repo https://github.com/kalpesheic/eictraining.git   --revision cluster090626   --path apps/nginx   --dest-server https://kubernetes.default.svc   --dest-namespace default
+ 1479  argocd app get nginx-app
+ 1480  argocd app sync nginx-app
+ 1481  argocd app list
+ 1482  argocd app sync nginx-app
+ 1483  argocd app list
+ 1484  kubectl patch svc argocd-server -n argocd   -p '{"spec":{"type":"LoadBalancer"}}'
+ 1485  kubectl get svc argocd-server -n argocd -w
+ 1486  kubectl get svc argocd-server -n argocd   -o jsonpath='{.status.loadBalancer.ingress[0].hostname}{"\n"}'
+ 1487  kubectl get svc argocd-server -n argocd -o wide
+ 1488  ARGOCD_SERVER=$(kubectl get svc argocd-server -n argocd \
+ 1489    -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+ 1490  echo $ARGOCD_SERVER
+ 1491  argocd login "$ARGOCD_SERVER"   --username admin   --password 'tSqMmZMdg2cGk5W9'   --insecure
+ 1492  argocd account get-user-info
+ 1493  argocd app get nginx-app
+ 1494  argocd app create nginx-app   --repo https://github.com/kalpesheic/eictraining.git   --revision cluster090626   --path apps/nginx   --dest-server https://kubernetes.default.svc   --dest-namespace default
+ 1495  argocd app sync nginx-app
+ 1496  aws elbv2 describe-load-balancers   --region ap-south-1   --query 'LoadBalancers[].{Name:LoadBalancerName,DNS:DNSName,State:State.Code}'   --output table
+ 1497  kubectl describe svc argocd-server -n argocd
+ 1498  ARGOCD_SERVER=$(kubectl get svc argocd-server -n argocd \
+ 1499    -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+ 1500  echo $ARGOCD_SERVER
+ 1501  argocd admin initial-password -n argocd
+ 1502  export ARGOCD_SERVER=$(kubectl get svc argocd-server -n argocd \
+ 1503    -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+ 1504  echo $ARGOCD_SERVER
+ 1505  argocd admin initial-password -n argocd
+ 1506  argocd login "$ARGOCD_SERVER"   --username admin   --password 'tSqMmZMdg2cGk5W9'   --insecure   --grpc-web
+ 1507  argocd account get-user-info
+ 1508  argocd cluster list
+ 1509  argocd account update-password
+ 1510  argocd app create nginx-app   --repo https://github.com/kalpesheic/eictraining.git   --revision cluster090626   --path apps/nginx   --dest-server https://kubernetes.default.svc   --dest-namespace default
+ 1511  argocd app sync nginx-app
+ 1512  kubectl get pods -n default
+ 1513  kubectl get pods -n argocd
+ 1514  kubectl get deployment -n argocd
+ 1515  kubectl get deployment -n demo
+ 1516  kubectl get deployment nginx -n demo   -o jsonpath='{.spec.template.spec.containers[0].image}{"\n"}'
+ 1517  kubectl get deployment -n demo
+ 1518  cd ..
+ 1519  ls
+ 1520  git clone -b cluster090626 https://github.com/kalpesheic/eictraining.git
+ 1521  ls
+ 1522  cd eictraining/
+ 1523  dir
+ 1524  cd ..
+ 1525  rm -rf eictraining/
+ 1526  ls
+ 1527  cd cluster26/
+ 1528  ls
+ 1529  cd ..
+ 1530  ls
+ 1531  cd cluster26/
+ 1532  ls
+ 1533  cd ..
+ 1534  ls
+ 1535  cd apps/
+ 1536  ls
+ 1537  cd ..
+ 1538  ls
+ 1539  cd project2026/
+ 1540  ls
+ 1541  git clone -b cluster090626 https://github.com/kalpesheic/eictraining.git
+ 1542  ls
+ 1543  cd eictraining/
+ 1544  ls
+ 1545  cd project2026/
+ 1546  ls
+ 1547  cd cluster26/
+ 1548  ls
+ 1549  cd ..
+ 1550  ls
+ 1551  cd ..
+ 1552  ls
+ 1553  cd apps/
+ 1554  ls
+ 1555  cd nginx/
+ 1556  ls
+ 1557  vim deployment.yaml 
+ 1558  git status
+ 1559  git add apps/nginx/deployment.yaml
+ 1560  git add .
+ 1561  git status
+ 1562  git commit -m "Test argocd gitops sync"
+ 1563  git push origin cluster090626
+ 1564  argocd app get nginc
+ 1565  argocd app get nginx
+ 1566  argocd app get nginx-app
+ 1567  argocd app sync nginx-app
+ 1568  kubectl get deployment nginx -n demo -o yaml
+ 1569  kubectl get deployment nginx-app -n demo   -o jsonpath='{.spec.template.metadata.annotations.gitops-test}{"\n"}'
+ 1570  kubectl get deployment nginx -n demo   -o jsonpath='{.spec.template.metadata.annotations.gitops-test}{"\n"}'
+ 1571  ls
+ 1572  vim deployment.yaml 
+ 1573  git add . 
+ 1574  git status
+ 1575  git commit -m "updated nginx image"
+ 1576  git push origin cluster090626
+ 1577  argocd app get nginx-app
+ 1578  kubectl get pods -n demo -w
+ 1579  kubectl get pods -n demo 
+ 1580  kubectl describe pods ginx-7bdf4c7bb8-kcd8j -n demo 
+ 1581  kubectl describe pods nginx-7bdf4c7bb8-kcd8j -n demo 
+ 1582  kubectl get nodes
+ 1583  kubectl label node ip-10-0-0-142.ap-south-1.compute.internal worker-pool=high
+ 1584  kubectl label node ip-10-0-2-118.ap-south-1.compute.internal worker-pool=high
+ 1585  kubectl get nodes
+ 1586  kubectl get pods -n demo 
+ 1587  kubectl describe pods nginx-7c567678f-5txh6 -n demo
+ 1588  kubectl edit deployment nginx
+ 1589  ls
+ 1590  kubectl edit deployment nginx -n demo
+ 1591  kubectl get pods -n demo 
+ 1592  kubectl get pods -n demo  - w
+ 1593  kubectl get pods -n demo 
+ 1594  argocd app get nginx-app
+ 1595  kubectl get pods -n demo 
+ 1596  argocd app get nginx -o yaml -n demo
+ 1597  argocd app get nginx-app -o yaml
+ 1598  argocd app set nginx-app --self-heal
+ 1599  argocd app set nginx --self-heal
+ 1600  kubectl edit deployment nginx-app
+ 1601  kubectl scale deployment nginx-app --replicas=3
+ 1602  kubectl get deployment -n demo
+ 1603  argocd app list
+ 1604  grep -n "replicas:" deployment.yaml
+ 1605  argocd app get nginx-demo
+ 1606  grep -n "replicas:" deployment.yaml
+ 1607  argocd app list
+ 1608  kubectl get deployment -n demo
+ 1609  kubectl edit deployment -n demo
+ 1610  kubectl get deployment -n demo
+ 1611  kubectl edit deployment -n demo
+ 1612  kubectl get deployment -n demo
+ 1613  kubectl edit deployment -n demo
+ 1614  kubectl get deployment -n demo
+ 1615  argocd app set nginx-demo --sync-policy automated
+ 1616  argocd app set nginx-demo --self-heal
+ 1617  argocd app get nginx-demo
+ 1618  kubectl get deployment -n demo
+ 1619  kubectl edit deployment -n demo
+ 1620  kubectl get deployment -n demo
+ 1621  grep -n "replicas:" deployment.yaml
+ 1622  kubectl scale deployment nginx -n demo --replicas=5
+ 1623  kubectl get deployment nginx -n demo -w
+ 1624  grep -n "replicas:" deployment.yaml
+ 1625  kubectl get deployment nginx -n demo
+ 1626  kubectl get deployment nginx -n demo -w
+ 1627  argocd app list
+ 1628  argocd app set nginx-demo --self-heal
+ 1629  argocd app get nginx-demo
+ 1630  argocd app diff nginx-demo
+ 1631  argocd app sync nginx-demo
+ 1632  argocd app resources nginx-app
+ 1633  argocd app delete nginx-app
+ 1634  argocd app list
+ 1635  argocd app diff nginx-demo
+ 1636  argocd app get nginx-demo
+ 1637  kubectl get deployment nginx -n demo -o yaml | grep -A5 -B5 annotations
+ 1638  argocd app set nginx-demo --self-heal
+ 1639  kubectl get hpa nginx -n demo
+ 1640  kubectl get pods -n demo
+ 1641  kubectl get deployment nginx -n demo -o jsonpath='{.spec.template.metadata.annotations}'
+ 1642  echo
+ 1643  grep -n -A10 -B5 "annotations" deployment.yaml
+ 1644  kubectl get deployment nginx -n demo
+ 1645  kubectl scale deployment nginx -n demo --replicas=5
+ 1646  kubectl get deployment nginx -n demo -w
+ 1647  argocd app list
+ 1648  kubectl describe hpa nginx -n demo
+ 1649  kubectl get hpa nginx -n demo
+ 1650  argocd app sync nginx-demo
+ 1651  kubectl get deployment metrics-server -n kube-system
+ 1652  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+ 1653  kubectl get pods -n kube-system | grep metrics
+ 1654  kubectl get hpa nginx -n demo
+ 1655  argocd app diff nginx-demo
+ 1656  argocd app set nginx-demo --self-heal
+ 1657  argocd app get nginx-demo
+ 1658  kubectl get deployment metrics-server -n kube-system
+ 1659  kubectl get apiservice v1beta1.metrics.k8s.io
+ 1660  argocd app get nginx-demo
+ 1661  argocd app diff nginx-demo
+ 1662  kubectl get hpa nginx -n demo
+ 1663  argocd app get nginx-demo
+ 1664  argocd app diff nginx-demo
+ 1665  cat deployment.yaml
+ 1666  kubectl get deployment nginx -n demo -o yaml
+ 1667  kubectl get deployment nginx -n demo   -o jsonpath='{.spec.template.metadata.annotations}'
+ 1668  echo
+ 1669  argocd app sync nginx-demo
+ 1670  argocd app get nginx-demo
+ 1671  argocd app diff nginx-demo
+ 1672  grep -n -A8 -B5 "annotations" deployment.yaml
+ 1673  kubectl apply --dry-run=client -f deployment.yaml
+ 1674  grep -n -A8 -B5 "annotations" deployment.yaml
+ 1675  argocd app diff nginx-demo
+ 1676  argocd app sync nginx-demo
+ 1677  grep -n -A8 -B5 "annotations" deployment.yaml
+ 1678  ls
+ 1679  kubectl delete -f nginx-app.yaml 
+ 1680  kubectl delete -f deployment.yaml -n demo
+ 1681  cd ..
+ 1682  ls
+ 1683  cd ..
+ 1684  ls
+ 1685  cd cluster26/
+ 1686  ld
+ 1687  ls
+ 1688  cd modules/
+ 1689  cd ..
+ 1690  l
+ 1691  terraform destroy
+ 1692  terraform plan
+ 1693  terraform destroy
+ 1694  ls
+ 1695  git status
+ 1696  git add .
+ 1697  git commit -m "changed vpc"
+ 1698  git push origin cluster090626
+ 1699  git pull --rebase origin cluster090626
+ 1700  git push origin cluster090626
+ 1701  terraform destroy
+ 1702  terraform plan
+ 1703  terraform force-unlock ef04fe76-9bda-6197-8c59-f443971a7470
+ 1704  terraform destroy
+ 1705  terraform plan
+ 1706  terraform destroy 
+ 1707  terraform plan
+ 1708  terraform destroy
+ 1709  df -kh
+ 1710  cd /mnt/c/eic2026/
+ 1711  dir
+ 1712  cd botkube/
+ 1713  ls
+ 1714  cd ..
+ 1715  ls
+ 1716  cd project2026/
+ 1717  ls
+ 1718  cd eictraining/
+ 1719  ls
+ 1720  cd project2026/
+ 1721  ls
+ 1722  cd cluster26/
+ 1723  ls
+ 1724  terraform plan
+ 1725  cd ..
+ 1726  ls
+ 1727  cd ..
+ 1728  ls
+ 1729  cd ..
+ 1730  ls
+ 1731  cd project2026/
+ 1732  ls
+ 1733  cd cluster26/
+ 1734  dir
+ 1735  ls -l
+ 1736  terraform init
+ 1737  terraform plan
+ 1738  ls
+ 1739  cd modules/
+ 1740  ls
+ 1741  cd ..
+ 1742  terraform init
+ 1743  terraform plan
+ 1744  aws ec2 describe-subnets   --region ap-south-1   --filters "Name=vpc-id,Values=<YOUR-VPC-ID>"   --query 'Subnets[*].[SubnetId,AvailabilityZone,CidrBlock,Tags[?Key==`Name`].Value|[0]]'   --output table
+ 1745  aws ec2 describe-subnets   --region ap-south-1   --filters "Name=vpc-id,Values=vpc-0abc7baf500feda6c"   --query 'Subnets[*].[SubnetId,AvailabilityZone,CidrBlock,Tags[?Key==`Name`].Value|[0]]'   --output table
+ 1746  terraform plan
+ 1747  terraform fmt -recursive
+ 1748  terraform validate
+ 1749  terraform plan
+ 1750  terraform apply
+ 1751  terraform state list | grep -E 's3_readonly|eks_cluster|aws_load_balancer|eks_nodes'
+ 1752  terraform import   'module.eks.aws_iam_role.s3_readonly_role'   'dev-kalpesh-demo-s3-readonly-role'
+ 1753  ls
+ 1754  cat modules/eks/helm-and-kubernetes-providers.tf 
+ 1755  ls
+ 1756  cd ..
+ 1757  ls
+ 1758  cd eictraining/
+ 1759  ls
+ 1760  cd project2026/
+ 1761  ls
+ 1762  cd cluster26/
+ 1763  ld
+ 1764  ls
+ 1765  terraform plan
+ 1766  terraform init
+ 1767  terraform plan
+ 1768  pwd
+ 1769  cd ..
+ 1770  ls
+ 1771  cd ..
+ 1772  ls
+ 1773  cd ..
+ 1774  ls
+ 1775  cd cluster26
+ 1776  dir
+ 1777  terraform plan
+ 1778  terraform apply
+ 1779  aws iam get-role --role-name dev-kalpesh-demo-s3-readonly-role
+ 1780  aws iam get-policy   --policy-arn arn:aws:iam::454143665149:policy/kalpesh-demo-AWSLoadBalancerControllerPolicy
+ 1781  terraform state list | grep -E 'iam_role|iam_policy'
+ 1782  terraform import 'module.eks.aws_iam_role.s3_readonly_role' dev-kalpesh-demo-s3-readonly-role
+ 1783  terraform apply
+ 1784  terraform state list | grep -E 's3_readonly_role|eks_cluster|aws_load_balancer_controller|eks_nodes'
+ 1785  terraform import 'module.eks.aws_iam_role.s3_readonly_role' dev-kalpesh-demo-s3-readonly-role
+ 1786  cat modules/eks/helm-and-kubernetes-providers.tf
+ 1787  sed -n '1,200p' modules/eks/cluster.tf
+ 1788  grep -R 'resource "aws_eks_cluster"' -n modules/eks
+ 1789  terraform state list | grep s3_readonly
+ 1790  grep -R 'resource "aws_eks_cluster"' -n modules/eks
+ 1791  cat modules/eks/helm-and-kubernetes-providers.tf
+ 1792  terraform init
+ 1793  terraform state list | grep s3_readonly
+ 1794  terraform import 'module.eks.aws_iam_role.s3_readonly_role' dev-kalpesh-demo-s3-readonly-role
+ 1795  terraform import 'module.eks.aws_iam_role.eks_cluster' dev-eks-cluster-role
+ 1796  terraform import 'module.eks.aws_iam_role.aws_load_balancer_controller' kalpesh-demo-aws-lb-controller
+ 1797  terraform import 'module.eks.aws_iam_policy.aws_load_balancer_controller' arn:aws:iam::$(aws sts get-caller-identity --query Account --output text):policy/kalpesh-demo-AWSLoadBalancerControllerPolicy
+ 1798  terraform import module.eks.aws_iam_role.eks_nodes' dev-kalpesh-demo-node-role
+ 1799  terraform import 'module.eks.aws_iam_role.eks_nodes' dev-kalpesh-demo-node-role
+ 1800  terraform state list | grep -E ''s3_readonly|eks_cluster|aws_load_balancer_controller|eks_nodes'
+ 1801  terraform state list | grep -E 's3_readonly|eks_cluster|aws_load_balancer_controller|eks_nodes'
+ 1802  terraform plan
+ 1803  terraform apply
+ 1804  aws ec2 modify-subnet-attribute   --subnet-id subnet-067d8aef16163e709   --map-public-ip-on-launch
+ 1805  aws ec2 modify-subnet-attribute   --subnet-id subnet-023528435c65dd7d3   --map-public-ip-on-launch
+ 1806  aws ec2 describe-subnets   --subnet-ids subnet-067d8aef16163e709 subnet-023528435c65dd7d3   --query 'Subnets[*].[SubnetId,MapPublicIpOnLaunch]'   --output table
+ 1807  grep -R "map_public_ip_on_launch" -n modules/vpc .
+ 1808  terraform apply
+ 1809  terraform destroy
+ 1810  terraform plan
+ 1811  terraform apply
+ 1812  aws eks list-addons   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1813  aws eks describe-addon   --cluster-name dev-kalpesh-demo   --region ap-south-1   --addon-name vpc-cni   --query 'addon.{status:status,version:addonVersion}'   --output table
+ 1814  aws eks list-addons   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1815  ps -ef | grep terraform
+ 1816  aws eks list-addons   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1817  aws eks describe-addon   --cluster-name dev-kalpesh-demo   --region ap-south-1   --addon-name vpc-cni   --query 'addon.{status:status,version:addonVersion}'   --output table
+ 1818  terraform state list | grep -i vpc
+ 1819  terraform state list | grep aws_eks_addon
+ 1820  grep -R "vpc-cni" -n modules/eks .
+ 1821  aws eks list-nodegroups   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1822  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,health:health.issues,desired:scalingConfig.desiredSize,subnets:subnets}'   --output json
+ 1823  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name <PRIVATE_NODEGROUP_NAME>   --query 'nodegroup.{status:status,health:health.issues,desired:scalingConfig.desiredSize,subnets:subnets}'   --output json
+ 1824  aws eks list-nodegroups --cluster-name dev-kalpesh-demo --region ap-south-1
+ 1825  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,health:health.issues,desired:scalingConfig.desiredSize,subnets:subnets}'   --output json
+ 1826  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,created:createdAt,modified:modifiedAt,issues:health.issues,asg:resources.autoScalingGroups[*].name}'   --output json
+ 1827  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,created:createdAt,modified:modifiedAt,issues:health.issues,asg:resources.autoScalingGroups[*].name}'   --output json
+ 1828  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --query 'AutoScalingGroups[?contains(AutoScalingGroupName, `dev-kalpesh-demo-spot`)].{Name:AutoScalingGroupName,Desired:DesiredCapacity,Min:MinSize,Max:MaxSize,Instances:Instances[*].[InstanceId,LifecycleState,HealthStatus]}'   --output json
+ 1829  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --auto-scaling-group-names "<ASG_NAME>"   --query 'AutoScalingGroups[0].{Desired:DesiredCapacity,Instances:Instances[*].[InstanceId,LifecycleState,HealthStatus]}'   --output json
+ 1830  aws ec2 describe-subnets   --region ap-south-1   --subnet-ids subnet-067d8aef16163e709 subnet-023528435c65dd7d3   --query 'Subnets[*].{Subnet:SubnetId,AZ:AvailabilityZone,PublicIP:MapPublicIpOnLaunch,AvailableIPs:AvailableIpAddressCount,State:State}'   --output table
+ 1831  aws ec2 describe-route-tables   --region ap-south-1   --query 'RouteTables[*].{RouteTable:RouteTableId,VPC:VpcId,Routes:Routes[*].[DestinationCidrBlock,GatewayId,NatGatewayId]}'   --output json
+ 1832  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,created:createdAt,modified:modifiedAt,issues:health.issues,asg:resources.autoScalingGroups[*].name}'   --output json
+ 1833  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --query 'AutoScalingGroups[?contains(AutoScalingGroupName, `dev-kalpesh-demo-spot`)].{Name:AutoScalingGroupName,Desired:DesiredCapacity,Min:MinSize,Max:MaxSize,Instances:Instances[*].[InstanceId,LifecycleState,HealthStatus]}'   --output json
+ 1834  aws ec2 describe-subnets   --region ap-south-1   --subnet-ids subnet-067d8aef16163e709 subnet-023528435c65dd7d3   --query 'Subnets[*].{Subnet:SubnetId,AZ:AvailabilityZone,PublicIP:MapPublicIpOnLaunch,AvailableIPs:AvailableIpAddressCount,State:State}'   --output table
+ 1835  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-09bd434f59217be4c i-0a1c408789898322f   --query 'Reservations[*].Instances[*].{Instance:InstanceId,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,State:State.Name,Subnet:SubnetId,AZ:Placement.AvailabilityZone,SG:SecurityGroups[*].GroupId,IAM:IamInstanceProfile.Arn}'   --output table
+ 1836  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{Status:status,Issues:health.issues,Desired:scalingConfig.desiredSize,Current:scalingConfig.minSize,ASG:resources.autoScalingGroups[*].name}'   --output json
+ 1837  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-09bd434f59217be4c i-0a1c408789898322f   --query 'Reservations[].Instances[].{InstanceId:InstanceId,State:State.Name,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,Subnet:SubnetId}'   --output json
+ 1838  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --auto-scaling-group-names   eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --query 'AutoScalingGroups[0].{Name:AutoScalingGroupName,Desired:DesiredCapacity,Min:MinSize,Max:MaxSize,Instances:Instances}'   --output json
+ 1839  aws autoscaling describe-scaling-activities   --region ap-south-1   --auto-scaling-group-name   eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --max-items 10   --query 'Activities[].{Time:StartTime,Status:StatusCode,Description:Description,Cause:Cause}'   --output table
+ 1840  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-09bd434f59217be4c i-0a1c408789898322f   --query 'Reservations[].Instances[].{Instance:InstanceId,State:State.Name,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,Subnet:SubnetId,AZ:Placement.AvailabilityZone,IAM:IamInstanceProfile.Arn,SG:SecurityGroups[*].GroupId}'   --output table
+ 1841  aws ec2 describe-launch-template-versions   --region ap-south-1   --launch-template-id lt-043211796bcdd5d0d   --versions 1   --query 'LaunchTemplateVersions[0].LaunchTemplateData.{ImageId:ImageId,InstanceType:InstanceType,UserData:UserData,SecurityGroupIds:SecurityGroupIds,IamInstanceProfile:IamInstanceProfile}'   --output json
+ 1842  aws eks describe-cluster   --name dev-kalpesh-demo   --region ap-south-1   --query 'cluster.kubernetesNetworkConfig'   --output json
+ 1843  aws ec2 describe-images   --region ap-south-1   --image-ids ami-067d27d47f88c442a   --query 'Images[0].{Name:Name,Description:Description,Architecture:Architecture,Platform:PlatformDetails,CreationDate:CreationDate}'   --output table
+ 1844  aws autoscaling describe-scaling-activities   --region ap-south-1   --auto-scaling-group-name eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --max-items 10   --query 'Activities[].{Time:StartTime,Status:StatusCode,Description:Description,Cause:Cause}'   --output table
+ 1845  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{Status:status,Created:createdAt,Modified:modifiedAt,Health:health,Resources:resources,LaunchTemplate:launchTemplate,RemoteAccess:remoteAccess}'   --output json
+ 1846  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-09bd434f59217be4c i-0a1c408789898322f   --query 'Reservations[].Instances[].{InstanceId:InstanceId,State:State.Name,Subnet:SubnetId,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,SG:SecurityGroups[*].GroupId,Tags:Tags}'   --output json
+ 1847  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --query 'AutoScalingGroups[?contains(AutoScalingGroupName, `dev-kalpesh-demo-spot`)].{Name:AutoScalingGroupName,Desired:DesiredCapacity,Min:MinSize,Max:MaxSize,Instances:Instances[*].{Id:InstanceId,Lifecycle:LifecycleState,AZ:AvailabilityZone}}'   --output json
+ 1848  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --auto-scaling-group-names eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --query 'AutoScalingGroups[0].{Name:AutoScalingGroupName,LaunchTemplate:LaunchTemplate,Instances:Instances[*].{Id:InstanceId,Lifecycle:LifecycleState,Health:HealthStatus}}'   --output json
+ 1849  aws autoscaling describe-scaling-activities   --region ap-south-1   --auto-scaling-group-name eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --max-items 20   --query 'Activities[].{Time:StartTime,Status:StatusCode,Instance:Details.InstanceId,Description:Description,Cause:Cause}'   --output table
+ 1850  aws autoscaling describe-scaling-activities   --region ap-south-1   --auto-scaling-group-name eks-dev-kalpesh-demo-spot-44d087e8-283b-2210-9b74-5be2e97b7ff1   --max-items 20   --query 'Activities[].{Time:StartTime,Status:StatusCode,Instance:Details.InstanceId,Description:Description,Cause:Cause}'   --output table
+ 1851  aws ec2 describe-vpc-attribute   --region ap-south-1   --vpc-id vpc-0abc7baf500feda6c   --attribute enableDnsSupport
+ 1852  aws ec2 describe-vpc-attribute   --region ap-south-1   --vpc-id vpc-0abc7baf500feda6c   --attribute enableDnsHostnames
+ 1853  nslookup 602401143452.dkr.ecr.ap-south-1.amazonaws.com
+ 1854  aws ssm describe-instance-information   --region ap-south-1   --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus,Platform:PlatformName}'   --output table
+ 1855  aws ssm describe-instance-information   --region ap-south-1   --filters Key=InstanceIds,Values=i-0a1c408789898322f,i-01e9d123ee5e20445   --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus}'   --output table
+ 1856  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-0a1c408789898322f i-01e9d123ee5e20445   --query 'Reservations[].Instances[].{InstanceId:InstanceId,State:State.Name,PublicIP:PublicIpAddress,Subnet:SubnetId,Profile:IamInstanceProfile.Arn}'   --output table
+ 1857  aws ec2 describe-network-acls   --region ap-south-1   --filters     Name=association.subnet-id,Values=subnet-023528435c65dd7d3,subnet-067d8aef16163e709   --query 'NetworkAcls[].{NetworkAclId:NetworkAclId,Entries:Entries}'   --output json
+ 1858  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1859  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1860  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1861  aws ec2 describe-network-acls   --region ap-south-1   --filters     Name=association.subnet-id,Values=subnet-023528435c65dd7d3,subnet-067d8aef16163e709   --query 'NetworkAcls[].{NetworkAclId:NetworkAclId,Entries:Entries}'   --output json
+ 1862  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1863  aws eks describe-cluster   --name dev-kalpesh-demo   --region ap-south-1   --query 'cluster.resourcesVpcConfig.{ClusterSG:clusterSecurityGroupId,AdditionalSGs:securityGroupIds,VPC:vpcId,Subnets:subnetIds,Endpoint:endpoint,PublicAccess:endpointPublicAccess,PrivateAccess:endpointPrivateAccess}'   --output json
+ 1864  aws ec2 describe-security-groups   --region ap-south-1   --filters Name=vpc-id,Values=vpc-0abc7baf500feda6c   --query 'SecurityGroups[].{GroupId:GroupId,Name:GroupName,Description:Description}'   --output table
+ 1865  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LaunchTemplate:nodegroup.launchTemplate}'   --output json
+ 1866  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1867  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.health.issues'   --output json
+ 1868  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1869  aws ec2 describe-security-groups   --region ap-south-1   --filters Name=vpc-id,Values=vpc-0abc7baf500feda6c   --query 'SecurityGroups[].{GroupId:GroupId,Name:GroupName,Description:Description}'   --output table
+ 1870  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1871  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --query 'AutoScalingGroups[?contains(AutoScalingGroupName, `dev-kalpesh-demo-spot`)].{ASG:AutoScalingGroupName,Instances:Instances}'   --output json
+ 1872  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.resources.autoScalingGroups[].name'   --output text
+ 1873  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.resources.autoScalingGroups[].name'   --output text
+ 1874  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1875  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.resources.autoScalingGroups[].name'   --output text
+ 1876  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1877  aws ec2 describe-instances   --region ap-south-1   --instance-ids <INSTANCE_ID>   --query 'Reservations[0].Instances[0].{PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,Subnet:SubnetId,SG:SecurityGroups[*].GroupId,Profile:IamInstanceProfile.Arn}'   --output json
+ 1878  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query '{Status:nodegroup.status,Issues:nodegroup.health.issues,ASG:nodegroup.resources.autoScalingGroups,LT:nodegroup.launchTemplate}'   --output json
+ 1879  aws autoscaling describe-auto-scaling-groups   --region ap-south-1   --query 'AutoScalingGroups[?contains(AutoScalingGroupName, `dev-kalpesh-demo-spot`)].{ASG:AutoScalingGroupName,Instances:Instances}'   --output json
+ 1880  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.resources.autoScalingGroups[].name'   --output text
+ 1881  ls
+ 1882  cd ..
+ 1883  ls
+ 1884  cd jenkins/
+ 1885  ls
+ 1886  ssh -i kalpesh2026.pem ubuntu@15.252.122.73
+ 1887  ls
+ 1888  chmod 400 kalpesh2026.pem 
+ 1889  ssh -i kalpesh2026.pem ubuntu@15.252.122.73
+ 1890  chmod 400 kalpesh2026.pem
+ 1891  ssh -i kalpesh2026.pem ec2-user@15.252.122.73
+ 1892  cd /mnt/c/eic2026/
+ 1893  dir
+ 1894  cd project2026/
+ 1895  ls
+ 1896  cd cluster26/
+ 1897  ls
+ 1898  aws eks describe-addon   --cluster-name dev-kalpesh-demo   --addon-name vpc-cni   --query 'addon.{status:status,version:addonVersion,issues:health.issues}'   --output json
+ 1899  kubectl get pods -n kube-system -l k8s-app=aws-node -o wide
+ 1900  aws eks describe-cluster   --name dev-kalpesh-demo   --query 'cluster.{status:status,version:version,endpoint:endpoint,public:resourcesVpcConfig.endpointPublicAccess,private:resourcesVpcConfig.endpointPrivateAccess}'   --output table
+ 1901  aws eks list-addons   --cluster-name dev-kalpesh-demo   --output table
+ 1902  aws eks describe-cluster   --name dev-kalpesh-demo   --query 'cluster.endpoint'   --output text
+ 1903  nslookup CAA0A5579A1659779BC1AA8528C8DF04.gr7.ap-south-1.eks.amazonaws.com
+ 1904  ps -ef | grep terraform
+ 1905  aws eks describe-cluster   --name dev-kalpesh-demo   --query 'cluster.status'   --output text
+ 1906  aws eks list-nodegroups   --cluster-name dev-kalpesh-demo   --output table
+ 1907  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{status:status,health:health.issues}'   --output json
+ 1908  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-private   --query 'nodegroup.{status:status,health:health.issues}'   --output json
+ 1909  grep -R "aws_eks_addon" -n modules .
+ 1910  aws eks describe-addon --addon-name vpc-cni
+ 1911  aws eks describe-cluster   --name dev-kalpesh-demo   --query 'cluster.{version:version,endpoint:endpoint,public:resourcesVpcConfig.endpointPublicAccess,private:resourcesVpcConfig.endpointPrivateAccess}'   --output table
+ 1912  aws eks list-addons   --cluster-name dev-kalpesh-demo   --output table
+ 1913  terraform state list | grep -E 'eks|node_group|addon'
+ 1914  resource "aws_eks_addon" "vpc_cni" {
+ 1915  }
+ 1916  aws eks list-addons   --cluster-name dev-kalpesh-demo   --region ap-south-1
+ 1917  grep -R "resource \"aws_eks_node_group\"" -n modules/eks
+ 1918  terraform validate
+ 1919  terraform plan
+ 1920  terraform plan | grep  module.eks.aws_eks_addon.vpc_cni
+ 1921  terraform apply
+ 1922  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --region ap-south-1   --nodegroup-name dev-kalpesh-demo-spot   --query 'nodegroup.{Status:status,Issues:health.issues,Resources:resources,LaunchTemplate:launchTemplate}'   --output json
+ 1923  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-0a1c408789898322f i-01e9d123ee5e20445   --query 'Reservations[].Instances[].{Id:InstanceId,State:State.Name,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress,Subnet:SubnetId,AMI:ImageId,SG:SecurityGroups[*].GroupId,Profile:IamInstanceProfile.Arn}'   --output table
+ 1924  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{VpcId:VpcId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1925  aws eks describe-cluster   --name dev-kalpesh-demo   --region ap-south-1   --query 'cluster.resourcesVpcConfig.{VPC:vpcId,ClusterSG:clusterSecurityGroupId,Endpoint:endpoint}'   --output json
+ 1926  aws ec2 describe-security-groups   --region ap-south-1   --group-ids <CLUSTER_SG>   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1927  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1928  aws ec2 describe-route-tables   --region ap-south-1   --filters "Name=association.subnet-id,Values=subnet-023528435c65dd7d3,subnet-067d8aef16163e709"   --query 'RouteTables[].{RouteTableId:RouteTableId,Routes:Routes}'   --output json
+ 1929  aws eks describe-cluster   --name dev-kalpesh-demo   --region ap-south-1   --query 'cluster.resourcesVpcConfig.{VPC:vpcId,ClusterSG:clusterSecurityGroupId,Endpoint:endpoint}'   --output json
+ 1930  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-080e02de863c3271d   --query 'SecurityGroups[0].{GroupId:GroupId,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1931  aws ec2 get-console-output   --region ap-south-1   --instance-id i-0a1c408789898322f   --latest   --output text
+ 1932  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-0a1c408789898322f i-01e9d123ee5e20445   --query 'Reservations[].Instances[].{InstanceId:InstanceId,LTId:Tags[?Key==`aws:ec2launchtemplate:id`].Value|[0],LTVersion:Tags[?Key==`aws:ec2launchtemplate:version`].Value|[0],AMI:ImageId,Profile:IamInstanceProfile.Arn}'   --output table
+ 1933  aws ec2 describe-instances   --region ap-south-1   --instance-ids i-0a1c408789898322f i-01e9d123ee5e20445   --query 'Reservations[].Instances[].{InstanceId:InstanceId,LTId:Tags[?Key==`aws:ec2launchtemplate:id`].Value|[0],LTVersion:Tags[?Key==`aws:ec2launchtemplate:version`].Value|[0],AMI:ImageId,Profile:IamInstanceProfile.Arn}'   --output table
+ 1934  aws ec2 describe-launch-template-versions   --region ap-south-1   --launch-template-id lt-0fa801f9dc714df90   --versions 1   --query 'LaunchTemplateVersions[0].LaunchTemplateData.{ImageId:ImageId,SecurityGroups:SecurityGroupIds,IamProfile:IamInstanceProfile,UserData:UserData}'   --output json
+ 1935  aws ec2 describe-launch-template-versions   --region ap-south-1   --launch-template-id lt-043211796bcdd5d0d   --versions 1   --query 'LaunchTemplateVersions[0].LaunchTemplateData.{ImageId:ImageId,SecurityGroups:SecurityGroupIds,IamProfile:IamInstanceProfile,UserData:UserData}'   --output json
+ 1936  terraform destroy
+ 1937  terraform apply
+ 1938  terraform destroy
+ 1939  terraform plan
+ 1940  terraform apply
+ 1941  terraform destroy
+ 1942  ls
+ 1943  chmod 400 kalpesh2026.pem
+ 1944  ls
+ 1945  aws eks describe-nodegroup   --cluster-name dev-kalpesh-demo   --nodegroup-name dev-kalpesh-demo-spot   --region ap-south-1   --query 'nodegroup.nodeRole'   --output text
+ 1946  aws iam list-attached-role-policies   --role-name <NODE_ROLE_NAME>   --query 'AttachedPolicies[].{Name:PolicyName,Arn:PolicyArn}'   --output table
+ 1947  terraform state list | grep -E 'aws_iam_role|node_group'
+ 1948  terraform state list
+ 1949  terraform plan
+ 1950  terraform state list
+ 1951  terraform state list | grep aws_iam_role
+ 1952  aws ec2 describe-vpcs --vpc-ids vpc-0abc7baf500feda6c
+ 1953  aws ec2 describe-vpc-attribute   --vpc-id vpc-0abc7baf500feda6c   --attribute enableDnsSupport
+ 1954  aws ec2 describe-vpc-attribute   --vpc-id vpc-0abc7baf500feda6c   --attribute enableDnsSupport
+ 1955  aws ec2 describe-vpc-attribute   --vpc-id vpc-0abc7baf500feda6c   --attribute enableDnsHostnames
+ 1956  aws ec2 describe-route-tables   --filters Name=association.subnet-id,Values=subnet-023528435c65dd7d3
+ 1957  aws ec2 describe-route-tables   --filters Name=association.subnet-id,Values=subnet-067d8aef16163e709
+ 1958  aws ec2 describe-subnets   --subnet-ids   subnet-023528435c65dd7d3   subnet-067d8aef16163e709
+ 1959  aws ec2 describe-tags   --filters Name=resource-id,Values=subnet-067d8aef16163e709
+ 1960  aws ec2 describe-vpc-attribute --vpc-id vpc-0abc7baf500feda6c --attribute enableDnsSupport
+ 1961  aws ec2 describe-vpc-attribute --vpc-id vpc-0abc7baf500feda6c --attribute enableDnsHostnames
+ 1962  terraform state show module.eks.aws_eks_cluster.main
+ 1963  terraform show | grep security_group
+ 1964  terraform plan
+ 1965  terraform apply
+ 1966  aws ec2 describe-security-groups   --region ap-south-1   --group-ids sg-00523287cd621df2e   --query 'SecurityGroups[0].{GroupId:GroupId,Name:GroupName,Inbound:IpPermissions,Outbound:IpPermissionsEgress}'   --output json
+ 1967  cd /mnt/c/eic2026/
+ 1968  dir
+ 1969  cd project2026/
+ 1970  ls
+ 1971  cd cluster26/
+ 1972  ls
+ 1973  kubectl get pods -n keda-demo -w
+ 1974  kubectl get hpa -n keda-demo -w
+ 1975  kubectl get hpa -n keda-demo 
+ 1976  kubectl get pods
+ 1977  kubectl get ns
+ 1978  kubectl get hpa -n keda
+ 1979  kubectl get hpa -n keda-demo 
+ 1980  kubectl get pods -n keda-demo -w
+ 1981  kubectl get pods -n keda
+ 1982  kubectl get scaledobject -n keda-demo
+ 1983  kubectl describe scaledobject sqs-worker-scaler -n keda-demo
+ 1984  kubectl get secret aws-credentials -n keda-demo -o yaml
+ 1985  aws configure
+ 1986  cat > trigger-authentication.yaml <<'EOF'
+apiVersion: keda.sh/v1alpha1
+kind: TriggerAuthentication
+metadata:
+  name: aws-credentials
+  namespace: keda-demo
+spec:
+  secretTargetRef:
+  - parameter: awsAccessKeyID
+    name: aws-credentials
+    key: QUtJQVdUUElTTVA2VDY2V0pFWE8=
+
+  - parameter: awsSecretAccessKey
+    name: aws-credentials
+    key: VGR1bEg3RFQwamVXUjArRGhubkpXcm5JeWcvWTlobC91eFh2TWJmeA==
+EOF
+
+ 1987  kubectl get secret aws-credentials -n keda-demo -o yaml
+ 1988  kubectl get scaledobject -n keda-demo
+ 1989  kubectl apply -f trigger-authentication.yaml
+ 1990  ls 
+ 1991  kubectl get triggerauthentication -n keda-demo
+ 1992  ls- l
+ 1993  ls -l
+ 1994  kubectl get triggerauthentication -n keda-demo
+ 1995  ls -l
+ 1996  cd keda-sqs-demo/
+ 1997  ls
+ 1998  ls -l
+ 1999  kubectl get scaledobject sqs-worker-scaler -n keda-demo -o yaml
+ 2000  ls
+ 2001  cd ..
+ 2002  kubectl get triggerauthentication aws-credentials -n keda-demo -o yaml
+ 2003  kubectl get triggerauthentication aws-credentials -n keda-demo
+ 2004  kubectl get secret aws-credentials -n keda-demo
+ 2005  kubectl describe secret aws-credentials -n keda-demo
+ 2006  kubectl get scaledobject sqs-worker-scaler -n keda-demo -w
+ 2007  kubectl get hpa -n keda-demo
+ 2008  kubectl get triggerauthentication aws-credentials   -n keda-demo   -o yaml
+ 2009  kubectl logs -n keda deployment/keda-operator --tail=100 | grep -Ei "sqs|awsAccess|authentication|error"
+ 2010  kubectl get triggerauthentication aws-credentials   -n keda-demo -o yaml
+ 2011  kubectl logs -n keda deployment/keda-operator --tail=100 | grep -Ei "sqs|awsAccess|authentication|error"
+ 2012  kubectl rollout restart deployment keda-operator -n keda
+ 2013  kubectl rollout status deployment keda-operator -n keda
+ 2014  kubectl rollout restart deployment keda-operator -n keda
+ 2015  kubectl rollout status deployment keda-operator -n keda
+ 2016  kubectl get hpa -n keda-demo
+ 2017  kubectl get scaledobject sqs-worker-scaler -n keda-demo
+ 2018  kubectl logs -n keda deploy/keda-operator --since=3m | grep -E "awsAccessKeyID|SQS|sqs-worker|error|Error"
+ 2019  kubectl get scaledobject sqs-worker-scaler -n keda-demo
+ 2020  kubectl get hpa -n keda-demo
+ 2021  kubectl get deployment sqs-worker -n keda-demo
+ 2022  kubectl get pods -n keda-demo
+ 2023  aws sqs get-queue-attributes   --queue-url "https://sqs.ap-south-1.amazonaws.com/454143665149/keda-demo-queue"   --attribute-names ApproximateNumberOfMessages   --region ap-south-1
+ 2024  QUEUE_URL="https://sqs.ap-south-1.amazonaws.com/454143665149/keda-demo-queue"
+ 2025  for i in $(seq 1 20); do   aws sqs send-message     --queue-url "$QUEUE_URL"     --message-body "KEDA test message $i"     --region ap-south-1; done
+ 2026  kubectl get pods -n keda-demo -w
+ 2027  kubectl get pods -n keda-demo 
+ 2028  kubectl get pods -n keda-demo -w
+ 2029  kubectl get pods -n keda-demo 
+ 2030  kubectl get pods -n keda-demo -w
+ 2031  kubectl get nodes
+ 2032  ls
+ 2033  kubectl get scaledobject sqs-worker-scaler -n keda-demo
+ 2034  kubectl get triggerauthentication aws-credentials   -n keda-demo   -o jsonpath='{.spec.secretTargetRef}' | jq
+ 2035  kubectl rollout restart deployment keda-operator -n keda
+ 2036  kubectl rollout status deployment keda-operator -n keda
+ 2037  kubectl get scaledobject sqs-worker-scaler -n keda-demo
+ 2038  kubectl get hpa -n keda-demo
+ 2039  kubectl get scaledobject sqs-worker-scaler -n keda-demo
+ 2040  kubectl get deployment sqs-worker -n keda-demo
+ 2041  kubectl get hpa -n keda-demo
+ 2042  QUEUE_URL="https://sqs.ap-south-1.amazonaws.com/454143665149/keda-demo-queue"
+ 2043  aws sqs get-queue-attributes   --queue-url "$QUEUE_URL"   --attribute-names ApproximateNumberOfMessages   --region ap-south-1
+ 2044  for i in $(seq 1 20); do   aws sqs send-message     --queue-url "$QUEUE_URL"     --message-body "KEDA test message $i"     --region ap-south-1     --output text; done
+ 2045  kubectl get pods -n keda-demo -w
+ 2046  kubectl get deployment sqs-worker -n keda-demo -w
+ 2047  kubectl delete scaledobject sqs-worker-scaler -n keda-demo
+ 2048  kubectl delete triggerauthentication aws-credentials -n keda-demo
+ 2049  kubectl delete deployment sqs-worker -n keda-demo
+ 2050  kubectl get pods -n keda-demo
+ 2051  kubectl get hpa -n keda-demo
+ 2052  kubectl get pods -n keda-demo
+ 2053  ls
+ 2054  git status
+ 2055  ls
+ 2056  history >> kida.history

@@ -114,31 +114,31 @@
 
 ### added code for the aws load balancer controller 
 
-#resource "helm_release" "aws_load_balancer_controller" {
+resource "helm_release" "aws_load_balancer_controller" {
 
-#  name       = "aws-load-balancer-controller"
-#  repository = "https://aws.github.io/eks-charts"
-#  chart      = "aws-load-balancer-controller"
-#  namespace  = "kube-system"
+  name       = "aws-load-balancer-controller"
+  repository = "https://aws.github.io/eks-charts"
+  chart      = "aws-load-balancer-controller"
+  namespace  = "kube-system"
 
-#  values = [
-#    yamlencode({
-#      clusterName = var.cluster_name
-#      region      = "ap-south-1"
-#      vpcId       = "vpc-02358ddc1cb955bcd"
+  values = [
+    yamlencode({
+      clusterName = var.cluster_name
+      region      = "ap-south-1"
+      vpcId       = "vpc-0abc7baf500feda6c"
 
-#      serviceAccount = {
-#        create = false
-#        name   = "aws-load-balancer-controller"
-#      }
-#    })
-#  ]
+      serviceAccount = {
+        create = false
+        name   = "aws-load-balancer-controller"
+      }
+    })
+  ]
 
-#  timeout = 600
-#  wait    = true
+  timeout = 600
+  wait    = true
 
-#  depends_on = [
-#    aws_eks_cluster.main,
-#    aws_eks_node_group.private_nodes
-#  ]
-#}
+  depends_on = [
+    aws_eks_cluster.main,
+    aws_eks_node_group.private_nodes
+  ]
+}

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqs-worker
+  namespace: keda-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqs-worker
+  template:
+    metadata:
+      labels:
+        app: sqs-worker
+    spec:
+      containers:
+      - name: worker
+        image: public.ecr.aws/docker/library/alpine:3.20
+        command:
+        - /bin/sh
+        - -c
+        - |
+          echo "SQS Worker started"
+          while true; do
+            echo "Worker is running..."
+            sleep 10
+          done
