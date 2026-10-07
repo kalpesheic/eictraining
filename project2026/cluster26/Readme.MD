@@ -61,6 +61,8 @@ Namespace
    │
    └── ScaledObject
          └── sqs-worker-scaler
+
+
 KEDA automatically creates/manages an HPA associated with the ScaledObject.
 
 SQS Configuration
