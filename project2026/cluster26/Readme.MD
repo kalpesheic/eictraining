@@ -64,6 +64,7 @@ Namespace
 
 
 KEDA automatically creates/manages an HPA associated with the ScaledObject.
+As per the below screen shot, we would create secret (aws-credential)  and deploy trigger-authentication, sqs-worker and scaled-object deployment as per the yaml files.
 
 SQS Configuration
 Queue name- keda-demo-queue
